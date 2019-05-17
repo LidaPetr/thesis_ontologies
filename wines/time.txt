@@ -1,0 +1,3 @@
+Ontology Load time: PT22.222S
+ARFF Creation: PT0.026S
+Association Rules: PT0.424S

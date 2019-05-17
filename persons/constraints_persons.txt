@@ -1,0 +1,20 @@
+_answer <- MarriedTo(?X, ?X).
+_answer <- hasParent(?X, ?Y), hasParent(?Y, ?X).
+_answer <- Female(?X), Male(?X).
+_answer <- Female(?X), Man(?X).
+_answer <- Female(?X), Priest(?X).
+_answer <- Male(?X), Woman(?X).
+_answer <- Man(?X), Woman(?X).
+_answer <- Priest(?X), Woman(?X).
+_answer <- Adult(?X), Minor(?X).
+_answer <- Man(?X), Minor(?X).
+_answer <- Minor(?X), Priest(?X).
+_answer <- Minor(?X), Woman(?X).
+_answer <- MarriedTo(?0, ?X), Minor(?X).
+_answer <- MarriedTo(?X, ?1), Minor(?X).
+_answer <- MarriedTo(?X, ?Y), Priest(?X).
+_answer <- MarriedTo(?Y, ?X), Priest(?X).
+_answer <- MarriedTo(?X, ?Y), SinglePerson(?X).
+_answer <- MarriedTo(?Y, ?X), SinglePerson(?X).
+_answer <- MarriedTo(?X, ?Y), hasParent(?X, ?Y).
+_answer <- MarriedTo(?Y, ?X), hasParent(?X, ?Y).

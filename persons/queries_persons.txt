@@ -1,0 +1,86 @@
+Q(?X) <- Female(?X), -Adult(?X).
+Q(?X) <- Male(?X), -Person(?X).
+Q(?X) <- Woman(?X), -Person(?X).
+Q(?X) <- hasParent(?Y0, ?X), -Person(?X).
+Q(?X) <- MarriedTo(?Y0, ?X), -Adult(?X).
+Q(?X) <- Priest(?X), -Male(?X).
+Q(?X) <- Woman(?X), -Adult(?X).
+Q(?X) <- MarriedTo(?X, ?Y0), -hasParent(?Y1, ?X).
+Q(?X) <- Man(?X), -Male(?X).
+Q(?X) <- hasParent(?Y0, ?X), -Adult(?X).
+Q(?X) <- Female(?X), -Person(?X).
+Q(?X) <- Priest(?X), -hasParent(?X, ?Y0).
+Q(?X) <- MarriedTo(?X, ?Y0), -Adult(?X).
+Q(?X) <- hasParent(?X, ?Y0), -Person(?X).
+Q(?X) <- hasParent(?Y0, ?X), -MarriedTo(?Y1, ?X).
+Q(?X) <- MarriedTo(?X, ?Y0), -Person(?X).
+Q(?X) <- MarriedTo(?X, ?Y0), -MarriedTo(?Y1, ?X).
+Q(?X) <- Priest(?X), -Adult(?X).
+Q(?X) <- hasParent(?Y1, ?X), -MarriedTo(?X, ?Y0).
+Q(?X) <- hasParent(?X, ?Y0), -Adult(?X).
+Q(?X) <- MarriedTo(?Y0, ?X), -Person(?X).
+Q(?X) <- Adult(?X), -Person(?X).
+Q(?X) <- Male(?X), -Man(?X).
+Q(?X) <- Woman(?X), -Female(?X).
+Q(?X) <- Female(?X), -Woman(?X).
+Q(?X) <- Priest(?X), -Person(?X).
+Q(?X) <- Person(?X), -Adult(?X).
+Q(?X) <- Priest(?X), -Man(?X).
+Q(?X) <- Man(?X), -Person(?X).
+Q(?X) <- MarriedTo(?Y1, ?X), -MarriedTo(?X, ?Y0).
+Q(?X) <- MarriedTo(?Y0, ?X), -hasParent(?Y1, ?X).
+Q(?X) <- Male(?X), -Adult(?X).
+Q(?X) <- Man(?X), -Adult(?X).
+Q(?X) <- Adult(?X), -Female(?X).
+Q(?X) <- MarriedTo(?X, ?Y0), -Man(?X).
+Q(?X) <- Adult(?X), -MarriedTo(?X, ?Y0).
+Q(?X) <- Woman(?X), -MarriedTo(?Y0, ?X).
+Q(?X) <- Male(?X), -hasParent(?X, ?Y0).
+Q(?X) <- Woman(?X), -hasParent(?Y0, ?X).
+Q(?X) <- MarriedTo(?Y0, ?X), -Female(?X).
+Q(?X) <- hasParent(?Y0, ?X), -Male(?X).
+Q(?X) <- Adult(?X), -Man(?X).
+Q(?X) <- Person(?X), -Male(?X).
+Q(?X) <- Man(?X), -MarriedTo(?X, ?Y0).
+Q(?X) <- Male(?X), -MarriedTo(?X, ?Y0).
+Q(?X) <- MarriedTo(?X, ?Y0), -Female(?X).
+Q(?X) <- hasParent(?X, ?Y0), -Female(?X).
+Q(?X) <- Person(?X), -Female(?X).
+Q(?X) <- Male(?X), -MarriedTo(?Y0, ?X).
+Q(?X) <- hasParent(?X, ?Y0), -Man(?X).
+Q(?X) <- Adult(?X), -MarriedTo(?Y0, ?X).
+Q(?X) <- Adult(?X), -hasParent(?X, ?Y0).
+Q(?X) <- hasParent(?Y0, ?X), -Man(?X).
+Q(?X) <- Man(?X), -Priest(?X).
+Q(?X) <- Male(?X), -hasParent(?Y0, ?X).
+Q(?X) <- MarriedTo(?Y0, ?X), -Woman(?X).
+Q(?X) <- hasParent(?X, ?Y0), -Male(?X).
+Q(?X) <- hasParent(?Y0, ?X), -Female(?X).
+Q(?X) <- Adult(?X), -hasParent(?Y0, ?X).
+Q(?X) <- Person(?X), -hasParent(?Y0, ?X).
+Q(?X) <- MarriedTo(?Y0, ?X), -Man(?X).
+Q(?X) <- hasParent(?X, ?Y0), -Woman(?X).
+Q(?X) <- Man(?X), -MarriedTo(?Y0, ?X).
+Q(?X) <- hasParent(?Y0, ?X), -Woman(?X).
+Q(?X) <- Man(?X), -hasParent(?X, ?Y0).
+Q(?X) <- Woman(?X), -MarriedTo(?X, ?Y0).
+Q(?X) <- Female(?X), -hasParent(?X, ?Y0).
+Q(?X) <- Female(?X), -MarriedTo(?X, ?Y0).
+Q(?X) <- Woman(?X), -hasParent(?X, ?Y0).
+Q(?X) <- MarriedTo(?Y0, ?X), -Male(?X).
+Q(?X) <- MarriedTo(?X, ?Y0), -Woman(?X).
+Q(?X) <- Female(?X), -MarriedTo(?Y0, ?X).
+Q(?X) <- Male(?X), -Priest(?X).
+Q(?X) <- Man(?X), -hasParent(?Y0, ?X).
+Q(?X) <- Person(?X), -Woman(?X).
+Q(?X) <- Person(?X), -MarriedTo(?Y0, ?X).
+Q(?X) <- Person(?X), -Man(?X).
+Q(?X) <- MarriedTo(?X, ?Y0), -Male(?X).
+Q(?X) <- Adult(?X), -Woman(?X).
+Q(?X) <- Female(?X), -hasParent(?Y0, ?X).
+Q(?X) <- Person(?X), -hasParent(?X, ?Y0).
+Q(?X) <- hasParent(?X, ?Y0), -Priest(?X).
+Q(?X) <- Person(?X), -MarriedTo(?X, ?Y0).
+Q(?X) <- Adult(?X), -Male(?X).
+Q(?X) <- Person(?X), -Priest(?X).
+Q(?X) <- Adult(?X), -Priest(?X).

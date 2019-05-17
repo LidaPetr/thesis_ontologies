@@ -1,0 +1,17 @@
+@relation persons
+@attribute "Male(X)" {true, false}
+@attribute "Person(X)" {true, false}
+@attribute "Adult(X)" {true, false}
+@attribute "Priest(X)" {true, false}
+@attribute "Woman(X)" {true, false}
+@attribute "Female(X)" {true, false}
+@attribute "Man(X)" {true, false}
+@attribute "hasParent(X, Y)" {true, false}
+@attribute "hasParent(Y, X)" {true, false}
+@attribute "MarriedTo(X, Y)" {true, false}
+@attribute "MarriedTo(Y, X)" {true, false}
+@DATA
+?, true, true, ?, true, true, ?, ?, true, true, true
+true, true, true, true, ?, ?, true, true, ?, ?, ?
+?, true, true, ?, true, true, ?, true, ?, ?, ?
+true, true, true, ?, ?, ?, true, ?, true, true, true

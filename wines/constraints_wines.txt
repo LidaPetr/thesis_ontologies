@@ -1,0 +1,44 @@
+_answer <- Dessert(?X), OtherTomatoBasedFood(?X).
+_answer <- Dessert(?X), Fruit(?X).
+_answer <- EarlyHarvest(?X), LateHarvest(?X).
+_answer <- Fish(?X), Shellfish(?X).
+_answer <- NonOysterShellfish(?X), OysterShellfish(?X).
+_answer <- EdibleThing(?X), MealCourse(?X).
+_answer <- CheeseNutsDessert(?X), SweetDessert(?X).
+_answer <- Fowl(?X), OtherTomatoBasedFood(?X).
+_answer <- PastaWithNonSpicyRedSauce(?X), PastaWithSpicyRedSauce(?X).
+_answer <- Meat(?X), Pasta(?X).
+_answer <- BlandFish(?X), NonBlandFish(?X).
+_answer <- OtherTomatoBasedFood(?X), Pasta(?X).
+_answer <- EdibleThing(?X), Meal(?X).
+_answer <- Fowl(?X), Fruit(?X).
+_answer <- OtherTomatoBasedFood(?X), Seafood(?X).
+_answer <- Fruit(?X), OtherTomatoBasedFood(?X).
+_answer <- Meal(?X), MealCourse(?X).
+_answer <- Dessert(?X), Fowl(?X).
+_answer <- Dessert(?X), Meat(?X).
+_answer <- Fowl(?X), Pasta(?X).
+_answer <- PastaWithHeavyCreamSauce(?X), PastaWithLightCreamSauce(?X).
+_answer <- Pasta(?X), Seafood(?X).
+_answer <- PastaWithRedSauce(?X), PastaWithWhiteSauce(?X).
+_answer <- Fruit(?X), Meat(?X).
+_answer <- DarkMeatFowl(?X), LightMeatFowl(?X).
+_answer <- Fruit(?X), Seafood(?X).
+_answer <- NonRedMeat(?X), RedMeat(?X).
+_answer <- Dessert(?X), Pasta(?X).
+_answer <- NonSweetFruit(?X), SweetFruit(?X).
+_answer <- Meal(?X), PotableLiquid(?X).
+_answer <- Dessert(?X), Seafood(?X).
+_answer <- Fowl(?X), Seafood(?X).
+_answer <- Meat(?X), Seafood(?X).
+_answer <- Fowl(?X), Meat(?X).
+_answer <- Fruit(?X), Pasta(?X).
+_answer <- Meat(?X), OtherTomatoBasedFood(?X).
+_answer <- NonSpicyRedMeat(?X), SpicyRedMeat(?X).
+_answer <- MealCourse(?X), PotableLiquid(?X).
+_answer <- EdibleThing(?X), PotableLiquid(?X).
+_answer <- course(?X, ?Y), course(?Y, ?X).
+_answer <- hasFood(?X, ?Y), hasFood(?Y, ?X).
+_answer <- madeIntoWine(?X, ?Y), madeIntoWine(?Y, ?X).
+_answer <- hasDrink(?X, ?Y), hasDrink(?Y, ?X).
+_answer <- madeFromGrape(?X, ?Y), madeFromGrape(?Y, ?X).

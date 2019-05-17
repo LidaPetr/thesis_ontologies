@@ -1,0 +1,131 @@
+"concept";"probability"
+"AmericanWine(X)";0.124
+"Anjou(X)";0.005
+"Beaujolais(X)";0.005
+"BlandFish(X)";0.015
+"Bordeaux(X)";0.021
+"Burgundy(X)";0.021
+"CabernetFranc(X)";0.005
+"CabernetSauvignon(X)";0.031
+"CaliforniaWine(X)";0.119
+"Chardonnay(X)";0.041
+"CheeseNutsDessert(X)";0.01
+"CheninBlanc(X)";0.01
+"Chianti(X)";0.005
+"ConsumableThing(X)";0.526
+"CotesDOr(X)";0.005
+"DarkMeatFowl(X)";0.01
+"Dessert(X)";0.021
+"DessertWine(X)";0.021
+"DryRedWine(X)";0.129
+"DryRiesling(X)";0.005
+"DryWhiteWine(X)";0.093
+"DryWine(X)";0.222
+"EatingGrape(X)";0.005
+"EdibleThing(X)";0.253
+"Fish(X)";0.026
+"Fowl(X)";0.021
+"FrenchWine(X)";0.062
+"Fruit(X)";0.103
+"FullBodiedWine(X)";0.082
+"Gamay(X)";0.005
+"GermanWine(X)";0.01
+"Grape(X)";0.088
+"IceWine(X)";0.005
+"ItalianWine(X)";0.005
+"LateHarvest(X)";0.01
+"LightMeatFowl(X)";0.01
+"Loire(X)";0.015
+"Margaux(X)";0.005
+"Meat(X)";0.031
+"Medoc(X)";0.01
+"Meritage(X)";0.005
+"Merlot(X)";0.015
+"Meursault(X)";0.005
+"Muscadet(X)";0.005
+"NonBlandFish(X)";0.01
+"NonOysterShellfish(X)";0.021
+"NonRedMeat(X)";0.005
+"NonSpicyRedMeat(X)";0.015
+"OtherTomatoBasedFood(X)";0.005
+"OysterShellfish(X)";0.005
+"Pasta(X)";0.021
+"PastaWithHeavyCreamSauce(X)";0.005
+"PastaWithLightCreamSauce(X)";0.005
+"PastaWithNonSpicyRedSauce(X)";0.005
+"PastaWithRedSauce(X)";0.01
+"PastaWithSpicyRedSauce(X)";0.005
+"PastaWithWhiteSauce(X)";0.01
+"Pauillac(X)";0.005
+"PetiteSyrah(X)";0.01
+"PinotBlanc(X)";0.005
+"PinotNoir(X)";0.021
+"Port(X)";0.005
+"PotableLiquid(X)";0.273
+"RedBordeaux(X)";0.015
+"RedBurgundy(X)";0.005
+"RedMeat(X)";0.026
+"RedTableWine(X)";0.129
+"RedWine(X)";0.134
+"Region(X)";0.186
+"Riesling(X)";0.021
+"RoseWine(X)";0.005
+"Sancerre(X)";0.005
+"Sauternes(X)";0.005
+"SauvignonBlanc(X)";0.026
+"Seafood(X)";0.052
+"Semillon(X)";0.01
+"SemillonOrSauvignonBlanc(X)";0.041
+"Shellfish(X)";0.026
+"SpicyRedMeat(X)";0.01
+"StEmilion(X)";0.005
+"SweetDessert(X)";0.01
+"SweetFruit(X)";0.103
+"SweetRiesling(X)";0.01
+"SweetWine(X)";0.031
+"TableWine(X)";0.222
+"TexasWine(X)";0.005
+"Vintage(X)";0.005
+"VintageYear(X)";0.005
+"WhiteBordeaux(X)";0.005
+"WhiteBurgundy(X)";0.015
+"WhiteLoire(X)";0.01
+"WhiteNonSweetWine(X)";0.108
+"WhiteTableWine(X)";0.093
+"WhiteWine(X)";0.129
+"Wine(X)";0.273
+"WineBody(X)";0.015
+"WineColor(X)";0.015
+"WineDescriptor(X)";0.062
+"WineFlavor(X)";0.015
+"WineGrape(X)";0.082
+"WineSugar(X)";0.015
+"WineTaste(X)";0.046
+"Winery(X)";0.222
+"Zinfandel(X)";0.026
+"adjacentRegion(X, Y)";0.01
+"adjacentRegion(Y, X)";0.01
+"hasBody(X, Y)";0.253
+"hasBody(Y, X)";0.015
+"hasColor(X, Y)";0.268
+"hasColor(Y, X)";0.015
+"hasFlavor(X, Y)";0.273
+"hasFlavor(Y, X)";0.015
+"hasMaker(X, Y)";0.268
+"hasMaker(Y, X)";0.211
+"hasSugar(X, Y)";0.273
+"hasSugar(Y, X)";0.015
+"hasVintageYear(X, Y)";0.005
+"hasVintageYear(Y, X)";0.005
+"hasWineDescriptor(X, Y)";0.273
+"hasWineDescriptor(Y, X)";0.062
+"locatedIn(X, Y)";0.407
+"locatedIn(Y, X)";0.17
+"madeFromFruit(X, Y)";0.237
+"madeFromFruit(Y, X)";0.072
+"madeFromGrape(X, Y)";0.237
+"madeFromGrape(Y, X)";0.072
+"madeIntoWine(X, Y)";0.072
+"madeIntoWine(Y, X)";0.237
+"producesWine(X, Y)";0.211
+"producesWine(Y, X)";0.268

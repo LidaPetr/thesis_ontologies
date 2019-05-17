@@ -1,0 +1,2658 @@
+Q(?X) <- -Accommodation(X), -Hotel(X), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -Hotel(X), Accommodation(X).
+Q(?X) <- -LuxuryHotel(X), -Accommodation(X), Hotel(X).
+Q(?X) <- -Accommodation(X), -hasAccommodation(Y, X), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -hasAccommodation(Y, X), Accommodation(X).
+Q(?X) <- -LuxuryHotel(X), -Accommodation(X), hasAccommodation(Y, X).
+Q(?X) <- -Accommodation(X), -hasRating(X, Y), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -hasRating(X, Y), Accommodation(X).
+Q(?X) <- -LuxuryHotel(X), -Accommodation(X), hasRating(X, Y).
+Q(?X) <- -Hotel(X), -hasAccommodation(Y, X), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -hasAccommodation(Y, X), Hotel(X).
+Q(?X) <- -LuxuryHotel(X), -Hotel(X), hasAccommodation(Y, X).
+Q(?X) <- -Hotel(X), -hasRating(X, Y), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -hasRating(X, Y), Hotel(X).
+Q(?X) <- -LuxuryHotel(X), -Hotel(X), hasRating(X, Y).
+Q(?X) <- -hasAccommodation(Y, X), -hasRating(X, Y), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -hasRating(X, Y), hasAccommodation(Y, X).
+Q(?X) <- -LuxuryHotel(X), -hasAccommodation(Y, X), hasRating(X, Y).
+Q(?X) <- -Hotel(X), -hasAccommodation(Y, X), Accommodation(X).
+Q(?X) <- -Accommodation(X), -hasAccommodation(Y, X), Hotel(X).
+Q(?X) <- -Accommodation(X), -Hotel(X), hasAccommodation(Y, X).
+Q(?X) <- -Hotel(X), -hasRating(X, Y), Accommodation(X).
+Q(?X) <- -Accommodation(X), -hasRating(X, Y), Hotel(X).
+Q(?X) <- -Accommodation(X), -Hotel(X), hasRating(X, Y).
+Q(?X) <- -hasAccommodation(Y, X), -hasRating(X, Y), Accommodation(X).
+Q(?X) <- -Accommodation(X), -hasRating(X, Y), hasAccommodation(Y, X).
+Q(?X) <- -Accommodation(X), -hasAccommodation(Y, X), hasRating(X, Y).
+Q(?X) <- -hasAccommodation(Y, X), -hasRating(X, Y), Hotel(X).
+Q(?X) <- -Hotel(X), -hasRating(X, Y), hasAccommodation(Y, X).
+Q(?X) <- -Hotel(X), -hasAccommodation(Y, X), hasRating(X, Y).
+Q(?X) <- -Town(X), -Accommodation(X), LuxuryHotel(X).
+Q(?X) <- -Town(X), -LuxuryHotel(X), Accommodation(X).
+Q(?X) <- -Town(X), -Hotel(X), LuxuryHotel(X).
+Q(?X) <- -Town(X), -LuxuryHotel(X), Hotel(X).
+Q(?X) <- -Town(X), -hasAccommodation(Y, X), LuxuryHotel(X).
+Q(?X) <- -Town(X), -LuxuryHotel(X), hasAccommodation(Y, X).
+Q(?X) <- -Town(X), -hasRating(X, Y), LuxuryHotel(X).
+Q(?X) <- -Town(X), -LuxuryHotel(X), hasRating(X, Y).
+Q(?X) <- -Town(X), -Hotel(X), Accommodation(X).
+Q(?X) <- -Town(X), -Accommodation(X), Hotel(X).
+Q(?X) <- -Town(X), -hasAccommodation(Y, X), Accommodation(X).
+Q(?X) <- -Town(X), -Accommodation(X), hasAccommodation(Y, X).
+Q(?X) <- -Town(X), -hasRating(X, Y), Accommodation(X).
+Q(?X) <- -Town(X), -Accommodation(X), hasRating(X, Y).
+Q(?X) <- -Town(X), -hasAccommodation(Y, X), Hotel(X).
+Q(?X) <- -Town(X), -Hotel(X), hasAccommodation(Y, X).
+Q(?X) <- -Town(X), -hasRating(X, Y), Hotel(X).
+Q(?X) <- -Town(X), -Hotel(X), hasRating(X, Y).
+Q(?X) <- -Town(X), -hasPart(X, Y), hasAccommodation(X, Y).
+Q(?X) <- -Town(X), -hasAccommodation(X, Y), hasPart(X, Y).
+Q(?X) <- -Town(X), -hasRating(X, Y), hasAccommodation(Y, X).
+Q(?X) <- -Town(X), -hasAccommodation(Y, X), hasRating(X, Y).
+Q(?X) <- -Accommodation(X), -hasAccommodation(X, Y), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -hasAccommodation(X, Y), Accommodation(X).
+Q(?X) <- -Accommodation(X), -hasPart(X, Y), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -hasPart(X, Y), Accommodation(X).
+Q(?X) <- -Accommodation(X), -hasRating(Y, X), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -hasRating(Y, X), Accommodation(X).
+Q(?X) <- -Hotel(X), -hasAccommodation(X, Y), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -hasAccommodation(X, Y), Hotel(X).
+Q(?X) <- -Hotel(X), -hasPart(X, Y), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -hasPart(X, Y), Hotel(X).
+Q(?X) <- -Hotel(X), -hasRating(Y, X), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -hasRating(Y, X), Hotel(X).
+Q(?X) <- -hasAccommodation(X, Y), -hasAccommodation(Y, X), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -hasAccommodation(X, Y), hasAccommodation(Y, X).
+Q(?X) <- -LuxuryHotel(X), -hasPart(X, Y), hasAccommodation(X, Y).
+Q(?X) <- -LuxuryHotel(X), -hasAccommodation(X, Y), hasPart(X, Y).
+Q(?X) <- -hasAccommodation(X, Y), -hasRating(X, Y), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -hasAccommodation(X, Y), hasRating(X, Y).
+Q(?X) <- -hasAccommodation(Y, X), -hasPart(X, Y), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -hasPart(X, Y), hasAccommodation(Y, X).
+Q(?X) <- -hasAccommodation(Y, X), -hasRating(Y, X), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -hasRating(Y, X), hasAccommodation(Y, X).
+Q(?X) <- -hasPart(X, Y), -hasRating(X, Y), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -hasPart(X, Y), hasRating(X, Y).
+Q(?X) <- -hasRating(X, Y), -hasRating(Y, X), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -hasRating(Y, X), hasRating(X, Y).
+Q(?X) <- -RetireeDestination(X), -hasAccommodation(X, Y), Capital(X).
+Q(?X) <- -Capital(X), -hasAccommodation(X, Y), RetireeDestination(X).
+Q(?X) <- -Capital(X), -RetireeDestination(X), hasAccommodation(X, Y).
+Q(?X) <- -RetireeDestination(X), -hasPart(X, Y), Capital(X).
+Q(?X) <- -Capital(X), -hasPart(X, Y), RetireeDestination(X).
+Q(?X) <- -Capital(X), -RetireeDestination(X), hasPart(X, Y).
+Q(?X) <- -Capital(X), -hasPart(X, Y), hasAccommodation(X, Y).
+Q(?X) <- -Capital(X), -hasAccommodation(X, Y), hasPart(X, Y).
+Q(?X) <- -Hotel(X), -hasAccommodation(X, Y), Accommodation(X).
+Q(?X) <- -Accommodation(X), -hasAccommodation(X, Y), Hotel(X).
+Q(?X) <- -Hotel(X), -hasPart(X, Y), Accommodation(X).
+Q(?X) <- -Accommodation(X), -hasPart(X, Y), Hotel(X).
+Q(?X) <- -Hotel(X), -hasRating(Y, X), Accommodation(X).
+Q(?X) <- -Accommodation(X), -hasRating(Y, X), Hotel(X).
+Q(?X) <- -hasAccommodation(X, Y), -hasAccommodation(Y, X), Accommodation(X).
+Q(?X) <- -Accommodation(X), -hasAccommodation(X, Y), hasAccommodation(Y, X).
+Q(?X) <- -Accommodation(X), -hasPart(X, Y), hasAccommodation(X, Y).
+Q(?X) <- -Accommodation(X), -hasAccommodation(X, Y), hasPart(X, Y).
+Q(?X) <- -hasAccommodation(X, Y), -hasRating(X, Y), Accommodation(X).
+Q(?X) <- -Accommodation(X), -hasAccommodation(X, Y), hasRating(X, Y).
+Q(?X) <- -hasAccommodation(Y, X), -hasPart(X, Y), Accommodation(X).
+Q(?X) <- -Accommodation(X), -hasPart(X, Y), hasAccommodation(Y, X).
+Q(?X) <- -hasAccommodation(Y, X), -hasRating(Y, X), Accommodation(X).
+Q(?X) <- -Accommodation(X), -hasRating(Y, X), hasAccommodation(Y, X).
+Q(?X) <- -hasPart(X, Y), -hasRating(X, Y), Accommodation(X).
+Q(?X) <- -Accommodation(X), -hasPart(X, Y), hasRating(X, Y).
+Q(?X) <- -hasRating(X, Y), -hasRating(Y, X), Accommodation(X).
+Q(?X) <- -Accommodation(X), -hasRating(Y, X), hasRating(X, Y).
+Q(?X) <- -RetireeDestination(X), -hasPart(X, Y), hasAccommodation(X, Y).
+Q(?X) <- -RetireeDestination(X), -hasAccommodation(X, Y), hasPart(X, Y).
+Q(?X) <- -hasAccommodation(X, Y), -hasAccommodation(Y, X), Hotel(X).
+Q(?X) <- -Hotel(X), -hasAccommodation(X, Y), hasAccommodation(Y, X).
+Q(?X) <- -Hotel(X), -hasPart(X, Y), hasAccommodation(X, Y).
+Q(?X) <- -Hotel(X), -hasAccommodation(X, Y), hasPart(X, Y).
+Q(?X) <- -hasAccommodation(X, Y), -hasRating(X, Y), Hotel(X).
+Q(?X) <- -Hotel(X), -hasAccommodation(X, Y), hasRating(X, Y).
+Q(?X) <- -hasAccommodation(Y, X), -hasPart(X, Y), Hotel(X).
+Q(?X) <- -Hotel(X), -hasPart(X, Y), hasAccommodation(Y, X).
+Q(?X) <- -hasAccommodation(Y, X), -hasRating(Y, X), Hotel(X).
+Q(?X) <- -Hotel(X), -hasRating(Y, X), hasAccommodation(Y, X).
+Q(?X) <- -hasPart(X, Y), -hasRating(X, Y), Hotel(X).
+Q(?X) <- -Hotel(X), -hasPart(X, Y), hasRating(X, Y).
+Q(?X) <- -hasRating(X, Y), -hasRating(Y, X), Hotel(X).
+Q(?X) <- -Hotel(X), -hasRating(Y, X), hasRating(X, Y).
+Q(?X) <- -hasAccommodation(Y, X), -hasPart(X, Y), hasAccommodation(X, Y).
+Q(?X) <- -hasAccommodation(X, Y), -hasAccommodation(Y, X), hasPart(X, Y).
+Q(?X) <- -hasAccommodation(X, Y), -hasRating(X, Y), hasAccommodation(Y, X).
+Q(?X) <- -hasAccommodation(X, Y), -hasAccommodation(Y, X), hasRating(X, Y).
+Q(?X) <- -hasPart(X, Y), -hasRating(X, Y), hasAccommodation(X, Y).
+Q(?X) <- -hasAccommodation(X, Y), -hasRating(X, Y), hasPart(X, Y).
+Q(?X) <- -hasPart(X, Y), -hasRating(Y, X), hasAccommodation(X, Y).
+Q(?X) <- -hasAccommodation(X, Y), -hasRating(Y, X), hasPart(X, Y).
+Q(?X) <- -hasPart(X, Y), -hasRating(X, Y), hasAccommodation(Y, X).
+Q(?X) <- -hasAccommodation(Y, X), -hasPart(X, Y), hasRating(X, Y).
+Q(?X) <- -hasRating(X, Y), -hasRating(Y, X), hasAccommodation(Y, X).
+Q(?X) <- -hasAccommodation(Y, X), -hasRating(Y, X), hasRating(X, Y).
+Q(?X) <- -Town(X), -hasPart(Y, X), Beach(X).
+Q(?X) <- -Town(X), -Beach(X), hasPart(Y, X).
+Q(?X) <- -Town(X), -RetireeDestination(X), Capital(X).
+Q(?X) <- -Town(X), -Capital(X), RetireeDestination(X).
+Q(?X) <- -Town(X), -Capital(X), hasAccommodation(X, Y).
+Q(?X) <- -Town(X), -Capital(X), hasPart(X, Y).
+Q(?X) <- -Town(X), -RetireeDestination(X), hasAccommodation(X, Y).
+Q(?X) <- -Town(X), -RetireeDestination(X), hasPart(X, Y).
+Q(?X) <- -Town(X), -BackpackersDestination(X), NationalPark(X).
+Q(?X) <- -Town(X), -NationalPark(X), BackpackersDestination(X).
+Q(?X) <- -Beach(X), -Accommodation(X), LuxuryHotel(X).
+Q(?X) <- -Beach(X), -LuxuryHotel(X), Accommodation(X).
+Q(?X) <- -Beach(X), -Hotel(X), LuxuryHotel(X).
+Q(?X) <- -Beach(X), -LuxuryHotel(X), Hotel(X).
+Q(?X) <- -Beach(X), -hasAccommodation(Y, X), LuxuryHotel(X).
+Q(?X) <- -Beach(X), -LuxuryHotel(X), hasAccommodation(Y, X).
+Q(?X) <- -LuxuryHotel(X), -hasPart(Y, X), Beach(X).
+Q(?X) <- -Beach(X), -LuxuryHotel(X), hasPart(Y, X).
+Q(?X) <- -Beach(X), -hasRating(X, Y), LuxuryHotel(X).
+Q(?X) <- -Beach(X), -LuxuryHotel(X), hasRating(X, Y).
+Q(?X) <- -Beach(X), -Hotel(X), Accommodation(X).
+Q(?X) <- -Beach(X), -Accommodation(X), Hotel(X).
+Q(?X) <- -Beach(X), -hasAccommodation(Y, X), Accommodation(X).
+Q(?X) <- -Beach(X), -Accommodation(X), hasAccommodation(Y, X).
+Q(?X) <- -Accommodation(X), -hasPart(Y, X), Beach(X).
+Q(?X) <- -Beach(X), -Accommodation(X), hasPart(Y, X).
+Q(?X) <- -Beach(X), -hasRating(X, Y), Accommodation(X).
+Q(?X) <- -Beach(X), -Accommodation(X), hasRating(X, Y).
+Q(?X) <- -Beach(X), -hasAccommodation(Y, X), Hotel(X).
+Q(?X) <- -Beach(X), -Hotel(X), hasAccommodation(Y, X).
+Q(?X) <- -Hotel(X), -hasPart(Y, X), Beach(X).
+Q(?X) <- -Beach(X), -Hotel(X), hasPart(Y, X).
+Q(?X) <- -Beach(X), -hasRating(X, Y), Hotel(X).
+Q(?X) <- -Beach(X), -Hotel(X), hasRating(X, Y).
+Q(?X) <- -Beach(X), -hasPart(X, Y), hasAccommodation(X, Y).
+Q(?X) <- -Beach(X), -hasAccommodation(X, Y), hasPart(X, Y).
+Q(?X) <- -hasAccommodation(X, Y), -hasPart(Y, X), Beach(X).
+Q(?X) <- -Beach(X), -hasAccommodation(X, Y), hasPart(Y, X).
+Q(?X) <- -hasAccommodation(Y, X), -hasPart(Y, X), Beach(X).
+Q(?X) <- -Beach(X), -hasAccommodation(Y, X), hasPart(Y, X).
+Q(?X) <- -Beach(X), -hasRating(X, Y), hasAccommodation(Y, X).
+Q(?X) <- -Beach(X), -hasAccommodation(Y, X), hasRating(X, Y).
+Q(?X) <- -hasPart(X, Y), -hasPart(Y, X), Beach(X).
+Q(?X) <- -Beach(X), -hasPart(X, Y), hasPart(Y, X).
+Q(?X) <- -hasPart(Y, X), -hasRating(X, Y), Beach(X).
+Q(?X) <- -Beach(X), -hasRating(X, Y), hasPart(Y, X).
+Q(?X) <- -hasPart(Y, X), -hasRating(Y, X), Beach(X).
+Q(?X) <- -Beach(X), -hasRating(Y, X), hasPart(Y, X).
+Q(?X) <- -City(X), -RetireeDestination(X), Capital(X).
+Q(?X) <- -City(X), -Capital(X), RetireeDestination(X).
+Q(?X) <- -City(X), -hasAccommodation(X, Y), Capital(X).
+Q(?X) <- -City(X), -Capital(X), hasAccommodation(X, Y).
+Q(?X) <- -City(X), -hasPart(X, Y), Capital(X).
+Q(?X) <- -City(X), -Capital(X), hasPart(X, Y).
+Q(?X) <- -City(X), -hasAccommodation(X, Y), RetireeDestination(X).
+Q(?X) <- -City(X), -RetireeDestination(X), hasAccommodation(X, Y).
+Q(?X) <- -City(X), -hasPart(X, Y), RetireeDestination(X).
+Q(?X) <- -City(X), -RetireeDestination(X), hasPart(X, Y).
+Q(?X) <- -City(X), -hasPart(X, Y), hasAccommodation(X, Y).
+Q(?X) <- -City(X), -hasAccommodation(X, Y), hasPart(X, Y).
+Q(?X) <- -Capital(X), -Accommodation(X), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -Capital(X), Accommodation(X).
+Q(?X) <- -LuxuryHotel(X), -RetireeDestination(X), Capital(X).
+Q(?X) <- -LuxuryHotel(X), -Capital(X), RetireeDestination(X).
+Q(?X) <- -Capital(X), -Hotel(X), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -Capital(X), Hotel(X).
+Q(?X) <- -LuxuryHotel(X), -Capital(X), hasAccommodation(X, Y).
+Q(?X) <- -Capital(X), -hasAccommodation(Y, X), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -Capital(X), hasAccommodation(Y, X).
+Q(?X) <- -LuxuryHotel(X), -Capital(X), hasPart(X, Y).
+Q(?X) <- -Capital(X), -hasRating(X, Y), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -Capital(X), hasRating(X, Y).
+Q(?X) <- -Accommodation(X), -RetireeDestination(X), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -RetireeDestination(X), Accommodation(X).
+Q(?X) <- -Accommodation(X), -NationalPark(X), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -NationalPark(X), Accommodation(X).
+Q(?X) <- -Accommodation(X), -BackpackersDestination(X), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -BackpackersDestination(X), Accommodation(X).
+Q(?X) <- -Accommodation(X), -hasPart(Y, X), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -hasPart(Y, X), Accommodation(X).
+Q(?X) <- -RetireeDestination(X), -Hotel(X), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -RetireeDestination(X), Hotel(X).
+Q(?X) <- -LuxuryHotel(X), -RetireeDestination(X), hasAccommodation(X, Y).
+Q(?X) <- -RetireeDestination(X), -hasAccommodation(Y, X), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -RetireeDestination(X), hasAccommodation(Y, X).
+Q(?X) <- -LuxuryHotel(X), -RetireeDestination(X), hasPart(X, Y).
+Q(?X) <- -RetireeDestination(X), -hasRating(X, Y), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -RetireeDestination(X), hasRating(X, Y).
+Q(?X) <- -NationalPark(X), -Hotel(X), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -NationalPark(X), Hotel(X).
+Q(?X) <- -LuxuryHotel(X), -BackpackersDestination(X), NationalPark(X).
+Q(?X) <- -LuxuryHotel(X), -NationalPark(X), BackpackersDestination(X).
+Q(?X) <- -NationalPark(X), -hasAccommodation(Y, X), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -NationalPark(X), hasAccommodation(Y, X).
+Q(?X) <- -NationalPark(X), -hasRating(X, Y), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -NationalPark(X), hasRating(X, Y).
+Q(?X) <- -Hotel(X), -BackpackersDestination(X), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -BackpackersDestination(X), Hotel(X).
+Q(?X) <- -Hotel(X), -hasPart(Y, X), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -hasPart(Y, X), Hotel(X).
+Q(?X) <- -BackpackersDestination(X), -hasAccommodation(Y, X), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -BackpackersDestination(X), hasAccommodation(Y, X).
+Q(?X) <- -BackpackersDestination(X), -hasRating(X, Y), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -BackpackersDestination(X), hasRating(X, Y).
+Q(?X) <- -hasAccommodation(Y, X), -hasPart(Y, X), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -hasPart(Y, X), hasAccommodation(Y, X).
+Q(?X) <- -hasPart(Y, X), -hasRating(X, Y), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -hasPart(Y, X), hasRating(X, Y).
+Q(?X) <- -Accommodation(X), -RetireeDestination(X), Capital(X).
+Q(?X) <- -Capital(X), -Accommodation(X), RetireeDestination(X).
+Q(?X) <- -Capital(X), -Hotel(X), Accommodation(X).
+Q(?X) <- -Capital(X), -Accommodation(X), Hotel(X).
+Q(?X) <- -Capital(X), -Accommodation(X), hasAccommodation(X, Y).
+Q(?X) <- -Capital(X), -hasAccommodation(Y, X), Accommodation(X).
+Q(?X) <- -Capital(X), -Accommodation(X), hasAccommodation(Y, X).
+Q(?X) <- -Capital(X), -Accommodation(X), hasPart(X, Y).
+Q(?X) <- -Capital(X), -hasRating(X, Y), Accommodation(X).
+Q(?X) <- -Capital(X), -Accommodation(X), hasRating(X, Y).
+Q(?X) <- -RetireeDestination(X), -Hotel(X), Capital(X).
+Q(?X) <- -Capital(X), -Hotel(X), RetireeDestination(X).
+Q(?X) <- -RetireeDestination(X), -hasAccommodation(Y, X), Capital(X).
+Q(?X) <- -Capital(X), -hasAccommodation(Y, X), RetireeDestination(X).
+Q(?X) <- -RetireeDestination(X), -hasRating(X, Y), Capital(X).
+Q(?X) <- -Capital(X), -hasRating(X, Y), RetireeDestination(X).
+Q(?X) <- -RetireeDestination(X), -hasRating(Y, X), Capital(X).
+Q(?X) <- -Capital(X), -hasRating(Y, X), RetireeDestination(X).
+Q(?X) <- -Capital(X), -Hotel(X), hasAccommodation(X, Y).
+Q(?X) <- -Capital(X), -hasAccommodation(Y, X), Hotel(X).
+Q(?X) <- -Capital(X), -Hotel(X), hasAccommodation(Y, X).
+Q(?X) <- -Capital(X), -Hotel(X), hasPart(X, Y).
+Q(?X) <- -Capital(X), -hasRating(X, Y), Hotel(X).
+Q(?X) <- -Capital(X), -Hotel(X), hasRating(X, Y).
+Q(?X) <- -Capital(X), -hasAccommodation(Y, X), hasAccommodation(X, Y).
+Q(?X) <- -Capital(X), -hasRating(X, Y), hasAccommodation(X, Y).
+Q(?X) <- -Capital(X), -hasRating(Y, X), hasAccommodation(X, Y).
+Q(?X) <- -Capital(X), -hasAccommodation(Y, X), hasPart(X, Y).
+Q(?X) <- -Capital(X), -hasRating(X, Y), hasAccommodation(Y, X).
+Q(?X) <- -Capital(X), -hasAccommodation(Y, X), hasRating(X, Y).
+Q(?X) <- -Capital(X), -hasRating(X, Y), hasPart(X, Y).
+Q(?X) <- -Capital(X), -hasRating(Y, X), hasPart(X, Y).
+Q(?X) <- -RetireeDestination(X), -Hotel(X), Accommodation(X).
+Q(?X) <- -Accommodation(X), -RetireeDestination(X), Hotel(X).
+Q(?X) <- -Accommodation(X), -RetireeDestination(X), hasAccommodation(X, Y).
+Q(?X) <- -RetireeDestination(X), -hasAccommodation(Y, X), Accommodation(X).
+Q(?X) <- -Accommodation(X), -RetireeDestination(X), hasAccommodation(Y, X).
+Q(?X) <- -Accommodation(X), -RetireeDestination(X), hasPart(X, Y).
+Q(?X) <- -RetireeDestination(X), -hasRating(X, Y), Accommodation(X).
+Q(?X) <- -Accommodation(X), -RetireeDestination(X), hasRating(X, Y).
+Q(?X) <- -NationalPark(X), -Hotel(X), Accommodation(X).
+Q(?X) <- -Accommodation(X), -NationalPark(X), Hotel(X).
+Q(?X) <- -Accommodation(X), -BackpackersDestination(X), NationalPark(X).
+Q(?X) <- -Accommodation(X), -NationalPark(X), BackpackersDestination(X).
+Q(?X) <- -NationalPark(X), -hasAccommodation(Y, X), Accommodation(X).
+Q(?X) <- -Accommodation(X), -NationalPark(X), hasAccommodation(Y, X).
+Q(?X) <- -NationalPark(X), -hasRating(X, Y), Accommodation(X).
+Q(?X) <- -Accommodation(X), -NationalPark(X), hasRating(X, Y).
+Q(?X) <- -Hotel(X), -BackpackersDestination(X), Accommodation(X).
+Q(?X) <- -Accommodation(X), -BackpackersDestination(X), Hotel(X).
+Q(?X) <- -Hotel(X), -hasPart(Y, X), Accommodation(X).
+Q(?X) <- -Accommodation(X), -hasPart(Y, X), Hotel(X).
+Q(?X) <- -BackpackersDestination(X), -hasAccommodation(Y, X), Accommodation(X).
+Q(?X) <- -Accommodation(X), -BackpackersDestination(X), hasAccommodation(Y, X).
+Q(?X) <- -BackpackersDestination(X), -hasRating(X, Y), Accommodation(X).
+Q(?X) <- -Accommodation(X), -BackpackersDestination(X), hasRating(X, Y).
+Q(?X) <- -hasAccommodation(Y, X), -hasPart(Y, X), Accommodation(X).
+Q(?X) <- -Accommodation(X), -hasPart(Y, X), hasAccommodation(Y, X).
+Q(?X) <- -hasPart(Y, X), -hasRating(X, Y), Accommodation(X).
+Q(?X) <- -Accommodation(X), -hasPart(Y, X), hasRating(X, Y).
+Q(?X) <- -RetireeDestination(X), -Hotel(X), hasAccommodation(X, Y).
+Q(?X) <- -RetireeDestination(X), -hasAccommodation(Y, X), Hotel(X).
+Q(?X) <- -RetireeDestination(X), -Hotel(X), hasAccommodation(Y, X).
+Q(?X) <- -RetireeDestination(X), -Hotel(X), hasPart(X, Y).
+Q(?X) <- -RetireeDestination(X), -hasRating(X, Y), Hotel(X).
+Q(?X) <- -RetireeDestination(X), -Hotel(X), hasRating(X, Y).
+Q(?X) <- -RetireeDestination(X), -hasAccommodation(Y, X), hasAccommodation(X, Y).
+Q(?X) <- -RetireeDestination(X), -hasRating(X, Y), hasAccommodation(X, Y).
+Q(?X) <- -RetireeDestination(X), -hasRating(Y, X), hasAccommodation(X, Y).
+Q(?X) <- -RetireeDestination(X), -hasAccommodation(Y, X), hasPart(X, Y).
+Q(?X) <- -RetireeDestination(X), -hasRating(X, Y), hasAccommodation(Y, X).
+Q(?X) <- -RetireeDestination(X), -hasAccommodation(Y, X), hasRating(X, Y).
+Q(?X) <- -RetireeDestination(X), -hasRating(X, Y), hasPart(X, Y).
+Q(?X) <- -RetireeDestination(X), -hasRating(Y, X), hasPart(X, Y).
+Q(?X) <- -Hotel(X), -BackpackersDestination(X), NationalPark(X).
+Q(?X) <- -NationalPark(X), -Hotel(X), BackpackersDestination(X).
+Q(?X) <- -NationalPark(X), -hasAccommodation(Y, X), Hotel(X).
+Q(?X) <- -NationalPark(X), -Hotel(X), hasAccommodation(Y, X).
+Q(?X) <- -NationalPark(X), -hasRating(X, Y), Hotel(X).
+Q(?X) <- -NationalPark(X), -Hotel(X), hasRating(X, Y).
+Q(?X) <- -BackpackersDestination(X), -hasAccommodation(X, Y), NationalPark(X).
+Q(?X) <- -NationalPark(X), -hasAccommodation(X, Y), BackpackersDestination(X).
+Q(?X) <- -BackpackersDestination(X), -hasAccommodation(Y, X), NationalPark(X).
+Q(?X) <- -NationalPark(X), -hasAccommodation(Y, X), BackpackersDestination(X).
+Q(?X) <- -BackpackersDestination(X), -hasPart(X, Y), NationalPark(X).
+Q(?X) <- -NationalPark(X), -hasPart(X, Y), BackpackersDestination(X).
+Q(?X) <- -BackpackersDestination(X), -hasRating(X, Y), NationalPark(X).
+Q(?X) <- -NationalPark(X), -hasRating(X, Y), BackpackersDestination(X).
+Q(?X) <- -BackpackersDestination(X), -hasRating(Y, X), NationalPark(X).
+Q(?X) <- -NationalPark(X), -hasRating(Y, X), BackpackersDestination(X).
+Q(?X) <- -NationalPark(X), -hasPart(X, Y), hasAccommodation(X, Y).
+Q(?X) <- -NationalPark(X), -hasAccommodation(X, Y), hasPart(X, Y).
+Q(?X) <- -NationalPark(X), -hasRating(X, Y), hasAccommodation(Y, X).
+Q(?X) <- -NationalPark(X), -hasAccommodation(Y, X), hasRating(X, Y).
+Q(?X) <- -BackpackersDestination(X), -hasAccommodation(Y, X), Hotel(X).
+Q(?X) <- -Hotel(X), -BackpackersDestination(X), hasAccommodation(Y, X).
+Q(?X) <- -BackpackersDestination(X), -hasRating(X, Y), Hotel(X).
+Q(?X) <- -Hotel(X), -BackpackersDestination(X), hasRating(X, Y).
+Q(?X) <- -hasAccommodation(Y, X), -hasPart(Y, X), Hotel(X).
+Q(?X) <- -Hotel(X), -hasPart(Y, X), hasAccommodation(Y, X).
+Q(?X) <- -hasPart(Y, X), -hasRating(X, Y), Hotel(X).
+Q(?X) <- -Hotel(X), -hasPart(Y, X), hasRating(X, Y).
+Q(?X) <- -BackpackersDestination(X), -hasPart(X, Y), hasAccommodation(X, Y).
+Q(?X) <- -BackpackersDestination(X), -hasAccommodation(X, Y), hasPart(X, Y).
+Q(?X) <- -BackpackersDestination(X), -hasRating(X, Y), hasAccommodation(Y, X).
+Q(?X) <- -BackpackersDestination(X), -hasAccommodation(Y, X), hasRating(X, Y).
+Q(?X) <- -hasPart(X, Y), -hasPart(Y, X), hasAccommodation(X, Y).
+Q(?X) <- -hasAccommodation(X, Y), -hasPart(Y, X), hasPart(X, Y).
+Q(?X) <- -hasPart(Y, X), -hasRating(X, Y), hasAccommodation(Y, X).
+Q(?X) <- -hasAccommodation(Y, X), -hasPart(Y, X), hasRating(X, Y).
+Q(?X) <- -RuralArea(X), -BackpackersDestination(X), NationalPark(X).
+Q(?X) <- -RuralArea(X), -NationalPark(X), BackpackersDestination(X).
+Q(?X) <- -Town(X), -AccommodationRating(X), hasRating(Y, X).
+Q(?X) <- -UrbanArea(X), -City(X), Town(X).
+Q(?X) <- -Town(X), -City(X), UrbanArea(X).
+Q(?X) <- -Town(X), -UrbanArea(X), City(X).
+Q(?X) <- -UrbanArea(X), -Capital(X), Town(X).
+Q(?X) <- -Town(X), -UrbanArea(X), Capital(X).
+Q(?X) <- -UrbanArea(X), -RetireeDestination(X), Town(X).
+Q(?X) <- -Town(X), -UrbanArea(X), RetireeDestination(X).
+Q(?X) <- -UrbanArea(X), -hasAccommodation(X, Y), Town(X).
+Q(?X) <- -Town(X), -UrbanArea(X), hasAccommodation(X, Y).
+Q(?X) <- -UrbanArea(X), -hasPart(X, Y), Town(X).
+Q(?X) <- -Town(X), -UrbanArea(X), hasPart(X, Y).
+Q(?X) <- -Town(X), -City(X), Capital(X).
+Q(?X) <- -Town(X), -City(X), RetireeDestination(X).
+Q(?X) <- -Town(X), -City(X), hasAccommodation(X, Y).
+Q(?X) <- -Town(X), -City(X), hasPart(X, Y).
+Q(?X) <- Destination(X), -LuxuryHotel(X), AccommodationRating(X).
+Q(?X) <- -AccommodationRating(X), -LuxuryHotel(X), -Destination(X).
+Q(?X) <- -AccommodationRating(X), Destination(X), LuxuryHotel(X).
+Q(?X) <- Destination(X), -Accommodation(X), AccommodationRating(X).
+Q(?X) <- -AccommodationRating(X), -Accommodation(X), -Destination(X).
+Q(?X) <- -AccommodationRating(X), Destination(X), Accommodation(X).
+Q(?X) <- Destination(X), -Hotel(X), AccommodationRating(X).
+Q(?X) <- -AccommodationRating(X), -Hotel(X), -Destination(X).
+Q(?X) <- -AccommodationRating(X), Destination(X), Hotel(X).
+Q(?X) <- Destination(X), -hasAccommodation(Y, X), AccommodationRating(X).
+Q(?X) <- -AccommodationRating(X), -hasAccommodation(Y, X), -Destination(X).
+Q(?X) <- -AccommodationRating(X), Destination(X), hasAccommodation(Y, X).
+Q(?X) <- Destination(X), -hasRating(X, Y), AccommodationRating(X).
+Q(?X) <- -AccommodationRating(X), -hasRating(X, Y), -Destination(X).
+Q(?X) <- -AccommodationRating(X), Destination(X), hasRating(X, Y).
+Q(?X) <- Destination(X), -hasRating(Y, X), AccommodationRating(X).
+Q(?X) <- -AccommodationRating(X), Destination(X), hasRating(Y, X).
+Q(?X) <- -AccommodationRating(X), -Accommodation(X), LuxuryHotel(X).
+Q(?X) <- -AccommodationRating(X), -LuxuryHotel(X), Accommodation(X).
+Q(?X) <- -AccommodationRating(X), -Hotel(X), LuxuryHotel(X).
+Q(?X) <- -AccommodationRating(X), -LuxuryHotel(X), Hotel(X).
+Q(?X) <- -AccommodationRating(X), -hasAccommodation(Y, X), LuxuryHotel(X).
+Q(?X) <- -AccommodationRating(X), -LuxuryHotel(X), hasAccommodation(Y, X).
+Q(?X) <- -AccommodationRating(X), -hasRating(X, Y), LuxuryHotel(X).
+Q(?X) <- -AccommodationRating(X), -LuxuryHotel(X), hasRating(X, Y).
+Q(?X) <- -AccommodationRating(X), -LuxuryHotel(X), hasRating(Y, X).
+Q(?X) <- -AccommodationRating(X), -Hotel(X), Accommodation(X).
+Q(?X) <- -AccommodationRating(X), -Accommodation(X), Hotel(X).
+Q(?X) <- -AccommodationRating(X), -hasAccommodation(Y, X), Accommodation(X).
+Q(?X) <- -AccommodationRating(X), -Accommodation(X), hasAccommodation(Y, X).
+Q(?X) <- -AccommodationRating(X), -hasRating(X, Y), Accommodation(X).
+Q(?X) <- -AccommodationRating(X), -Accommodation(X), hasRating(X, Y).
+Q(?X) <- -AccommodationRating(X), -Accommodation(X), hasRating(Y, X).
+Q(?X) <- -AccommodationRating(X), -hasAccommodation(Y, X), Hotel(X).
+Q(?X) <- -AccommodationRating(X), -Hotel(X), hasAccommodation(Y, X).
+Q(?X) <- -AccommodationRating(X), -hasRating(X, Y), Hotel(X).
+Q(?X) <- -AccommodationRating(X), -Hotel(X), hasRating(X, Y).
+Q(?X) <- -AccommodationRating(X), -Hotel(X), hasRating(Y, X).
+Q(?X) <- -AccommodationRating(X), -hasPart(X, Y), hasAccommodation(X, Y).
+Q(?X) <- -AccommodationRating(X), -hasAccommodation(X, Y), hasPart(X, Y).
+Q(?X) <- -AccommodationRating(X), -hasAccommodation(X, Y), hasRating(Y, X).
+Q(?X) <- -AccommodationRating(X), -hasRating(X, Y), hasAccommodation(Y, X).
+Q(?X) <- -AccommodationRating(X), -hasAccommodation(Y, X), hasRating(X, Y).
+Q(?X) <- -AccommodationRating(X), -hasAccommodation(Y, X), hasRating(Y, X).
+Q(?X) <- -AccommodationRating(X), -hasPart(X, Y), hasRating(Y, X).
+Q(?X) <- -AccommodationRating(X), -hasRating(X, Y), hasRating(Y, X).
+Q(?X) <- -Beach(X), -RetireeDestination(X), Capital(X).
+Q(?X) <- -Beach(X), -Capital(X), RetireeDestination(X).
+Q(?X) <- -Beach(X), -Capital(X), hasAccommodation(X, Y).
+Q(?X) <- -Beach(X), -Capital(X), hasPart(X, Y).
+Q(?X) <- -Capital(X), -hasPart(Y, X), Beach(X).
+Q(?X) <- -Beach(X), -Capital(X), hasPart(Y, X).
+Q(?X) <- -Beach(X), -RetireeDestination(X), hasAccommodation(X, Y).
+Q(?X) <- -Beach(X), -RetireeDestination(X), hasPart(X, Y).
+Q(?X) <- -RetireeDestination(X), -hasPart(Y, X), Beach(X).
+Q(?X) <- -Beach(X), -RetireeDestination(X), hasPart(Y, X).
+Q(?X) <- -Beach(X), -BackpackersDestination(X), NationalPark(X).
+Q(?X) <- -Beach(X), -NationalPark(X), BackpackersDestination(X).
+Q(?X) <- -NationalPark(X), -hasPart(Y, X), Beach(X).
+Q(?X) <- -Beach(X), -NationalPark(X), hasPart(Y, X).
+Q(?X) <- -BackpackersDestination(X), -hasPart(Y, X), Beach(X).
+Q(?X) <- -Beach(X), -BackpackersDestination(X), hasPart(Y, X).
+Q(?X) <- -UrbanArea(X), -Capital(X), City(X).
+Q(?X) <- -UrbanArea(X), -City(X), Capital(X).
+Q(?X) <- -UrbanArea(X), -RetireeDestination(X), City(X).
+Q(?X) <- -UrbanArea(X), -City(X), RetireeDestination(X).
+Q(?X) <- -UrbanArea(X), -hasAccommodation(X, Y), City(X).
+Q(?X) <- -UrbanArea(X), -City(X), hasAccommodation(X, Y).
+Q(?X) <- -UrbanArea(X), -hasPart(X, Y), City(X).
+Q(?X) <- -UrbanArea(X), -City(X), hasPart(X, Y).
+Q(?X) <- -UrbanArea(X), -RetireeDestination(X), Capital(X).
+Q(?X) <- -UrbanArea(X), -Capital(X), RetireeDestination(X).
+Q(?X) <- -UrbanArea(X), -hasAccommodation(X, Y), Capital(X).
+Q(?X) <- -UrbanArea(X), -Capital(X), hasAccommodation(X, Y).
+Q(?X) <- -UrbanArea(X), -hasPart(X, Y), Capital(X).
+Q(?X) <- -UrbanArea(X), -Capital(X), hasPart(X, Y).
+Q(?X) <- -UrbanArea(X), -hasAccommodation(X, Y), RetireeDestination(X).
+Q(?X) <- -UrbanArea(X), -RetireeDestination(X), hasAccommodation(X, Y).
+Q(?X) <- -UrbanArea(X), -hasPart(X, Y), RetireeDestination(X).
+Q(?X) <- -UrbanArea(X), -RetireeDestination(X), hasPart(X, Y).
+Q(?X) <- -UrbanArea(X), -hasPart(X, Y), hasAccommodation(X, Y).
+Q(?X) <- -UrbanArea(X), -hasAccommodation(X, Y), hasPart(X, Y).
+Q(?X) <- -City(X), -LuxuryHotel(X), Capital(X).
+Q(?X) <- -City(X), -Accommodation(X), LuxuryHotel(X).
+Q(?X) <- -City(X), -LuxuryHotel(X), Accommodation(X).
+Q(?X) <- -City(X), -LuxuryHotel(X), RetireeDestination(X).
+Q(?X) <- -City(X), -Hotel(X), LuxuryHotel(X).
+Q(?X) <- -City(X), -LuxuryHotel(X), Hotel(X).
+Q(?X) <- -City(X), -LuxuryHotel(X), hasAccommodation(X, Y).
+Q(?X) <- -City(X), -hasAccommodation(Y, X), LuxuryHotel(X).
+Q(?X) <- -City(X), -LuxuryHotel(X), hasAccommodation(Y, X).
+Q(?X) <- -City(X), -LuxuryHotel(X), hasPart(X, Y).
+Q(?X) <- -City(X), -hasRating(X, Y), LuxuryHotel(X).
+Q(?X) <- -City(X), -LuxuryHotel(X), hasRating(X, Y).
+Q(?X) <- -City(X), -Accommodation(X), Capital(X).
+Q(?X) <- -City(X), -Hotel(X), Capital(X).
+Q(?X) <- -City(X), -hasAccommodation(Y, X), Capital(X).
+Q(?X) <- -City(X), -hasRating(X, Y), Capital(X).
+Q(?X) <- -City(X), -hasRating(Y, X), Capital(X).
+Q(?X) <- -City(X), -Accommodation(X), RetireeDestination(X).
+Q(?X) <- -City(X), -Hotel(X), Accommodation(X).
+Q(?X) <- -City(X), -Accommodation(X), Hotel(X).
+Q(?X) <- -City(X), -Accommodation(X), hasAccommodation(X, Y).
+Q(?X) <- -City(X), -hasAccommodation(Y, X), Accommodation(X).
+Q(?X) <- -City(X), -Accommodation(X), hasAccommodation(Y, X).
+Q(?X) <- -City(X), -Accommodation(X), hasPart(X, Y).
+Q(?X) <- -City(X), -hasRating(X, Y), Accommodation(X).
+Q(?X) <- -City(X), -Accommodation(X), hasRating(X, Y).
+Q(?X) <- -City(X), -Hotel(X), RetireeDestination(X).
+Q(?X) <- -City(X), -hasAccommodation(Y, X), RetireeDestination(X).
+Q(?X) <- -City(X), -hasRating(X, Y), RetireeDestination(X).
+Q(?X) <- -City(X), -hasRating(Y, X), RetireeDestination(X).
+Q(?X) <- -City(X), -Hotel(X), hasAccommodation(X, Y).
+Q(?X) <- -City(X), -hasAccommodation(Y, X), Hotel(X).
+Q(?X) <- -City(X), -Hotel(X), hasAccommodation(Y, X).
+Q(?X) <- -City(X), -Hotel(X), hasPart(X, Y).
+Q(?X) <- -City(X), -hasRating(X, Y), Hotel(X).
+Q(?X) <- -City(X), -Hotel(X), hasRating(X, Y).
+Q(?X) <- -City(X), -hasAccommodation(Y, X), hasAccommodation(X, Y).
+Q(?X) <- -City(X), -hasRating(X, Y), hasAccommodation(X, Y).
+Q(?X) <- -City(X), -hasRating(Y, X), hasAccommodation(X, Y).
+Q(?X) <- -City(X), -hasAccommodation(Y, X), hasPart(X, Y).
+Q(?X) <- -City(X), -hasRating(X, Y), hasAccommodation(Y, X).
+Q(?X) <- -City(X), -hasAccommodation(Y, X), hasRating(X, Y).
+Q(?X) <- -City(X), -hasRating(X, Y), hasPart(X, Y).
+Q(?X) <- -City(X), -hasRating(Y, X), hasPart(X, Y).
+Q(?X) <- Destination(X), -Accommodation(X), LuxuryHotel(X).
+Q(?X) <- Destination(X), -LuxuryHotel(X), Accommodation(X).
+Q(?X) <- Destination(X), -Hotel(X), LuxuryHotel(X).
+Q(?X) <- Destination(X), -LuxuryHotel(X), Hotel(X).
+Q(?X) <- Destination(X), -hasAccommodation(Y, X), LuxuryHotel(X).
+Q(?X) <- Destination(X), -LuxuryHotel(X), hasAccommodation(Y, X).
+Q(?X) <- Destination(X), -hasRating(X, Y), LuxuryHotel(X).
+Q(?X) <- Destination(X), -LuxuryHotel(X), hasRating(X, Y).
+Q(?X) <- Destination(X), -hasRating(Y, X), LuxuryHotel(X).
+Q(?X) <- Destination(X), -LuxuryHotel(X), hasRating(Y, X).
+Q(?X) <- Destination(X), -Hotel(X), Accommodation(X).
+Q(?X) <- Destination(X), -Accommodation(X), Hotel(X).
+Q(?X) <- Destination(X), -hasAccommodation(Y, X), Accommodation(X).
+Q(?X) <- Destination(X), -Accommodation(X), hasAccommodation(Y, X).
+Q(?X) <- Destination(X), -hasRating(X, Y), Accommodation(X).
+Q(?X) <- Destination(X), -Accommodation(X), hasRating(X, Y).
+Q(?X) <- Destination(X), -hasRating(Y, X), Accommodation(X).
+Q(?X) <- Destination(X), -Accommodation(X), hasRating(Y, X).
+Q(?X) <- Destination(X), -hasAccommodation(Y, X), Hotel(X).
+Q(?X) <- Destination(X), -Hotel(X), hasAccommodation(Y, X).
+Q(?X) <- Destination(X), -hasRating(X, Y), Hotel(X).
+Q(?X) <- Destination(X), -Hotel(X), hasRating(X, Y).
+Q(?X) <- Destination(X), -hasRating(Y, X), Hotel(X).
+Q(?X) <- Destination(X), -Hotel(X), hasRating(Y, X).
+Q(?X) <- Destination(X), -hasRating(X, Y), hasAccommodation(Y, X).
+Q(?X) <- Destination(X), -hasAccommodation(Y, X), hasRating(X, Y).
+Q(?X) <- Destination(X), -hasRating(Y, X), hasAccommodation(Y, X).
+Q(?X) <- Destination(X), -hasAccommodation(Y, X), hasRating(Y, X).
+Q(?X) <- Destination(X), -hasRating(Y, X), hasRating(X, Y).
+Q(?X) <- Destination(X), -hasRating(X, Y), hasRating(Y, X).
+Q(?X) <- -RetireeDestination(X), -NationalPark(X), Capital(X).
+Q(?X) <- -Capital(X), -NationalPark(X), RetireeDestination(X).
+Q(?X) <- -RetireeDestination(X), -BackpackersDestination(X), Capital(X).
+Q(?X) <- -Capital(X), -BackpackersDestination(X), RetireeDestination(X).
+Q(?X) <- -RetireeDestination(X), -hasPart(Y, X), Capital(X).
+Q(?X) <- -Capital(X), -hasPart(Y, X), RetireeDestination(X).
+Q(?X) <- -Capital(X), -BackpackersDestination(X), NationalPark(X).
+Q(?X) <- -Capital(X), -NationalPark(X), BackpackersDestination(X).
+Q(?X) <- -Capital(X), -NationalPark(X), hasAccommodation(X, Y).
+Q(?X) <- -Capital(X), -NationalPark(X), hasPart(X, Y).
+Q(?X) <- -Capital(X), -BackpackersDestination(X), hasAccommodation(X, Y).
+Q(?X) <- -Capital(X), -BackpackersDestination(X), hasPart(X, Y).
+Q(?X) <- -Capital(X), -hasPart(Y, X), hasAccommodation(X, Y).
+Q(?X) <- -Capital(X), -hasPart(Y, X), hasPart(X, Y).
+Q(?X) <- -RetireeDestination(X), -BackpackersDestination(X), NationalPark(X).
+Q(?X) <- -RetireeDestination(X), -NationalPark(X), BackpackersDestination(X).
+Q(?X) <- -RetireeDestination(X), -NationalPark(X), hasAccommodation(X, Y).
+Q(?X) <- -RetireeDestination(X), -NationalPark(X), hasPart(X, Y).
+Q(?X) <- -RetireeDestination(X), -BackpackersDestination(X), hasAccommodation(X, Y).
+Q(?X) <- -RetireeDestination(X), -BackpackersDestination(X), hasPart(X, Y).
+Q(?X) <- -RetireeDestination(X), -hasPart(Y, X), hasAccommodation(X, Y).
+Q(?X) <- -RetireeDestination(X), -hasPart(Y, X), hasPart(X, Y).
+Q(?X) <- -BackpackersDestination(X), -hasPart(Y, X), NationalPark(X).
+Q(?X) <- -NationalPark(X), -hasPart(Y, X), BackpackersDestination(X).
+Q(?X) <- -RuralArea(X), -Town(X), NationalPark(X).
+Q(?X) <- -RuralArea(X), -Town(X), BackpackersDestination(X).
+Q(?X) <- -RuralArea(X), -Accommodation(X), LuxuryHotel(X).
+Q(?X) <- -RuralArea(X), -LuxuryHotel(X), Accommodation(X).
+Q(?X) <- -RuralArea(X), -LuxuryHotel(X), NationalPark(X).
+Q(?X) <- -RuralArea(X), -Hotel(X), LuxuryHotel(X).
+Q(?X) <- -RuralArea(X), -LuxuryHotel(X), Hotel(X).
+Q(?X) <- -RuralArea(X), -LuxuryHotel(X), BackpackersDestination(X).
+Q(?X) <- -RuralArea(X), -hasAccommodation(Y, X), LuxuryHotel(X).
+Q(?X) <- -RuralArea(X), -LuxuryHotel(X), hasAccommodation(Y, X).
+Q(?X) <- -RuralArea(X), -hasRating(X, Y), LuxuryHotel(X).
+Q(?X) <- -RuralArea(X), -LuxuryHotel(X), hasRating(X, Y).
+Q(?X) <- -RuralArea(X), -Accommodation(X), NationalPark(X).
+Q(?X) <- -RuralArea(X), -Hotel(X), Accommodation(X).
+Q(?X) <- -RuralArea(X), -Accommodation(X), Hotel(X).
+Q(?X) <- -RuralArea(X), -Accommodation(X), BackpackersDestination(X).
+Q(?X) <- -RuralArea(X), -hasAccommodation(Y, X), Accommodation(X).
+Q(?X) <- -RuralArea(X), -Accommodation(X), hasAccommodation(Y, X).
+Q(?X) <- -RuralArea(X), -hasRating(X, Y), Accommodation(X).
+Q(?X) <- -RuralArea(X), -Accommodation(X), hasRating(X, Y).
+Q(?X) <- -RuralArea(X), -Hotel(X), NationalPark(X).
+Q(?X) <- -RuralArea(X), -hasAccommodation(X, Y), NationalPark(X).
+Q(?X) <- -RuralArea(X), -hasAccommodation(Y, X), NationalPark(X).
+Q(?X) <- -RuralArea(X), -hasPart(X, Y), NationalPark(X).
+Q(?X) <- -RuralArea(X), -hasRating(X, Y), NationalPark(X).
+Q(?X) <- -RuralArea(X), -hasRating(Y, X), NationalPark(X).
+Q(?X) <- -RuralArea(X), -Hotel(X), BackpackersDestination(X).
+Q(?X) <- -RuralArea(X), -hasAccommodation(Y, X), Hotel(X).
+Q(?X) <- -RuralArea(X), -Hotel(X), hasAccommodation(Y, X).
+Q(?X) <- -RuralArea(X), -hasRating(X, Y), Hotel(X).
+Q(?X) <- -RuralArea(X), -Hotel(X), hasRating(X, Y).
+Q(?X) <- -RuralArea(X), -hasAccommodation(X, Y), BackpackersDestination(X).
+Q(?X) <- -RuralArea(X), -hasAccommodation(Y, X), BackpackersDestination(X).
+Q(?X) <- -RuralArea(X), -hasPart(X, Y), BackpackersDestination(X).
+Q(?X) <- -RuralArea(X), -hasRating(X, Y), BackpackersDestination(X).
+Q(?X) <- -RuralArea(X), -hasRating(Y, X), BackpackersDestination(X).
+Q(?X) <- -RuralArea(X), -hasPart(X, Y), hasAccommodation(X, Y).
+Q(?X) <- -RuralArea(X), -hasAccommodation(X, Y), hasPart(X, Y).
+Q(?X) <- -RuralArea(X), -hasRating(X, Y), hasAccommodation(Y, X).
+Q(?X) <- -RuralArea(X), -hasAccommodation(Y, X), hasRating(X, Y).
+Q(?X) <- -Town(X), Destination(X), AccommodationRating(X).
+Q(?X) <- -UrbanArea(X), -LuxuryHotel(X), Town(X).
+Q(?X) <- -UrbanArea(X), -Accommodation(X), Town(X).
+Q(?X) <- -UrbanArea(X), -Hotel(X), Town(X).
+Q(?X) <- -UrbanArea(X), -hasAccommodation(Y, X), Town(X).
+Q(?X) <- -UrbanArea(X), -hasRating(X, Y), Town(X).
+Q(?X) <- -UrbanArea(X), -hasRating(Y, X), Town(X).
+Q(?X) <- -Town(X), Destination(X), LuxuryHotel(X).
+Q(?X) <- -Town(X), Destination(X), Accommodation(X).
+Q(?X) <- -Town(X), Destination(X), Hotel(X).
+Q(?X) <- -Town(X), Destination(X), hasAccommodation(Y, X).
+Q(?X) <- -Town(X), Destination(X), hasRating(X, Y).
+Q(?X) <- -Town(X), Destination(X), hasRating(Y, X).
+Q(?X) <- -AccommodationRating(X), -hasPart(Y, X), Beach(X).
+Q(?X) <- -AccommodationRating(X), -Beach(X), hasPart(Y, X).
+Q(?X) <- -AccommodationRating(X), -Beach(X), hasRating(Y, X).
+Q(?X) <- Destination(X), -hasAccommodation(X, Y), AccommodationRating(X).
+Q(?X) <- Destination(X), -hasPart(X, Y), AccommodationRating(X).
+Q(?X) <- -AccommodationRating(X), -RetireeDestination(X), Capital(X).
+Q(?X) <- -AccommodationRating(X), -Capital(X), RetireeDestination(X).
+Q(?X) <- -AccommodationRating(X), -Capital(X), hasAccommodation(X, Y).
+Q(?X) <- -AccommodationRating(X), -Capital(X), hasPart(X, Y).
+Q(?X) <- -AccommodationRating(X), -Capital(X), hasRating(Y, X).
+Q(?X) <- -AccommodationRating(X), -RetireeDestination(X), hasAccommodation(X, Y).
+Q(?X) <- -AccommodationRating(X), -RetireeDestination(X), hasPart(X, Y).
+Q(?X) <- -AccommodationRating(X), -RetireeDestination(X), hasRating(Y, X).
+Q(?X) <- -AccommodationRating(X), -BackpackersDestination(X), NationalPark(X).
+Q(?X) <- -AccommodationRating(X), -NationalPark(X), BackpackersDestination(X).
+Q(?X) <- -AccommodationRating(X), -NationalPark(X), hasRating(Y, X).
+Q(?X) <- -AccommodationRating(X), -BackpackersDestination(X), hasRating(Y, X).
+Q(?X) <- -AccommodationRating(X), -hasPart(Y, X), hasRating(Y, X).
+Q(?X) <- -Beach(X), -City(X), Capital(X).
+Q(?X) <- -Beach(X), -City(X), RetireeDestination(X).
+Q(?X) <- -Beach(X), -City(X), hasAccommodation(X, Y).
+Q(?X) <- -Beach(X), -City(X), hasPart(X, Y).
+Q(?X) <- -City(X), -hasPart(Y, X), Beach(X).
+Q(?X) <- -Beach(X), -City(X), hasPart(Y, X).
+Q(?X) <- -UrbanArea(X), -LuxuryHotel(X), City(X).
+Q(?X) <- -UrbanArea(X), -Accommodation(X), City(X).
+Q(?X) <- -UrbanArea(X), -Hotel(X), City(X).
+Q(?X) <- -UrbanArea(X), -hasAccommodation(Y, X), City(X).
+Q(?X) <- -UrbanArea(X), -hasRating(X, Y), City(X).
+Q(?X) <- -UrbanArea(X), -hasRating(Y, X), City(X).
+Q(?X) <- -UrbanArea(X), -LuxuryHotel(X), Capital(X).
+Q(?X) <- -UrbanArea(X), -Accommodation(X), LuxuryHotel(X).
+Q(?X) <- -UrbanArea(X), -LuxuryHotel(X), Accommodation(X).
+Q(?X) <- -UrbanArea(X), -LuxuryHotel(X), RetireeDestination(X).
+Q(?X) <- -UrbanArea(X), -Hotel(X), LuxuryHotel(X).
+Q(?X) <- -UrbanArea(X), -LuxuryHotel(X), Hotel(X).
+Q(?X) <- -UrbanArea(X), -LuxuryHotel(X), hasAccommodation(X, Y).
+Q(?X) <- -UrbanArea(X), -hasAccommodation(Y, X), LuxuryHotel(X).
+Q(?X) <- -UrbanArea(X), -LuxuryHotel(X), hasAccommodation(Y, X).
+Q(?X) <- -UrbanArea(X), -LuxuryHotel(X), hasPart(X, Y).
+Q(?X) <- -UrbanArea(X), -hasRating(X, Y), LuxuryHotel(X).
+Q(?X) <- -UrbanArea(X), -LuxuryHotel(X), hasRating(X, Y).
+Q(?X) <- -UrbanArea(X), -Accommodation(X), Capital(X).
+Q(?X) <- -UrbanArea(X), -Hotel(X), Capital(X).
+Q(?X) <- -UrbanArea(X), -hasAccommodation(Y, X), Capital(X).
+Q(?X) <- -UrbanArea(X), -hasRating(X, Y), Capital(X).
+Q(?X) <- -UrbanArea(X), -hasRating(Y, X), Capital(X).
+Q(?X) <- -UrbanArea(X), -Accommodation(X), RetireeDestination(X).
+Q(?X) <- -UrbanArea(X), -Hotel(X), Accommodation(X).
+Q(?X) <- -UrbanArea(X), -Accommodation(X), Hotel(X).
+Q(?X) <- -UrbanArea(X), -Accommodation(X), hasAccommodation(X, Y).
+Q(?X) <- -UrbanArea(X), -hasAccommodation(Y, X), Accommodation(X).
+Q(?X) <- -UrbanArea(X), -Accommodation(X), hasAccommodation(Y, X).
+Q(?X) <- -UrbanArea(X), -Accommodation(X), hasPart(X, Y).
+Q(?X) <- -UrbanArea(X), -hasRating(X, Y), Accommodation(X).
+Q(?X) <- -UrbanArea(X), -Accommodation(X), hasRating(X, Y).
+Q(?X) <- -UrbanArea(X), -Hotel(X), RetireeDestination(X).
+Q(?X) <- -UrbanArea(X), -hasAccommodation(Y, X), RetireeDestination(X).
+Q(?X) <- -UrbanArea(X), -hasRating(X, Y), RetireeDestination(X).
+Q(?X) <- -UrbanArea(X), -hasRating(Y, X), RetireeDestination(X).
+Q(?X) <- -UrbanArea(X), -Hotel(X), hasAccommodation(X, Y).
+Q(?X) <- -UrbanArea(X), -hasAccommodation(Y, X), Hotel(X).
+Q(?X) <- -UrbanArea(X), -Hotel(X), hasAccommodation(Y, X).
+Q(?X) <- -UrbanArea(X), -Hotel(X), hasPart(X, Y).
+Q(?X) <- -UrbanArea(X), -hasRating(X, Y), Hotel(X).
+Q(?X) <- -UrbanArea(X), -Hotel(X), hasRating(X, Y).
+Q(?X) <- -UrbanArea(X), -hasAccommodation(Y, X), hasAccommodation(X, Y).
+Q(?X) <- -UrbanArea(X), -hasRating(X, Y), hasAccommodation(X, Y).
+Q(?X) <- -UrbanArea(X), -hasRating(Y, X), hasAccommodation(X, Y).
+Q(?X) <- -UrbanArea(X), -hasAccommodation(Y, X), hasPart(X, Y).
+Q(?X) <- -UrbanArea(X), -hasRating(X, Y), hasAccommodation(Y, X).
+Q(?X) <- -UrbanArea(X), -hasAccommodation(Y, X), hasRating(X, Y).
+Q(?X) <- -UrbanArea(X), -hasRating(X, Y), hasPart(X, Y).
+Q(?X) <- -UrbanArea(X), -hasRating(Y, X), hasPart(X, Y).
+Q(?X) <- -City(X), -NationalPark(X), Capital(X).
+Q(?X) <- -City(X), -BackpackersDestination(X), Capital(X).
+Q(?X) <- -City(X), -hasPart(Y, X), Capital(X).
+Q(?X) <- -City(X), -NationalPark(X), RetireeDestination(X).
+Q(?X) <- -City(X), -BackpackersDestination(X), RetireeDestination(X).
+Q(?X) <- -City(X), -hasPart(Y, X), RetireeDestination(X).
+Q(?X) <- -City(X), -BackpackersDestination(X), NationalPark(X).
+Q(?X) <- -City(X), -NationalPark(X), BackpackersDestination(X).
+Q(?X) <- -City(X), -NationalPark(X), hasAccommodation(X, Y).
+Q(?X) <- -City(X), -NationalPark(X), hasPart(X, Y).
+Q(?X) <- -City(X), -BackpackersDestination(X), hasAccommodation(X, Y).
+Q(?X) <- -City(X), -BackpackersDestination(X), hasPart(X, Y).
+Q(?X) <- -City(X), -hasPart(Y, X), hasAccommodation(X, Y).
+Q(?X) <- -City(X), -hasPart(Y, X), hasPart(X, Y).
+Q(?X) <- Destination(X), -hasAccommodation(X, Y), LuxuryHotel(X).
+Q(?X) <- Destination(X), -hasPart(X, Y), LuxuryHotel(X).
+Q(?X) <- Destination(X), -hasAccommodation(X, Y), Accommodation(X).
+Q(?X) <- Destination(X), -hasPart(X, Y), Accommodation(X).
+Q(?X) <- Destination(X), -hasAccommodation(X, Y), Hotel(X).
+Q(?X) <- Destination(X), -hasPart(X, Y), Hotel(X).
+Q(?X) <- Destination(X), -hasAccommodation(X, Y), hasAccommodation(Y, X).
+Q(?X) <- Destination(X), -hasPart(X, Y), hasAccommodation(X, Y).
+Q(?X) <- Destination(X), -hasAccommodation(X, Y), hasPart(X, Y).
+Q(?X) <- Destination(X), -hasAccommodation(X, Y), hasRating(X, Y).
+Q(?X) <- Destination(X), -hasAccommodation(X, Y), hasRating(Y, X).
+Q(?X) <- Destination(X), -hasPart(X, Y), hasAccommodation(Y, X).
+Q(?X) <- Destination(X), -hasPart(X, Y), hasRating(X, Y).
+Q(?X) <- Destination(X), -hasPart(X, Y), hasRating(Y, X).
+Q(?X) <- -RuralArea(X), -Beach(X), NationalPark(X).
+Q(?X) <- -RuralArea(X), -Beach(X), BackpackersDestination(X).
+Q(?X) <- -RuralArea(X), -hasPart(Y, X), Beach(X).
+Q(?X) <- -RuralArea(X), -Beach(X), hasPart(Y, X).
+Q(?X) <- -RuralArea(X), -RetireeDestination(X), Capital(X).
+Q(?X) <- -RuralArea(X), -Capital(X), RetireeDestination(X).
+Q(?X) <- -RuralArea(X), -Capital(X), NationalPark(X).
+Q(?X) <- -RuralArea(X), -Capital(X), BackpackersDestination(X).
+Q(?X) <- -RuralArea(X), -Capital(X), hasAccommodation(X, Y).
+Q(?X) <- -RuralArea(X), -Capital(X), hasPart(X, Y).
+Q(?X) <- -RuralArea(X), -RetireeDestination(X), NationalPark(X).
+Q(?X) <- -RuralArea(X), -RetireeDestination(X), BackpackersDestination(X).
+Q(?X) <- -RuralArea(X), -RetireeDestination(X), hasAccommodation(X, Y).
+Q(?X) <- -RuralArea(X), -RetireeDestination(X), hasPart(X, Y).
+Q(?X) <- -RuralArea(X), -hasPart(Y, X), NationalPark(X).
+Q(?X) <- -RuralArea(X), -hasPart(Y, X), BackpackersDestination(X).
+Q(?X) <- -Beach(X), -UrbanArea(X), Town(X).
+Q(?X) <- -UrbanArea(X), -NationalPark(X), Town(X).
+Q(?X) <- -UrbanArea(X), -BackpackersDestination(X), Town(X).
+Q(?X) <- -UrbanArea(X), -hasPart(Y, X), Town(X).
+Q(?X) <- -Beach(X), Destination(X), AccommodationRating(X).
+Q(?X) <- -AccommodationRating(X), -City(X), Capital(X).
+Q(?X) <- -AccommodationRating(X), -City(X), RetireeDestination(X).
+Q(?X) <- -AccommodationRating(X), -City(X), hasAccommodation(X, Y).
+Q(?X) <- -AccommodationRating(X), -City(X), hasPart(X, Y).
+Q(?X) <- -AccommodationRating(X), -City(X), hasRating(Y, X).
+Q(?X) <- Destination(X), -Capital(X), AccommodationRating(X).
+Q(?X) <- Destination(X), -RetireeDestination(X), AccommodationRating(X).
+Q(?X) <- Destination(X), -NationalPark(X), AccommodationRating(X).
+Q(?X) <- Destination(X), -BackpackersDestination(X), AccommodationRating(X).
+Q(?X) <- Destination(X), -hasPart(Y, X), AccommodationRating(X).
+Q(?X) <- -Beach(X), -UrbanArea(X), City(X).
+Q(?X) <- -Beach(X), -UrbanArea(X), Capital(X).
+Q(?X) <- -Beach(X), -UrbanArea(X), RetireeDestination(X).
+Q(?X) <- -Beach(X), -UrbanArea(X), hasAccommodation(X, Y).
+Q(?X) <- -Beach(X), -UrbanArea(X), hasPart(X, Y).
+Q(?X) <- -UrbanArea(X), -hasPart(Y, X), Beach(X).
+Q(?X) <- -Beach(X), -UrbanArea(X), hasPart(Y, X).
+Q(?X) <- -Beach(X), Destination(X), LuxuryHotel(X).
+Q(?X) <- -Beach(X), Destination(X), Accommodation(X).
+Q(?X) <- -Beach(X), Destination(X), Hotel(X).
+Q(?X) <- -Beach(X), Destination(X), hasAccommodation(Y, X).
+Q(?X) <- Destination(X), -hasPart(Y, X), Beach(X).
+Q(?X) <- -Beach(X), Destination(X), hasPart(Y, X).
+Q(?X) <- -Beach(X), Destination(X), hasRating(X, Y).
+Q(?X) <- -Beach(X), Destination(X), hasRating(Y, X).
+Q(?X) <- -UrbanArea(X), -NationalPark(X), City(X).
+Q(?X) <- -UrbanArea(X), -BackpackersDestination(X), City(X).
+Q(?X) <- -UrbanArea(X), -hasPart(Y, X), City(X).
+Q(?X) <- -UrbanArea(X), -NationalPark(X), Capital(X).
+Q(?X) <- -UrbanArea(X), -BackpackersDestination(X), Capital(X).
+Q(?X) <- -UrbanArea(X), -hasPart(Y, X), Capital(X).
+Q(?X) <- -UrbanArea(X), -NationalPark(X), RetireeDestination(X).
+Q(?X) <- -UrbanArea(X), -BackpackersDestination(X), RetireeDestination(X).
+Q(?X) <- -UrbanArea(X), -hasPart(Y, X), RetireeDestination(X).
+Q(?X) <- -UrbanArea(X), -BackpackersDestination(X), NationalPark(X).
+Q(?X) <- -UrbanArea(X), -NationalPark(X), BackpackersDestination(X).
+Q(?X) <- -UrbanArea(X), -NationalPark(X), hasAccommodation(X, Y).
+Q(?X) <- -UrbanArea(X), -NationalPark(X), hasPart(X, Y).
+Q(?X) <- -UrbanArea(X), -BackpackersDestination(X), hasAccommodation(X, Y).
+Q(?X) <- -UrbanArea(X), -BackpackersDestination(X), hasPart(X, Y).
+Q(?X) <- -UrbanArea(X), -hasPart(Y, X), hasAccommodation(X, Y).
+Q(?X) <- -UrbanArea(X), -hasPart(Y, X), hasPart(X, Y).
+Q(?X) <- Destination(X), -Capital(X), LuxuryHotel(X).
+Q(?X) <- Destination(X), -RetireeDestination(X), LuxuryHotel(X).
+Q(?X) <- Destination(X), -NationalPark(X), LuxuryHotel(X).
+Q(?X) <- Destination(X), -BackpackersDestination(X), LuxuryHotel(X).
+Q(?X) <- Destination(X), -hasPart(Y, X), LuxuryHotel(X).
+Q(?X) <- Destination(X), -Capital(X), Accommodation(X).
+Q(?X) <- Destination(X), -RetireeDestination(X), Capital(X).
+Q(?X) <- Destination(X), -Capital(X), RetireeDestination(X).
+Q(?X) <- Destination(X), -Capital(X), Hotel(X).
+Q(?X) <- Destination(X), -Capital(X), hasAccommodation(X, Y).
+Q(?X) <- Destination(X), -Capital(X), hasAccommodation(Y, X).
+Q(?X) <- Destination(X), -Capital(X), hasPart(X, Y).
+Q(?X) <- Destination(X), -Capital(X), hasRating(X, Y).
+Q(?X) <- Destination(X), -Capital(X), hasRating(Y, X).
+Q(?X) <- Destination(X), -RetireeDestination(X), Accommodation(X).
+Q(?X) <- Destination(X), -NationalPark(X), Accommodation(X).
+Q(?X) <- Destination(X), -BackpackersDestination(X), Accommodation(X).
+Q(?X) <- Destination(X), -hasPart(Y, X), Accommodation(X).
+Q(?X) <- Destination(X), -RetireeDestination(X), Hotel(X).
+Q(?X) <- Destination(X), -RetireeDestination(X), hasAccommodation(X, Y).
+Q(?X) <- Destination(X), -RetireeDestination(X), hasAccommodation(Y, X).
+Q(?X) <- Destination(X), -RetireeDestination(X), hasPart(X, Y).
+Q(?X) <- Destination(X), -RetireeDestination(X), hasRating(X, Y).
+Q(?X) <- Destination(X), -RetireeDestination(X), hasRating(Y, X).
+Q(?X) <- Destination(X), -NationalPark(X), Hotel(X).
+Q(?X) <- Destination(X), -BackpackersDestination(X), NationalPark(X).
+Q(?X) <- Destination(X), -NationalPark(X), BackpackersDestination(X).
+Q(?X) <- Destination(X), -NationalPark(X), hasAccommodation(Y, X).
+Q(?X) <- Destination(X), -NationalPark(X), hasRating(X, Y).
+Q(?X) <- Destination(X), -NationalPark(X), hasRating(Y, X).
+Q(?X) <- Destination(X), -BackpackersDestination(X), Hotel(X).
+Q(?X) <- Destination(X), -hasPart(Y, X), Hotel(X).
+Q(?X) <- Destination(X), -BackpackersDestination(X), hasAccommodation(Y, X).
+Q(?X) <- Destination(X), -BackpackersDestination(X), hasRating(X, Y).
+Q(?X) <- Destination(X), -BackpackersDestination(X), hasRating(Y, X).
+Q(?X) <- Destination(X), -hasPart(Y, X), hasAccommodation(Y, X).
+Q(?X) <- Destination(X), -hasPart(Y, X), hasRating(X, Y).
+Q(?X) <- Destination(X), -hasPart(Y, X), hasRating(Y, X).
+Q(?X) <- -LuxuryHotel(X), -Accommodation(X), Town(X).
+Q(?X) <- -LuxuryHotel(X), -Hotel(X), Town(X).
+Q(?X) <- -LuxuryHotel(X), -hasAccommodation(Y, X), Town(X).
+Q(?X) <- -LuxuryHotel(X), -hasRating(X, Y), Town(X).
+Q(?X) <- -Accommodation(X), -Hotel(X), Town(X).
+Q(?X) <- -Accommodation(X), -hasAccommodation(Y, X), Town(X).
+Q(?X) <- -Accommodation(X), -hasRating(X, Y), Town(X).
+Q(?X) <- -Hotel(X), -hasAccommodation(Y, X), Town(X).
+Q(?X) <- -Hotel(X), -hasRating(X, Y), Town(X).
+Q(?X) <- -hasAccommodation(X, Y), -hasPart(X, Y), Town(X).
+Q(?X) <- -hasAccommodation(Y, X), -hasRating(X, Y), Town(X).
+Q(?X) <- -LuxuryHotel(X), -Accommodation(X), hasAccommodation(X, Y).
+Q(?X) <- -LuxuryHotel(X), -Accommodation(X), hasPart(X, Y).
+Q(?X) <- -LuxuryHotel(X), -Accommodation(X), hasRating(Y, X).
+Q(?X) <- -LuxuryHotel(X), -Hotel(X), hasAccommodation(X, Y).
+Q(?X) <- -LuxuryHotel(X), -Hotel(X), hasPart(X, Y).
+Q(?X) <- -LuxuryHotel(X), -Hotel(X), hasRating(Y, X).
+Q(?X) <- -LuxuryHotel(X), -hasAccommodation(Y, X), hasAccommodation(X, Y).
+Q(?X) <- -hasAccommodation(X, Y), -hasPart(X, Y), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -hasRating(X, Y), hasAccommodation(X, Y).
+Q(?X) <- -LuxuryHotel(X), -hasAccommodation(Y, X), hasPart(X, Y).
+Q(?X) <- -LuxuryHotel(X), -hasAccommodation(Y, X), hasRating(Y, X).
+Q(?X) <- -LuxuryHotel(X), -hasRating(X, Y), hasPart(X, Y).
+Q(?X) <- -LuxuryHotel(X), -hasRating(X, Y), hasRating(Y, X).
+Q(?X) <- -hasAccommodation(X, Y), -hasPart(X, Y), Capital(X).
+Q(?X) <- -Accommodation(X), -Hotel(X), hasAccommodation(X, Y).
+Q(?X) <- -Accommodation(X), -Hotel(X), hasPart(X, Y).
+Q(?X) <- -Accommodation(X), -Hotel(X), hasRating(Y, X).
+Q(?X) <- -Accommodation(X), -hasAccommodation(Y, X), hasAccommodation(X, Y).
+Q(?X) <- -hasAccommodation(X, Y), -hasPart(X, Y), Accommodation(X).
+Q(?X) <- -Accommodation(X), -hasRating(X, Y), hasAccommodation(X, Y).
+Q(?X) <- -Accommodation(X), -hasAccommodation(Y, X), hasPart(X, Y).
+Q(?X) <- -Accommodation(X), -hasAccommodation(Y, X), hasRating(Y, X).
+Q(?X) <- -Accommodation(X), -hasRating(X, Y), hasPart(X, Y).
+Q(?X) <- -Accommodation(X), -hasRating(X, Y), hasRating(Y, X).
+Q(?X) <- -hasAccommodation(X, Y), -hasPart(X, Y), RetireeDestination(X).
+Q(?X) <- -Hotel(X), -hasAccommodation(Y, X), hasAccommodation(X, Y).
+Q(?X) <- -hasAccommodation(X, Y), -hasPart(X, Y), Hotel(X).
+Q(?X) <- -Hotel(X), -hasRating(X, Y), hasAccommodation(X, Y).
+Q(?X) <- -Hotel(X), -hasAccommodation(Y, X), hasPart(X, Y).
+Q(?X) <- -Hotel(X), -hasAccommodation(Y, X), hasRating(Y, X).
+Q(?X) <- -Hotel(X), -hasRating(X, Y), hasPart(X, Y).
+Q(?X) <- -Hotel(X), -hasRating(X, Y), hasRating(Y, X).
+Q(?X) <- -hasAccommodation(X, Y), -hasPart(X, Y), hasAccommodation(Y, X).
+Q(?X) <- -hasAccommodation(Y, X), -hasRating(X, Y), hasAccommodation(X, Y).
+Q(?X) <- -hasAccommodation(X, Y), -hasPart(X, Y), hasRating(X, Y).
+Q(?X) <- -hasAccommodation(X, Y), -hasPart(X, Y), hasRating(Y, X).
+Q(?X) <- -hasAccommodation(Y, X), -hasRating(X, Y), hasPart(X, Y).
+Q(?X) <- -hasAccommodation(Y, X), -hasRating(X, Y), hasRating(Y, X).
+Q(?X) <- -Beach(X), -hasPart(Y, X), Town(X).
+Q(?X) <- -LuxuryHotel(X), -hasAccommodation(X, Y), Town(X).
+Q(?X) <- -Town(X), -hasAccommodation(X, Y), LuxuryHotel(X).
+Q(?X) <- -Town(X), -LuxuryHotel(X), hasAccommodation(X, Y).
+Q(?X) <- -LuxuryHotel(X), -hasPart(X, Y), Town(X).
+Q(?X) <- -Town(X), -hasPart(X, Y), LuxuryHotel(X).
+Q(?X) <- -Town(X), -LuxuryHotel(X), hasPart(X, Y).
+Q(?X) <- -LuxuryHotel(X), -hasRating(Y, X), Town(X).
+Q(?X) <- -Town(X), -hasRating(Y, X), LuxuryHotel(X).
+Q(?X) <- -Town(X), -LuxuryHotel(X), hasRating(Y, X).
+Q(?X) <- -Capital(X), -RetireeDestination(X), Town(X).
+Q(?X) <- -Capital(X), -hasAccommodation(X, Y), Town(X).
+Q(?X) <- -Town(X), -hasAccommodation(X, Y), Capital(X).
+Q(?X) <- -Capital(X), -hasPart(X, Y), Town(X).
+Q(?X) <- -Town(X), -hasPart(X, Y), Capital(X).
+Q(?X) <- -Accommodation(X), -hasAccommodation(X, Y), Town(X).
+Q(?X) <- -Town(X), -hasAccommodation(X, Y), Accommodation(X).
+Q(?X) <- -Town(X), -Accommodation(X), hasAccommodation(X, Y).
+Q(?X) <- -Accommodation(X), -hasPart(X, Y), Town(X).
+Q(?X) <- -Town(X), -hasPart(X, Y), Accommodation(X).
+Q(?X) <- -Town(X), -Accommodation(X), hasPart(X, Y).
+Q(?X) <- -Accommodation(X), -hasRating(Y, X), Town(X).
+Q(?X) <- -Town(X), -hasRating(Y, X), Accommodation(X).
+Q(?X) <- -Town(X), -Accommodation(X), hasRating(Y, X).
+Q(?X) <- -RetireeDestination(X), -hasAccommodation(X, Y), Town(X).
+Q(?X) <- -Town(X), -hasAccommodation(X, Y), RetireeDestination(X).
+Q(?X) <- -RetireeDestination(X), -hasPart(X, Y), Town(X).
+Q(?X) <- -Town(X), -hasPart(X, Y), RetireeDestination(X).
+Q(?X) <- -NationalPark(X), -BackpackersDestination(X), Town(X).
+Q(?X) <- -Hotel(X), -hasAccommodation(X, Y), Town(X).
+Q(?X) <- -Town(X), -hasAccommodation(X, Y), Hotel(X).
+Q(?X) <- -Town(X), -Hotel(X), hasAccommodation(X, Y).
+Q(?X) <- -Hotel(X), -hasPart(X, Y), Town(X).
+Q(?X) <- -Town(X), -hasPart(X, Y), Hotel(X).
+Q(?X) <- -Town(X), -Hotel(X), hasPart(X, Y).
+Q(?X) <- -Hotel(X), -hasRating(Y, X), Town(X).
+Q(?X) <- -Town(X), -hasRating(Y, X), Hotel(X).
+Q(?X) <- -Town(X), -Hotel(X), hasRating(Y, X).
+Q(?X) <- -hasAccommodation(X, Y), -hasAccommodation(Y, X), Town(X).
+Q(?X) <- -Town(X), -hasAccommodation(Y, X), hasAccommodation(X, Y).
+Q(?X) <- -Town(X), -hasAccommodation(X, Y), hasAccommodation(Y, X).
+Q(?X) <- -hasAccommodation(X, Y), -hasRating(X, Y), Town(X).
+Q(?X) <- -Town(X), -hasRating(X, Y), hasAccommodation(X, Y).
+Q(?X) <- -Town(X), -hasAccommodation(X, Y), hasRating(X, Y).
+Q(?X) <- -hasAccommodation(X, Y), -hasRating(Y, X), Town(X).
+Q(?X) <- -Town(X), -hasRating(Y, X), hasAccommodation(X, Y).
+Q(?X) <- -Town(X), -hasAccommodation(X, Y), hasRating(Y, X).
+Q(?X) <- -hasAccommodation(Y, X), -hasPart(X, Y), Town(X).
+Q(?X) <- -Town(X), -hasPart(X, Y), hasAccommodation(Y, X).
+Q(?X) <- -Town(X), -hasAccommodation(Y, X), hasPart(X, Y).
+Q(?X) <- -hasAccommodation(Y, X), -hasRating(Y, X), Town(X).
+Q(?X) <- -Town(X), -hasRating(Y, X), hasAccommodation(Y, X).
+Q(?X) <- -Town(X), -hasAccommodation(Y, X), hasRating(Y, X).
+Q(?X) <- -hasPart(X, Y), -hasRating(X, Y), Town(X).
+Q(?X) <- -Town(X), -hasRating(X, Y), hasPart(X, Y).
+Q(?X) <- -Town(X), -hasPart(X, Y), hasRating(X, Y).
+Q(?X) <- -hasPart(X, Y), -hasRating(Y, X), Town(X).
+Q(?X) <- -Town(X), -hasRating(Y, X), hasPart(X, Y).
+Q(?X) <- -Town(X), -hasPart(X, Y), hasRating(Y, X).
+Q(?X) <- -hasRating(X, Y), -hasRating(Y, X), Town(X).
+Q(?X) <- -Town(X), -hasRating(Y, X), hasRating(X, Y).
+Q(?X) <- -Town(X), -hasRating(X, Y), hasRating(Y, X).
+Q(?X) <- -Beach(X), -hasPart(Y, X), LuxuryHotel(X).
+Q(?X) <- -Beach(X), -hasPart(Y, X), Accommodation(X).
+Q(?X) <- -Beach(X), -hasPart(Y, X), Hotel(X).
+Q(?X) <- -Beach(X), -hasPart(Y, X), hasAccommodation(X, Y).
+Q(?X) <- -Beach(X), -hasPart(Y, X), hasAccommodation(Y, X).
+Q(?X) <- -Beach(X), -hasPart(Y, X), hasPart(X, Y).
+Q(?X) <- -Beach(X), -hasPart(Y, X), hasRating(X, Y).
+Q(?X) <- -Beach(X), -hasPart(Y, X), hasRating(Y, X).
+Q(?X) <- -Capital(X), -RetireeDestination(X), City(X).
+Q(?X) <- -Capital(X), -hasAccommodation(X, Y), City(X).
+Q(?X) <- -Capital(X), -hasPart(X, Y), City(X).
+Q(?X) <- -RetireeDestination(X), -hasAccommodation(X, Y), City(X).
+Q(?X) <- -RetireeDestination(X), -hasPart(X, Y), City(X).
+Q(?X) <- -Capital(X), -RetireeDestination(X), LuxuryHotel(X).
+Q(?X) <- -Capital(X), -hasAccommodation(X, Y), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -hasAccommodation(X, Y), Capital(X).
+Q(?X) <- -Capital(X), -hasPart(X, Y), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -hasPart(X, Y), Capital(X).
+Q(?X) <- -RetireeDestination(X), -hasAccommodation(X, Y), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -hasAccommodation(X, Y), RetireeDestination(X).
+Q(?X) <- -RetireeDestination(X), -hasPart(X, Y), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -hasPart(X, Y), RetireeDestination(X).
+Q(?X) <- -NationalPark(X), -BackpackersDestination(X), LuxuryHotel(X).
+Q(?X) <- -hasAccommodation(X, Y), -hasRating(Y, X), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -hasRating(Y, X), hasAccommodation(X, Y).
+Q(?X) <- -LuxuryHotel(X), -hasAccommodation(X, Y), hasRating(Y, X).
+Q(?X) <- -hasPart(X, Y), -hasRating(Y, X), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -hasRating(Y, X), hasPart(X, Y).
+Q(?X) <- -LuxuryHotel(X), -hasPart(X, Y), hasRating(Y, X).
+Q(?X) <- -Capital(X), -RetireeDestination(X), Accommodation(X).
+Q(?X) <- -Accommodation(X), -hasAccommodation(X, Y), Capital(X).
+Q(?X) <- -Capital(X), -hasAccommodation(X, Y), Accommodation(X).
+Q(?X) <- -Accommodation(X), -hasPart(X, Y), Capital(X).
+Q(?X) <- -Capital(X), -hasPart(X, Y), Accommodation(X).
+Q(?X) <- -Capital(X), -RetireeDestination(X), Hotel(X).
+Q(?X) <- -Capital(X), -RetireeDestination(X), hasAccommodation(Y, X).
+Q(?X) <- -Capital(X), -RetireeDestination(X), hasRating(X, Y).
+Q(?X) <- -Capital(X), -RetireeDestination(X), hasRating(Y, X).
+Q(?X) <- -Hotel(X), -hasAccommodation(X, Y), Capital(X).
+Q(?X) <- -Capital(X), -hasAccommodation(X, Y), Hotel(X).
+Q(?X) <- -Hotel(X), -hasPart(X, Y), Capital(X).
+Q(?X) <- -Capital(X), -hasPart(X, Y), Hotel(X).
+Q(?X) <- -hasAccommodation(X, Y), -hasAccommodation(Y, X), Capital(X).
+Q(?X) <- -Capital(X), -hasAccommodation(X, Y), hasAccommodation(Y, X).
+Q(?X) <- -hasAccommodation(X, Y), -hasRating(X, Y), Capital(X).
+Q(?X) <- -Capital(X), -hasAccommodation(X, Y), hasRating(X, Y).
+Q(?X) <- -hasAccommodation(X, Y), -hasRating(Y, X), Capital(X).
+Q(?X) <- -Capital(X), -hasAccommodation(X, Y), hasRating(Y, X).
+Q(?X) <- -hasAccommodation(Y, X), -hasPart(X, Y), Capital(X).
+Q(?X) <- -Capital(X), -hasPart(X, Y), hasAccommodation(Y, X).
+Q(?X) <- -hasPart(X, Y), -hasRating(X, Y), Capital(X).
+Q(?X) <- -Capital(X), -hasPart(X, Y), hasRating(X, Y).
+Q(?X) <- -hasPart(X, Y), -hasRating(Y, X), Capital(X).
+Q(?X) <- -Capital(X), -hasPart(X, Y), hasRating(Y, X).
+Q(?X) <- -RetireeDestination(X), -hasAccommodation(X, Y), Accommodation(X).
+Q(?X) <- -Accommodation(X), -hasAccommodation(X, Y), RetireeDestination(X).
+Q(?X) <- -RetireeDestination(X), -hasPart(X, Y), Accommodation(X).
+Q(?X) <- -Accommodation(X), -hasPart(X, Y), RetireeDestination(X).
+Q(?X) <- -NationalPark(X), -BackpackersDestination(X), Accommodation(X).
+Q(?X) <- -hasAccommodation(X, Y), -hasRating(Y, X), Accommodation(X).
+Q(?X) <- -Accommodation(X), -hasRating(Y, X), hasAccommodation(X, Y).
+Q(?X) <- -Accommodation(X), -hasAccommodation(X, Y), hasRating(Y, X).
+Q(?X) <- -hasPart(X, Y), -hasRating(Y, X), Accommodation(X).
+Q(?X) <- -Accommodation(X), -hasRating(Y, X), hasPart(X, Y).
+Q(?X) <- -Accommodation(X), -hasPart(X, Y), hasRating(Y, X).
+Q(?X) <- -Hotel(X), -hasAccommodation(X, Y), RetireeDestination(X).
+Q(?X) <- -RetireeDestination(X), -hasAccommodation(X, Y), Hotel(X).
+Q(?X) <- -Hotel(X), -hasPart(X, Y), RetireeDestination(X).
+Q(?X) <- -RetireeDestination(X), -hasPart(X, Y), Hotel(X).
+Q(?X) <- -hasAccommodation(X, Y), -hasAccommodation(Y, X), RetireeDestination(X).
+Q(?X) <- -RetireeDestination(X), -hasAccommodation(X, Y), hasAccommodation(Y, X).
+Q(?X) <- -hasAccommodation(X, Y), -hasRating(X, Y), RetireeDestination(X).
+Q(?X) <- -RetireeDestination(X), -hasAccommodation(X, Y), hasRating(X, Y).
+Q(?X) <- -hasAccommodation(X, Y), -hasRating(Y, X), RetireeDestination(X).
+Q(?X) <- -RetireeDestination(X), -hasAccommodation(X, Y), hasRating(Y, X).
+Q(?X) <- -hasAccommodation(Y, X), -hasPart(X, Y), RetireeDestination(X).
+Q(?X) <- -RetireeDestination(X), -hasPart(X, Y), hasAccommodation(Y, X).
+Q(?X) <- -hasPart(X, Y), -hasRating(X, Y), RetireeDestination(X).
+Q(?X) <- -RetireeDestination(X), -hasPart(X, Y), hasRating(X, Y).
+Q(?X) <- -hasPart(X, Y), -hasRating(Y, X), RetireeDestination(X).
+Q(?X) <- -RetireeDestination(X), -hasPart(X, Y), hasRating(Y, X).
+Q(?X) <- -NationalPark(X), -BackpackersDestination(X), Hotel(X).
+Q(?X) <- -NationalPark(X), -BackpackersDestination(X), hasAccommodation(X, Y).
+Q(?X) <- -NationalPark(X), -BackpackersDestination(X), hasAccommodation(Y, X).
+Q(?X) <- -NationalPark(X), -BackpackersDestination(X), hasPart(X, Y).
+Q(?X) <- -NationalPark(X), -BackpackersDestination(X), hasRating(X, Y).
+Q(?X) <- -NationalPark(X), -BackpackersDestination(X), hasRating(Y, X).
+Q(?X) <- -hasAccommodation(X, Y), -hasRating(Y, X), Hotel(X).
+Q(?X) <- -Hotel(X), -hasRating(Y, X), hasAccommodation(X, Y).
+Q(?X) <- -Hotel(X), -hasAccommodation(X, Y), hasRating(Y, X).
+Q(?X) <- -hasPart(X, Y), -hasRating(Y, X), Hotel(X).
+Q(?X) <- -Hotel(X), -hasRating(Y, X), hasPart(X, Y).
+Q(?X) <- -Hotel(X), -hasPart(X, Y), hasRating(Y, X).
+Q(?X) <- -hasAccommodation(Y, X), -hasRating(Y, X), hasAccommodation(X, Y).
+Q(?X) <- -hasAccommodation(X, Y), -hasRating(Y, X), hasAccommodation(Y, X).
+Q(?X) <- -hasAccommodation(X, Y), -hasAccommodation(Y, X), hasRating(Y, X).
+Q(?X) <- -hasRating(X, Y), -hasRating(Y, X), hasAccommodation(X, Y).
+Q(?X) <- -hasAccommodation(X, Y), -hasRating(Y, X), hasRating(X, Y).
+Q(?X) <- -hasAccommodation(X, Y), -hasRating(X, Y), hasRating(Y, X).
+Q(?X) <- -hasPart(X, Y), -hasRating(Y, X), hasAccommodation(Y, X).
+Q(?X) <- -hasAccommodation(Y, X), -hasRating(Y, X), hasPart(X, Y).
+Q(?X) <- -hasAccommodation(Y, X), -hasPart(X, Y), hasRating(Y, X).
+Q(?X) <- -hasRating(X, Y), -hasRating(Y, X), hasPart(X, Y).
+Q(?X) <- -hasPart(X, Y), -hasRating(Y, X), hasRating(X, Y).
+Q(?X) <- -hasPart(X, Y), -hasRating(X, Y), hasRating(Y, X).
+Q(?X) <- -AccommodationRating(X), -hasRating(Y, X), Town(X).
+Q(?X) <- -Beach(X), -LuxuryHotel(X), Town(X).
+Q(?X) <- -Town(X), -Beach(X), LuxuryHotel(X).
+Q(?X) <- -Beach(X), -Accommodation(X), Town(X).
+Q(?X) <- -Town(X), -Beach(X), Accommodation(X).
+Q(?X) <- -Beach(X), -Hotel(X), Town(X).
+Q(?X) <- -Town(X), -Beach(X), Hotel(X).
+Q(?X) <- -Beach(X), -hasAccommodation(X, Y), Town(X).
+Q(?X) <- -Town(X), -Beach(X), hasAccommodation(X, Y).
+Q(?X) <- -Beach(X), -hasAccommodation(Y, X), Town(X).
+Q(?X) <- -Town(X), -Beach(X), hasAccommodation(Y, X).
+Q(?X) <- -Beach(X), -hasPart(X, Y), Town(X).
+Q(?X) <- -Town(X), -Beach(X), hasPart(X, Y).
+Q(?X) <- -Beach(X), -hasRating(X, Y), Town(X).
+Q(?X) <- -Town(X), -Beach(X), hasRating(X, Y).
+Q(?X) <- -Beach(X), -hasRating(Y, X), Town(X).
+Q(?X) <- -Town(X), -Beach(X), hasRating(Y, X).
+Q(?X) <- -Town(X), -Capital(X), UrbanArea(X).
+Q(?X) <- -Town(X), -RetireeDestination(X), UrbanArea(X).
+Q(?X) <- -City(X), -Capital(X), Town(X).
+Q(?X) <- -Town(X), -Capital(X), City(X).
+Q(?X) <- -City(X), -RetireeDestination(X), Town(X).
+Q(?X) <- -Town(X), -RetireeDestination(X), City(X).
+Q(?X) <- -City(X), -hasAccommodation(X, Y), Town(X).
+Q(?X) <- -City(X), -hasPart(X, Y), Town(X).
+Q(?X) <- -LuxuryHotel(X), -Capital(X), Town(X).
+Q(?X) <- -Town(X), -Capital(X), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -RetireeDestination(X), Town(X).
+Q(?X) <- -Town(X), -RetireeDestination(X), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -NationalPark(X), Town(X).
+Q(?X) <- -Town(X), -NationalPark(X), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -BackpackersDestination(X), Town(X).
+Q(?X) <- -Town(X), -BackpackersDestination(X), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -hasPart(Y, X), Town(X).
+Q(?X) <- -Town(X), -hasPart(Y, X), LuxuryHotel(X).
+Q(?X) <- -Capital(X), -Accommodation(X), Town(X).
+Q(?X) <- -Town(X), -Capital(X), Accommodation(X).
+Q(?X) <- -Capital(X), -Hotel(X), Town(X).
+Q(?X) <- -Town(X), -Capital(X), Hotel(X).
+Q(?X) <- -Capital(X), -hasAccommodation(Y, X), Town(X).
+Q(?X) <- -Town(X), -Capital(X), hasAccommodation(Y, X).
+Q(?X) <- -Capital(X), -hasRating(X, Y), Town(X).
+Q(?X) <- -Town(X), -Capital(X), hasRating(X, Y).
+Q(?X) <- -Capital(X), -hasRating(Y, X), Town(X).
+Q(?X) <- -Town(X), -Capital(X), hasRating(Y, X).
+Q(?X) <- -Accommodation(X), -RetireeDestination(X), Town(X).
+Q(?X) <- -Town(X), -RetireeDestination(X), Accommodation(X).
+Q(?X) <- -Accommodation(X), -NationalPark(X), Town(X).
+Q(?X) <- -Town(X), -NationalPark(X), Accommodation(X).
+Q(?X) <- -Accommodation(X), -BackpackersDestination(X), Town(X).
+Q(?X) <- -Town(X), -BackpackersDestination(X), Accommodation(X).
+Q(?X) <- -Accommodation(X), -hasPart(Y, X), Town(X).
+Q(?X) <- -Town(X), -hasPart(Y, X), Accommodation(X).
+Q(?X) <- -RetireeDestination(X), -Hotel(X), Town(X).
+Q(?X) <- -Town(X), -RetireeDestination(X), Hotel(X).
+Q(?X) <- -RetireeDestination(X), -hasAccommodation(Y, X), Town(X).
+Q(?X) <- -Town(X), -RetireeDestination(X), hasAccommodation(Y, X).
+Q(?X) <- -RetireeDestination(X), -hasRating(X, Y), Town(X).
+Q(?X) <- -Town(X), -RetireeDestination(X), hasRating(X, Y).
+Q(?X) <- -RetireeDestination(X), -hasRating(Y, X), Town(X).
+Q(?X) <- -Town(X), -RetireeDestination(X), hasRating(Y, X).
+Q(?X) <- -NationalPark(X), -Hotel(X), Town(X).
+Q(?X) <- -Town(X), -NationalPark(X), Hotel(X).
+Q(?X) <- -NationalPark(X), -hasAccommodation(X, Y), Town(X).
+Q(?X) <- -Town(X), -NationalPark(X), hasAccommodation(X, Y).
+Q(?X) <- -NationalPark(X), -hasAccommodation(Y, X), Town(X).
+Q(?X) <- -Town(X), -NationalPark(X), hasAccommodation(Y, X).
+Q(?X) <- -NationalPark(X), -hasPart(X, Y), Town(X).
+Q(?X) <- -Town(X), -NationalPark(X), hasPart(X, Y).
+Q(?X) <- -NationalPark(X), -hasRating(X, Y), Town(X).
+Q(?X) <- -Town(X), -NationalPark(X), hasRating(X, Y).
+Q(?X) <- -NationalPark(X), -hasRating(Y, X), Town(X).
+Q(?X) <- -Town(X), -NationalPark(X), hasRating(Y, X).
+Q(?X) <- -Hotel(X), -BackpackersDestination(X), Town(X).
+Q(?X) <- -Town(X), -BackpackersDestination(X), Hotel(X).
+Q(?X) <- -Hotel(X), -hasPart(Y, X), Town(X).
+Q(?X) <- -Town(X), -hasPart(Y, X), Hotel(X).
+Q(?X) <- -BackpackersDestination(X), -hasAccommodation(X, Y), Town(X).
+Q(?X) <- -Town(X), -BackpackersDestination(X), hasAccommodation(X, Y).
+Q(?X) <- -BackpackersDestination(X), -hasAccommodation(Y, X), Town(X).
+Q(?X) <- -Town(X), -BackpackersDestination(X), hasAccommodation(Y, X).
+Q(?X) <- -BackpackersDestination(X), -hasPart(X, Y), Town(X).
+Q(?X) <- -Town(X), -BackpackersDestination(X), hasPart(X, Y).
+Q(?X) <- -BackpackersDestination(X), -hasRating(X, Y), Town(X).
+Q(?X) <- -Town(X), -BackpackersDestination(X), hasRating(X, Y).
+Q(?X) <- -BackpackersDestination(X), -hasRating(Y, X), Town(X).
+Q(?X) <- -Town(X), -BackpackersDestination(X), hasRating(Y, X).
+Q(?X) <- -hasAccommodation(X, Y), -hasPart(Y, X), Town(X).
+Q(?X) <- -Town(X), -hasPart(Y, X), hasAccommodation(X, Y).
+Q(?X) <- -hasAccommodation(Y, X), -hasPart(Y, X), Town(X).
+Q(?X) <- -Town(X), -hasPart(Y, X), hasAccommodation(Y, X).
+Q(?X) <- -hasPart(X, Y), -hasPart(Y, X), Town(X).
+Q(?X) <- -Town(X), -hasPart(Y, X), hasPart(X, Y).
+Q(?X) <- -hasPart(Y, X), -hasRating(X, Y), Town(X).
+Q(?X) <- -Town(X), -hasPart(Y, X), hasRating(X, Y).
+Q(?X) <- -hasPart(Y, X), -hasRating(Y, X), Town(X).
+Q(?X) <- -Town(X), -hasPart(Y, X), hasRating(Y, X).
+Q(?X) <- -AccommodationRating(X), -hasRating(Y, X), -Destination(X).
+Q(?X) <- -AccommodationRating(X), -hasRating(Y, X), LuxuryHotel(X).
+Q(?X) <- -AccommodationRating(X), -hasRating(Y, X), Accommodation(X).
+Q(?X) <- -AccommodationRating(X), -hasRating(Y, X), Hotel(X).
+Q(?X) <- -AccommodationRating(X), -hasRating(Y, X), hasAccommodation(X, Y).
+Q(?X) <- -AccommodationRating(X), -hasRating(Y, X), hasAccommodation(Y, X).
+Q(?X) <- -AccommodationRating(X), -hasRating(Y, X), hasPart(X, Y).
+Q(?X) <- -AccommodationRating(X), -hasRating(Y, X), hasRating(X, Y).
+Q(?X) <- -Beach(X), -hasAccommodation(X, Y), LuxuryHotel(X).
+Q(?X) <- -Beach(X), -LuxuryHotel(X), hasAccommodation(X, Y).
+Q(?X) <- -Beach(X), -hasPart(X, Y), LuxuryHotel(X).
+Q(?X) <- -Beach(X), -LuxuryHotel(X), hasPart(X, Y).
+Q(?X) <- -Beach(X), -hasRating(Y, X), LuxuryHotel(X).
+Q(?X) <- -Beach(X), -LuxuryHotel(X), hasRating(Y, X).
+Q(?X) <- -Beach(X), -hasAccommodation(X, Y), Capital(X).
+Q(?X) <- -Beach(X), -hasPart(X, Y), Capital(X).
+Q(?X) <- -Beach(X), -hasAccommodation(X, Y), Accommodation(X).
+Q(?X) <- -Beach(X), -Accommodation(X), hasAccommodation(X, Y).
+Q(?X) <- -Beach(X), -hasPart(X, Y), Accommodation(X).
+Q(?X) <- -Beach(X), -Accommodation(X), hasPart(X, Y).
+Q(?X) <- -Beach(X), -hasRating(Y, X), Accommodation(X).
+Q(?X) <- -Beach(X), -Accommodation(X), hasRating(Y, X).
+Q(?X) <- -Beach(X), -hasAccommodation(X, Y), RetireeDestination(X).
+Q(?X) <- -Beach(X), -hasPart(X, Y), RetireeDestination(X).
+Q(?X) <- -Beach(X), -hasAccommodation(X, Y), Hotel(X).
+Q(?X) <- -Beach(X), -Hotel(X), hasAccommodation(X, Y).
+Q(?X) <- -Beach(X), -hasPart(X, Y), Hotel(X).
+Q(?X) <- -Beach(X), -Hotel(X), hasPart(X, Y).
+Q(?X) <- -Beach(X), -hasRating(Y, X), Hotel(X).
+Q(?X) <- -Beach(X), -Hotel(X), hasRating(Y, X).
+Q(?X) <- -Beach(X), -hasAccommodation(Y, X), hasAccommodation(X, Y).
+Q(?X) <- -Beach(X), -hasAccommodation(X, Y), hasAccommodation(Y, X).
+Q(?X) <- -Beach(X), -hasRating(X, Y), hasAccommodation(X, Y).
+Q(?X) <- -Beach(X), -hasAccommodation(X, Y), hasRating(X, Y).
+Q(?X) <- -Beach(X), -hasRating(Y, X), hasAccommodation(X, Y).
+Q(?X) <- -Beach(X), -hasAccommodation(X, Y), hasRating(Y, X).
+Q(?X) <- -Beach(X), -hasPart(X, Y), hasAccommodation(Y, X).
+Q(?X) <- -Beach(X), -hasAccommodation(Y, X), hasPart(X, Y).
+Q(?X) <- -Beach(X), -hasRating(Y, X), hasAccommodation(Y, X).
+Q(?X) <- -Beach(X), -hasAccommodation(Y, X), hasRating(Y, X).
+Q(?X) <- -Beach(X), -hasRating(X, Y), hasPart(X, Y).
+Q(?X) <- -Beach(X), -hasPart(X, Y), hasRating(X, Y).
+Q(?X) <- -Beach(X), -hasRating(Y, X), hasPart(X, Y).
+Q(?X) <- -Beach(X), -hasPart(X, Y), hasRating(Y, X).
+Q(?X) <- -Beach(X), -hasRating(Y, X), hasRating(X, Y).
+Q(?X) <- -Beach(X), -hasRating(X, Y), hasRating(Y, X).
+Q(?X) <- -City(X), -Capital(X), UrbanArea(X).
+Q(?X) <- -City(X), -RetireeDestination(X), UrbanArea(X).
+Q(?X) <- -City(X), -hasAccommodation(X, Y), UrbanArea(X).
+Q(?X) <- -City(X), -hasPart(X, Y), UrbanArea(X).
+Q(?X) <- -LuxuryHotel(X), -Capital(X), City(X).
+Q(?X) <- -City(X), -Capital(X), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -RetireeDestination(X), City(X).
+Q(?X) <- -City(X), -RetireeDestination(X), LuxuryHotel(X).
+Q(?X) <- -City(X), -hasAccommodation(X, Y), LuxuryHotel(X).
+Q(?X) <- -City(X), -hasPart(X, Y), LuxuryHotel(X).
+Q(?X) <- -Capital(X), -Accommodation(X), City(X).
+Q(?X) <- -City(X), -Capital(X), Accommodation(X).
+Q(?X) <- -Capital(X), -Hotel(X), City(X).
+Q(?X) <- -City(X), -Capital(X), Hotel(X).
+Q(?X) <- -Capital(X), -hasAccommodation(Y, X), City(X).
+Q(?X) <- -City(X), -Capital(X), hasAccommodation(Y, X).
+Q(?X) <- -Capital(X), -hasRating(X, Y), City(X).
+Q(?X) <- -City(X), -Capital(X), hasRating(X, Y).
+Q(?X) <- -Capital(X), -hasRating(Y, X), City(X).
+Q(?X) <- -City(X), -Capital(X), hasRating(Y, X).
+Q(?X) <- -Accommodation(X), -RetireeDestination(X), City(X).
+Q(?X) <- -City(X), -RetireeDestination(X), Accommodation(X).
+Q(?X) <- -City(X), -hasAccommodation(X, Y), Accommodation(X).
+Q(?X) <- -City(X), -hasPart(X, Y), Accommodation(X).
+Q(?X) <- -RetireeDestination(X), -Hotel(X), City(X).
+Q(?X) <- -City(X), -RetireeDestination(X), Hotel(X).
+Q(?X) <- -RetireeDestination(X), -hasAccommodation(Y, X), City(X).
+Q(?X) <- -City(X), -RetireeDestination(X), hasAccommodation(Y, X).
+Q(?X) <- -RetireeDestination(X), -hasRating(X, Y), City(X).
+Q(?X) <- -City(X), -RetireeDestination(X), hasRating(X, Y).
+Q(?X) <- -RetireeDestination(X), -hasRating(Y, X), City(X).
+Q(?X) <- -City(X), -RetireeDestination(X), hasRating(Y, X).
+Q(?X) <- -City(X), -hasAccommodation(X, Y), Hotel(X).
+Q(?X) <- -City(X), -hasPart(X, Y), Hotel(X).
+Q(?X) <- -City(X), -hasAccommodation(X, Y), hasAccommodation(Y, X).
+Q(?X) <- -City(X), -hasAccommodation(X, Y), hasRating(X, Y).
+Q(?X) <- -City(X), -hasAccommodation(X, Y), hasRating(Y, X).
+Q(?X) <- -City(X), -hasPart(X, Y), hasAccommodation(Y, X).
+Q(?X) <- -City(X), -hasPart(X, Y), hasRating(X, Y).
+Q(?X) <- -City(X), -hasPart(X, Y), hasRating(Y, X).
+Q(?X) <- -Capital(X), -hasRating(Y, X), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -Capital(X), hasRating(Y, X).
+Q(?X) <- -RetireeDestination(X), -hasRating(Y, X), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -RetireeDestination(X), hasRating(Y, X).
+Q(?X) <- -NationalPark(X), -hasAccommodation(X, Y), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -NationalPark(X), hasAccommodation(X, Y).
+Q(?X) <- -NationalPark(X), -hasPart(X, Y), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -NationalPark(X), hasPart(X, Y).
+Q(?X) <- -NationalPark(X), -hasRating(Y, X), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -NationalPark(X), hasRating(Y, X).
+Q(?X) <- -BackpackersDestination(X), -hasAccommodation(X, Y), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -BackpackersDestination(X), hasAccommodation(X, Y).
+Q(?X) <- -BackpackersDestination(X), -hasPart(X, Y), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -BackpackersDestination(X), hasPart(X, Y).
+Q(?X) <- -BackpackersDestination(X), -hasRating(Y, X), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -BackpackersDestination(X), hasRating(Y, X).
+Q(?X) <- -hasAccommodation(X, Y), -hasPart(Y, X), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -hasPart(Y, X), hasAccommodation(X, Y).
+Q(?X) <- -hasPart(X, Y), -hasPart(Y, X), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -hasPart(Y, X), hasPart(X, Y).
+Q(?X) <- -hasPart(Y, X), -hasRating(Y, X), LuxuryHotel(X).
+Q(?X) <- -LuxuryHotel(X), -hasPart(Y, X), hasRating(Y, X).
+Q(?X) <- -Capital(X), -hasRating(Y, X), Accommodation(X).
+Q(?X) <- -Capital(X), -Accommodation(X), hasRating(Y, X).
+Q(?X) <- -NationalPark(X), -hasAccommodation(X, Y), Capital(X).
+Q(?X) <- -NationalPark(X), -hasPart(X, Y), Capital(X).
+Q(?X) <- -Capital(X), -hasRating(Y, X), Hotel(X).
+Q(?X) <- -Capital(X), -Hotel(X), hasRating(Y, X).
+Q(?X) <- -BackpackersDestination(X), -hasAccommodation(X, Y), Capital(X).
+Q(?X) <- -BackpackersDestination(X), -hasPart(X, Y), Capital(X).
+Q(?X) <- -hasAccommodation(X, Y), -hasPart(Y, X), Capital(X).
+Q(?X) <- -Capital(X), -hasRating(Y, X), hasAccommodation(Y, X).
+Q(?X) <- -Capital(X), -hasAccommodation(Y, X), hasRating(Y, X).
+Q(?X) <- -hasPart(X, Y), -hasPart(Y, X), Capital(X).
+Q(?X) <- -Capital(X), -hasRating(Y, X), hasRating(X, Y).
+Q(?X) <- -Capital(X), -hasRating(X, Y), hasRating(Y, X).
+Q(?X) <- -RetireeDestination(X), -hasRating(Y, X), Accommodation(X).
+Q(?X) <- -Accommodation(X), -RetireeDestination(X), hasRating(Y, X).
+Q(?X) <- -NationalPark(X), -hasAccommodation(X, Y), Accommodation(X).
+Q(?X) <- -Accommodation(X), -NationalPark(X), hasAccommodation(X, Y).
+Q(?X) <- -NationalPark(X), -hasPart(X, Y), Accommodation(X).
+Q(?X) <- -Accommodation(X), -NationalPark(X), hasPart(X, Y).
+Q(?X) <- -NationalPark(X), -hasRating(Y, X), Accommodation(X).
+Q(?X) <- -Accommodation(X), -NationalPark(X), hasRating(Y, X).
+Q(?X) <- -BackpackersDestination(X), -hasAccommodation(X, Y), Accommodation(X).
+Q(?X) <- -Accommodation(X), -BackpackersDestination(X), hasAccommodation(X, Y).
+Q(?X) <- -BackpackersDestination(X), -hasPart(X, Y), Accommodation(X).
+Q(?X) <- -Accommodation(X), -BackpackersDestination(X), hasPart(X, Y).
+Q(?X) <- -BackpackersDestination(X), -hasRating(Y, X), Accommodation(X).
+Q(?X) <- -Accommodation(X), -BackpackersDestination(X), hasRating(Y, X).
+Q(?X) <- -hasAccommodation(X, Y), -hasPart(Y, X), Accommodation(X).
+Q(?X) <- -Accommodation(X), -hasPart(Y, X), hasAccommodation(X, Y).
+Q(?X) <- -hasPart(X, Y), -hasPart(Y, X), Accommodation(X).
+Q(?X) <- -Accommodation(X), -hasPart(Y, X), hasPart(X, Y).
+Q(?X) <- -hasPart(Y, X), -hasRating(Y, X), Accommodation(X).
+Q(?X) <- -Accommodation(X), -hasPart(Y, X), hasRating(Y, X).
+Q(?X) <- -NationalPark(X), -hasAccommodation(X, Y), RetireeDestination(X).
+Q(?X) <- -NationalPark(X), -hasPart(X, Y), RetireeDestination(X).
+Q(?X) <- -RetireeDestination(X), -hasRating(Y, X), Hotel(X).
+Q(?X) <- -RetireeDestination(X), -Hotel(X), hasRating(Y, X).
+Q(?X) <- -BackpackersDestination(X), -hasAccommodation(X, Y), RetireeDestination(X).
+Q(?X) <- -BackpackersDestination(X), -hasPart(X, Y), RetireeDestination(X).
+Q(?X) <- -hasAccommodation(X, Y), -hasPart(Y, X), RetireeDestination(X).
+Q(?X) <- -RetireeDestination(X), -hasRating(Y, X), hasAccommodation(Y, X).
+Q(?X) <- -RetireeDestination(X), -hasAccommodation(Y, X), hasRating(Y, X).
+Q(?X) <- -hasPart(X, Y), -hasPart(Y, X), RetireeDestination(X).
+Q(?X) <- -RetireeDestination(X), -hasRating(Y, X), hasRating(X, Y).
+Q(?X) <- -RetireeDestination(X), -hasRating(X, Y), hasRating(Y, X).
+Q(?X) <- -NationalPark(X), -hasAccommodation(X, Y), Hotel(X).
+Q(?X) <- -NationalPark(X), -Hotel(X), hasAccommodation(X, Y).
+Q(?X) <- -NationalPark(X), -hasPart(X, Y), Hotel(X).
+Q(?X) <- -NationalPark(X), -Hotel(X), hasPart(X, Y).
+Q(?X) <- -NationalPark(X), -hasRating(Y, X), Hotel(X).
+Q(?X) <- -NationalPark(X), -Hotel(X), hasRating(Y, X).
+Q(?X) <- -NationalPark(X), -hasAccommodation(Y, X), hasAccommodation(X, Y).
+Q(?X) <- -NationalPark(X), -hasAccommodation(X, Y), hasAccommodation(Y, X).
+Q(?X) <- -NationalPark(X), -hasRating(X, Y), hasAccommodation(X, Y).
+Q(?X) <- -NationalPark(X), -hasAccommodation(X, Y), hasRating(X, Y).
+Q(?X) <- -NationalPark(X), -hasRating(Y, X), hasAccommodation(X, Y).
+Q(?X) <- -NationalPark(X), -hasAccommodation(X, Y), hasRating(Y, X).
+Q(?X) <- -NationalPark(X), -hasPart(X, Y), hasAccommodation(Y, X).
+Q(?X) <- -NationalPark(X), -hasAccommodation(Y, X), hasPart(X, Y).
+Q(?X) <- -NationalPark(X), -hasRating(Y, X), hasAccommodation(Y, X).
+Q(?X) <- -NationalPark(X), -hasAccommodation(Y, X), hasRating(Y, X).
+Q(?X) <- -NationalPark(X), -hasRating(X, Y), hasPart(X, Y).
+Q(?X) <- -NationalPark(X), -hasPart(X, Y), hasRating(X, Y).
+Q(?X) <- -NationalPark(X), -hasRating(Y, X), hasPart(X, Y).
+Q(?X) <- -NationalPark(X), -hasPart(X, Y), hasRating(Y, X).
+Q(?X) <- -NationalPark(X), -hasRating(Y, X), hasRating(X, Y).
+Q(?X) <- -NationalPark(X), -hasRating(X, Y), hasRating(Y, X).
+Q(?X) <- -BackpackersDestination(X), -hasAccommodation(X, Y), Hotel(X).
+Q(?X) <- -Hotel(X), -BackpackersDestination(X), hasAccommodation(X, Y).
+Q(?X) <- -BackpackersDestination(X), -hasPart(X, Y), Hotel(X).
+Q(?X) <- -Hotel(X), -BackpackersDestination(X), hasPart(X, Y).
+Q(?X) <- -BackpackersDestination(X), -hasRating(Y, X), Hotel(X).
+Q(?X) <- -Hotel(X), -BackpackersDestination(X), hasRating(Y, X).
+Q(?X) <- -hasAccommodation(X, Y), -hasPart(Y, X), Hotel(X).
+Q(?X) <- -Hotel(X), -hasPart(Y, X), hasAccommodation(X, Y).
+Q(?X) <- -hasPart(X, Y), -hasPart(Y, X), Hotel(X).
+Q(?X) <- -Hotel(X), -hasPart(Y, X), hasPart(X, Y).
+Q(?X) <- -hasPart(Y, X), -hasRating(Y, X), Hotel(X).
+Q(?X) <- -Hotel(X), -hasPart(Y, X), hasRating(Y, X).
+Q(?X) <- -BackpackersDestination(X), -hasAccommodation(Y, X), hasAccommodation(X, Y).
+Q(?X) <- -BackpackersDestination(X), -hasAccommodation(X, Y), hasAccommodation(Y, X).
+Q(?X) <- -BackpackersDestination(X), -hasRating(X, Y), hasAccommodation(X, Y).
+Q(?X) <- -BackpackersDestination(X), -hasAccommodation(X, Y), hasRating(X, Y).
+Q(?X) <- -BackpackersDestination(X), -hasRating(Y, X), hasAccommodation(X, Y).
+Q(?X) <- -BackpackersDestination(X), -hasAccommodation(X, Y), hasRating(Y, X).
+Q(?X) <- -BackpackersDestination(X), -hasPart(X, Y), hasAccommodation(Y, X).
+Q(?X) <- -BackpackersDestination(X), -hasAccommodation(Y, X), hasPart(X, Y).
+Q(?X) <- -BackpackersDestination(X), -hasRating(Y, X), hasAccommodation(Y, X).
+Q(?X) <- -BackpackersDestination(X), -hasAccommodation(Y, X), hasRating(Y, X).
+Q(?X) <- -BackpackersDestination(X), -hasRating(X, Y), hasPart(X, Y).
+Q(?X) <- -BackpackersDestination(X), -hasPart(X, Y), hasRating(X, Y).
+Q(?X) <- -BackpackersDestination(X), -hasRating(Y, X), hasPart(X, Y).
+Q(?X) <- -BackpackersDestination(X), -hasPart(X, Y), hasRating(Y, X).
+Q(?X) <- -BackpackersDestination(X), -hasRating(Y, X), hasRating(X, Y).
+Q(?X) <- -BackpackersDestination(X), -hasRating(X, Y), hasRating(Y, X).
+Q(?X) <- -hasAccommodation(Y, X), -hasPart(Y, X), hasAccommodation(X, Y).
+Q(?X) <- -hasAccommodation(X, Y), -hasPart(Y, X), hasAccommodation(Y, X).
+Q(?X) <- -hasPart(Y, X), -hasRating(X, Y), hasAccommodation(X, Y).
+Q(?X) <- -hasAccommodation(X, Y), -hasPart(Y, X), hasRating(X, Y).
+Q(?X) <- -hasPart(Y, X), -hasRating(Y, X), hasAccommodation(X, Y).
+Q(?X) <- -hasAccommodation(X, Y), -hasPart(Y, X), hasRating(Y, X).
+Q(?X) <- -hasPart(X, Y), -hasPart(Y, X), hasAccommodation(Y, X).
+Q(?X) <- -hasAccommodation(Y, X), -hasPart(Y, X), hasPart(X, Y).
+Q(?X) <- -hasPart(Y, X), -hasRating(Y, X), hasAccommodation(Y, X).
+Q(?X) <- -hasAccommodation(Y, X), -hasPart(Y, X), hasRating(Y, X).
+Q(?X) <- -hasPart(Y, X), -hasRating(X, Y), hasPart(X, Y).
+Q(?X) <- -hasPart(X, Y), -hasPart(Y, X), hasRating(X, Y).
+Q(?X) <- -hasPart(Y, X), -hasRating(Y, X), hasPart(X, Y).
+Q(?X) <- -hasPart(X, Y), -hasPart(Y, X), hasRating(Y, X).
+Q(?X) <- -hasPart(Y, X), -hasRating(Y, X), hasRating(X, Y).
+Q(?X) <- -hasPart(Y, X), -hasRating(X, Y), hasRating(Y, X).
+Q(?X) <- -RuralArea(X), -NationalPark(X), Town(X).
+Q(?X) <- -RuralArea(X), -BackpackersDestination(X), Town(X).
+Q(?X) <- -RuralArea(X), -NationalPark(X), LuxuryHotel(X).
+Q(?X) <- -RuralArea(X), -BackpackersDestination(X), LuxuryHotel(X).
+Q(?X) <- -RuralArea(X), -NationalPark(X), Accommodation(X).
+Q(?X) <- -RuralArea(X), -BackpackersDestination(X), Accommodation(X).
+Q(?X) <- -RuralArea(X), -NationalPark(X), Hotel(X).
+Q(?X) <- -RuralArea(X), -NationalPark(X), hasAccommodation(X, Y).
+Q(?X) <- -RuralArea(X), -NationalPark(X), hasAccommodation(Y, X).
+Q(?X) <- -RuralArea(X), -NationalPark(X), hasPart(X, Y).
+Q(?X) <- -RuralArea(X), -NationalPark(X), hasRating(X, Y).
+Q(?X) <- -RuralArea(X), -NationalPark(X), hasRating(Y, X).
+Q(?X) <- -RuralArea(X), -BackpackersDestination(X), Hotel(X).
+Q(?X) <- -RuralArea(X), -BackpackersDestination(X), hasAccommodation(X, Y).
+Q(?X) <- -RuralArea(X), -BackpackersDestination(X), hasAccommodation(Y, X).
+Q(?X) <- -RuralArea(X), -BackpackersDestination(X), hasPart(X, Y).
+Q(?X) <- -RuralArea(X), -BackpackersDestination(X), hasRating(X, Y).
+Q(?X) <- -RuralArea(X), -BackpackersDestination(X), hasRating(Y, X).
+Q(?X) <- -AccommodationRating(X), Destination(X), Town(X).
+Q(?X) <- -Town(X), -AccommodationRating(X), -Destination(X).
+Q(?X) <- -AccommodationRating(X), -LuxuryHotel(X), Town(X).
+Q(?X) <- -Town(X), -AccommodationRating(X), LuxuryHotel(X).
+Q(?X) <- -AccommodationRating(X), -Accommodation(X), Town(X).
+Q(?X) <- -Town(X), -AccommodationRating(X), Accommodation(X).
+Q(?X) <- -AccommodationRating(X), -Hotel(X), Town(X).
+Q(?X) <- -Town(X), -AccommodationRating(X), Hotel(X).
+Q(?X) <- -AccommodationRating(X), -hasAccommodation(X, Y), Town(X).
+Q(?X) <- -Town(X), -AccommodationRating(X), hasAccommodation(X, Y).
+Q(?X) <- -AccommodationRating(X), -hasAccommodation(Y, X), Town(X).
+Q(?X) <- -Town(X), -AccommodationRating(X), hasAccommodation(Y, X).
+Q(?X) <- -AccommodationRating(X), -hasPart(X, Y), Town(X).
+Q(?X) <- -Town(X), -AccommodationRating(X), hasPart(X, Y).
+Q(?X) <- -AccommodationRating(X), -hasRating(X, Y), Town(X).
+Q(?X) <- -Town(X), -AccommodationRating(X), hasRating(X, Y).
+Q(?X) <- -Beach(X), -Capital(X), Town(X).
+Q(?X) <- -Beach(X), -RetireeDestination(X), Town(X).
+Q(?X) <- -Beach(X), -NationalPark(X), Town(X).
+Q(?X) <- -Beach(X), -BackpackersDestination(X), Town(X).
+Q(?X) <- -Town(X), -UrbanArea(X), LuxuryHotel(X).
+Q(?X) <- -Town(X), -UrbanArea(X), Accommodation(X).
+Q(?X) <- -Town(X), -UrbanArea(X), Hotel(X).
+Q(?X) <- -Town(X), -UrbanArea(X), hasAccommodation(Y, X).
+Q(?X) <- -Town(X), -UrbanArea(X), hasRating(X, Y).
+Q(?X) <- -Town(X), -UrbanArea(X), hasRating(Y, X).
+Q(?X) <- -City(X), -LuxuryHotel(X), Town(X).
+Q(?X) <- -Town(X), -City(X), LuxuryHotel(X).
+Q(?X) <- -City(X), -Accommodation(X), Town(X).
+Q(?X) <- -Town(X), -City(X), Accommodation(X).
+Q(?X) <- -City(X), -Hotel(X), Town(X).
+Q(?X) <- -Town(X), -City(X), Hotel(X).
+Q(?X) <- -City(X), -hasAccommodation(Y, X), Town(X).
+Q(?X) <- -Town(X), -City(X), hasAccommodation(Y, X).
+Q(?X) <- -City(X), -hasRating(X, Y), Town(X).
+Q(?X) <- -Town(X), -City(X), hasRating(X, Y).
+Q(?X) <- -City(X), -hasRating(Y, X), Town(X).
+Q(?X) <- -Town(X), -City(X), hasRating(Y, X).
+Q(?X) <- Destination(X), -LuxuryHotel(X), Town(X).
+Q(?X) <- Destination(X), -Accommodation(X), Town(X).
+Q(?X) <- Destination(X), -Hotel(X), Town(X).
+Q(?X) <- Destination(X), -hasAccommodation(Y, X), Town(X).
+Q(?X) <- Destination(X), -hasRating(X, Y), Town(X).
+Q(?X) <- Destination(X), -hasRating(Y, X), Town(X).
+Q(?X) <- -Capital(X), -NationalPark(X), Town(X).
+Q(?X) <- -Capital(X), -BackpackersDestination(X), Town(X).
+Q(?X) <- -Capital(X), -hasPart(Y, X), Town(X).
+Q(?X) <- -RetireeDestination(X), -NationalPark(X), Town(X).
+Q(?X) <- -RetireeDestination(X), -BackpackersDestination(X), Town(X).
+Q(?X) <- -RetireeDestination(X), -hasPart(Y, X), Town(X).
+Q(?X) <- -NationalPark(X), -hasPart(Y, X), Town(X).
+Q(?X) <- -BackpackersDestination(X), -hasPart(Y, X), Town(X).
+Q(?X) <- -AccommodationRating(X), -hasAccommodation(X, Y), -Destination(X).
+Q(?X) <- -AccommodationRating(X), Destination(X), hasAccommodation(X, Y).
+Q(?X) <- -AccommodationRating(X), -hasPart(X, Y), -Destination(X).
+Q(?X) <- -AccommodationRating(X), Destination(X), hasPart(X, Y).
+Q(?X) <- -AccommodationRating(X), -hasAccommodation(X, Y), LuxuryHotel(X).
+Q(?X) <- -AccommodationRating(X), -LuxuryHotel(X), hasAccommodation(X, Y).
+Q(?X) <- -AccommodationRating(X), -hasPart(X, Y), LuxuryHotel(X).
+Q(?X) <- -AccommodationRating(X), -LuxuryHotel(X), hasPart(X, Y).
+Q(?X) <- -AccommodationRating(X), -hasAccommodation(X, Y), Capital(X).
+Q(?X) <- -AccommodationRating(X), -hasPart(X, Y), Capital(X).
+Q(?X) <- -AccommodationRating(X), -hasAccommodation(X, Y), Accommodation(X).
+Q(?X) <- -AccommodationRating(X), -Accommodation(X), hasAccommodation(X, Y).
+Q(?X) <- -AccommodationRating(X), -hasPart(X, Y), Accommodation(X).
+Q(?X) <- -AccommodationRating(X), -Accommodation(X), hasPart(X, Y).
+Q(?X) <- -AccommodationRating(X), -hasAccommodation(X, Y), RetireeDestination(X).
+Q(?X) <- -AccommodationRating(X), -hasPart(X, Y), RetireeDestination(X).
+Q(?X) <- -AccommodationRating(X), -hasAccommodation(X, Y), Hotel(X).
+Q(?X) <- -AccommodationRating(X), -Hotel(X), hasAccommodation(X, Y).
+Q(?X) <- -AccommodationRating(X), -hasPart(X, Y), Hotel(X).
+Q(?X) <- -AccommodationRating(X), -Hotel(X), hasPart(X, Y).
+Q(?X) <- -AccommodationRating(X), -hasAccommodation(Y, X), hasAccommodation(X, Y).
+Q(?X) <- -AccommodationRating(X), -hasAccommodation(X, Y), hasAccommodation(Y, X).
+Q(?X) <- -AccommodationRating(X), -hasRating(X, Y), hasAccommodation(X, Y).
+Q(?X) <- -AccommodationRating(X), -hasAccommodation(X, Y), hasRating(X, Y).
+Q(?X) <- -AccommodationRating(X), -hasPart(X, Y), hasAccommodation(Y, X).
+Q(?X) <- -AccommodationRating(X), -hasAccommodation(Y, X), hasPart(X, Y).
+Q(?X) <- -AccommodationRating(X), -hasRating(X, Y), hasPart(X, Y).
+Q(?X) <- -AccommodationRating(X), -hasPart(X, Y), hasRating(X, Y).
+Q(?X) <- -Beach(X), -Capital(X), City(X).
+Q(?X) <- -Beach(X), -RetireeDestination(X), City(X).
+Q(?X) <- -Beach(X), -Capital(X), LuxuryHotel(X).
+Q(?X) <- -Beach(X), -RetireeDestination(X), LuxuryHotel(X).
+Q(?X) <- -Beach(X), -NationalPark(X), LuxuryHotel(X).
+Q(?X) <- -Beach(X), -BackpackersDestination(X), LuxuryHotel(X).
+Q(?X) <- -Beach(X), -Capital(X), Accommodation(X).
+Q(?X) <- -Beach(X), -Capital(X), Hotel(X).
+Q(?X) <- -Beach(X), -Capital(X), hasAccommodation(Y, X).
+Q(?X) <- -Beach(X), -Capital(X), hasRating(X, Y).
+Q(?X) <- -Beach(X), -Capital(X), hasRating(Y, X).
+Q(?X) <- -Beach(X), -RetireeDestination(X), Accommodation(X).
+Q(?X) <- -Beach(X), -NationalPark(X), Accommodation(X).
+Q(?X) <- -Beach(X), -BackpackersDestination(X), Accommodation(X).
+Q(?X) <- -Beach(X), -RetireeDestination(X), Hotel(X).
+Q(?X) <- -Beach(X), -RetireeDestination(X), hasAccommodation(Y, X).
+Q(?X) <- -Beach(X), -RetireeDestination(X), hasRating(X, Y).
+Q(?X) <- -Beach(X), -RetireeDestination(X), hasRating(Y, X).
+Q(?X) <- -Beach(X), -NationalPark(X), Hotel(X).
+Q(?X) <- -Beach(X), -NationalPark(X), hasAccommodation(X, Y).
+Q(?X) <- -Beach(X), -NationalPark(X), hasAccommodation(Y, X).
+Q(?X) <- -Beach(X), -NationalPark(X), hasPart(X, Y).
+Q(?X) <- -Beach(X), -NationalPark(X), hasRating(X, Y).
+Q(?X) <- -Beach(X), -NationalPark(X), hasRating(Y, X).
+Q(?X) <- -Beach(X), -BackpackersDestination(X), Hotel(X).
+Q(?X) <- -Beach(X), -BackpackersDestination(X), hasAccommodation(X, Y).
+Q(?X) <- -Beach(X), -BackpackersDestination(X), hasAccommodation(Y, X).
+Q(?X) <- -Beach(X), -BackpackersDestination(X), hasPart(X, Y).
+Q(?X) <- -Beach(X), -BackpackersDestination(X), hasRating(X, Y).
+Q(?X) <- -Beach(X), -BackpackersDestination(X), hasRating(Y, X).
+Q(?X) <- -City(X), -LuxuryHotel(X), UrbanArea(X).
+Q(?X) <- -UrbanArea(X), -City(X), LuxuryHotel(X).
+Q(?X) <- -City(X), -Accommodation(X), UrbanArea(X).
+Q(?X) <- -UrbanArea(X), -City(X), Accommodation(X).
+Q(?X) <- -City(X), -Hotel(X), UrbanArea(X).
+Q(?X) <- -UrbanArea(X), -City(X), Hotel(X).
+Q(?X) <- -City(X), -hasAccommodation(Y, X), UrbanArea(X).
+Q(?X) <- -UrbanArea(X), -City(X), hasAccommodation(Y, X).
+Q(?X) <- -City(X), -hasRating(X, Y), UrbanArea(X).
+Q(?X) <- -UrbanArea(X), -City(X), hasRating(X, Y).
+Q(?X) <- -City(X), -hasRating(Y, X), UrbanArea(X).
+Q(?X) <- -UrbanArea(X), -City(X), hasRating(Y, X).
+Q(?X) <- -UrbanArea(X), -Capital(X), LuxuryHotel(X).
+Q(?X) <- -UrbanArea(X), -RetireeDestination(X), LuxuryHotel(X).
+Q(?X) <- -UrbanArea(X), -hasAccommodation(X, Y), LuxuryHotel(X).
+Q(?X) <- -UrbanArea(X), -hasPart(X, Y), LuxuryHotel(X).
+Q(?X) <- -UrbanArea(X), -Capital(X), Accommodation(X).
+Q(?X) <- -UrbanArea(X), -Capital(X), Hotel(X).
+Q(?X) <- -UrbanArea(X), -Capital(X), hasAccommodation(Y, X).
+Q(?X) <- -UrbanArea(X), -Capital(X), hasRating(X, Y).
+Q(?X) <- -UrbanArea(X), -Capital(X), hasRating(Y, X).
+Q(?X) <- -UrbanArea(X), -RetireeDestination(X), Accommodation(X).
+Q(?X) <- -UrbanArea(X), -hasAccommodation(X, Y), Accommodation(X).
+Q(?X) <- -UrbanArea(X), -hasPart(X, Y), Accommodation(X).
+Q(?X) <- -UrbanArea(X), -RetireeDestination(X), Hotel(X).
+Q(?X) <- -UrbanArea(X), -RetireeDestination(X), hasAccommodation(Y, X).
+Q(?X) <- -UrbanArea(X), -RetireeDestination(X), hasRating(X, Y).
+Q(?X) <- -UrbanArea(X), -RetireeDestination(X), hasRating(Y, X).
+Q(?X) <- -UrbanArea(X), -hasAccommodation(X, Y), Hotel(X).
+Q(?X) <- -UrbanArea(X), -hasPart(X, Y), Hotel(X).
+Q(?X) <- -UrbanArea(X), -hasAccommodation(X, Y), hasAccommodation(Y, X).
+Q(?X) <- -UrbanArea(X), -hasAccommodation(X, Y), hasRating(X, Y).
+Q(?X) <- -UrbanArea(X), -hasAccommodation(X, Y), hasRating(Y, X).
+Q(?X) <- -UrbanArea(X), -hasPart(X, Y), hasAccommodation(Y, X).
+Q(?X) <- -UrbanArea(X), -hasPart(X, Y), hasRating(X, Y).
+Q(?X) <- -UrbanArea(X), -hasPart(X, Y), hasRating(Y, X).
+Q(?X) <- -City(X), -hasRating(Y, X), LuxuryHotel(X).
+Q(?X) <- -City(X), -LuxuryHotel(X), hasRating(Y, X).
+Q(?X) <- -Capital(X), -NationalPark(X), City(X).
+Q(?X) <- -Capital(X), -BackpackersDestination(X), City(X).
+Q(?X) <- -Capital(X), -hasPart(Y, X), City(X).
+Q(?X) <- -City(X), -hasRating(Y, X), Accommodation(X).
+Q(?X) <- -City(X), -Accommodation(X), hasRating(Y, X).
+Q(?X) <- -RetireeDestination(X), -NationalPark(X), City(X).
+Q(?X) <- -RetireeDestination(X), -BackpackersDestination(X), City(X).
+Q(?X) <- -RetireeDestination(X), -hasPart(Y, X), City(X).
+Q(?X) <- -City(X), -hasRating(Y, X), Hotel(X).
+Q(?X) <- -City(X), -Hotel(X), hasRating(Y, X).
+Q(?X) <- -City(X), -hasRating(Y, X), hasAccommodation(Y, X).
+Q(?X) <- -City(X), -hasAccommodation(Y, X), hasRating(Y, X).
+Q(?X) <- -City(X), -hasRating(Y, X), hasRating(X, Y).
+Q(?X) <- -City(X), -hasRating(X, Y), hasRating(Y, X).
+Q(?X) <- Destination(X), -LuxuryHotel(X), hasAccommodation(X, Y).
+Q(?X) <- Destination(X), -LuxuryHotel(X), hasPart(X, Y).
+Q(?X) <- Destination(X), -Accommodation(X), hasAccommodation(X, Y).
+Q(?X) <- Destination(X), -Accommodation(X), hasPart(X, Y).
+Q(?X) <- Destination(X), -Hotel(X), hasAccommodation(X, Y).
+Q(?X) <- Destination(X), -Hotel(X), hasPart(X, Y).
+Q(?X) <- Destination(X), -hasAccommodation(Y, X), hasAccommodation(X, Y).
+Q(?X) <- Destination(X), -hasRating(X, Y), hasAccommodation(X, Y).
+Q(?X) <- Destination(X), -hasRating(Y, X), hasAccommodation(X, Y).
+Q(?X) <- Destination(X), -hasAccommodation(Y, X), hasPart(X, Y).
+Q(?X) <- Destination(X), -hasRating(X, Y), hasPart(X, Y).
+Q(?X) <- Destination(X), -hasRating(Y, X), hasPart(X, Y).
+Q(?X) <- -Capital(X), -NationalPark(X), LuxuryHotel(X).
+Q(?X) <- -Capital(X), -BackpackersDestination(X), LuxuryHotel(X).
+Q(?X) <- -Capital(X), -hasPart(Y, X), LuxuryHotel(X).
+Q(?X) <- -RetireeDestination(X), -NationalPark(X), LuxuryHotel(X).
+Q(?X) <- -RetireeDestination(X), -BackpackersDestination(X), LuxuryHotel(X).
+Q(?X) <- -RetireeDestination(X), -hasPart(Y, X), LuxuryHotel(X).
+Q(?X) <- -NationalPark(X), -hasPart(Y, X), LuxuryHotel(X).
+Q(?X) <- -BackpackersDestination(X), -hasPart(Y, X), LuxuryHotel(X).
+Q(?X) <- -Capital(X), -NationalPark(X), Accommodation(X).
+Q(?X) <- -Capital(X), -BackpackersDestination(X), Accommodation(X).
+Q(?X) <- -Capital(X), -hasPart(Y, X), Accommodation(X).
+Q(?X) <- -Capital(X), -NationalPark(X), Hotel(X).
+Q(?X) <- -Capital(X), -NationalPark(X), hasAccommodation(Y, X).
+Q(?X) <- -Capital(X), -NationalPark(X), hasRating(X, Y).
+Q(?X) <- -Capital(X), -NationalPark(X), hasRating(Y, X).
+Q(?X) <- -Capital(X), -BackpackersDestination(X), Hotel(X).
+Q(?X) <- -Capital(X), -hasPart(Y, X), Hotel(X).
+Q(?X) <- -Capital(X), -BackpackersDestination(X), hasAccommodation(Y, X).
+Q(?X) <- -Capital(X), -BackpackersDestination(X), hasRating(X, Y).
+Q(?X) <- -Capital(X), -BackpackersDestination(X), hasRating(Y, X).
+Q(?X) <- -Capital(X), -hasPart(Y, X), hasAccommodation(Y, X).
+Q(?X) <- -Capital(X), -hasPart(Y, X), hasRating(X, Y).
+Q(?X) <- -Capital(X), -hasPart(Y, X), hasRating(Y, X).
+Q(?X) <- -RetireeDestination(X), -NationalPark(X), Accommodation(X).
+Q(?X) <- -RetireeDestination(X), -BackpackersDestination(X), Accommodation(X).
+Q(?X) <- -RetireeDestination(X), -hasPart(Y, X), Accommodation(X).
+Q(?X) <- -NationalPark(X), -hasPart(Y, X), Accommodation(X).
+Q(?X) <- -BackpackersDestination(X), -hasPart(Y, X), Accommodation(X).
+Q(?X) <- -RetireeDestination(X), -NationalPark(X), Hotel(X).
+Q(?X) <- -RetireeDestination(X), -NationalPark(X), hasAccommodation(Y, X).
+Q(?X) <- -RetireeDestination(X), -NationalPark(X), hasRating(X, Y).
+Q(?X) <- -RetireeDestination(X), -NationalPark(X), hasRating(Y, X).
+Q(?X) <- -RetireeDestination(X), -BackpackersDestination(X), Hotel(X).
+Q(?X) <- -RetireeDestination(X), -hasPart(Y, X), Hotel(X).
+Q(?X) <- -RetireeDestination(X), -BackpackersDestination(X), hasAccommodation(Y, X).
+Q(?X) <- -RetireeDestination(X), -BackpackersDestination(X), hasRating(X, Y).
+Q(?X) <- -RetireeDestination(X), -BackpackersDestination(X), hasRating(Y, X).
+Q(?X) <- -RetireeDestination(X), -hasPart(Y, X), hasAccommodation(Y, X).
+Q(?X) <- -RetireeDestination(X), -hasPart(Y, X), hasRating(X, Y).
+Q(?X) <- -RetireeDestination(X), -hasPart(Y, X), hasRating(Y, X).
+Q(?X) <- -NationalPark(X), -hasPart(Y, X), Hotel(X).
+Q(?X) <- -NationalPark(X), -hasPart(Y, X), hasAccommodation(X, Y).
+Q(?X) <- -NationalPark(X), -hasPart(Y, X), hasAccommodation(Y, X).
+Q(?X) <- -NationalPark(X), -hasPart(Y, X), hasPart(X, Y).
+Q(?X) <- -NationalPark(X), -hasPart(Y, X), hasRating(X, Y).
+Q(?X) <- -NationalPark(X), -hasPart(Y, X), hasRating(Y, X).
+Q(?X) <- -BackpackersDestination(X), -hasPart(Y, X), Hotel(X).
+Q(?X) <- -BackpackersDestination(X), -hasPart(Y, X), hasAccommodation(X, Y).
+Q(?X) <- -BackpackersDestination(X), -hasPart(Y, X), hasAccommodation(Y, X).
+Q(?X) <- -BackpackersDestination(X), -hasPart(Y, X), hasPart(X, Y).
+Q(?X) <- -BackpackersDestination(X), -hasPart(Y, X), hasRating(X, Y).
+Q(?X) <- -BackpackersDestination(X), -hasPart(Y, X), hasRating(Y, X).
+Q(?X) <- -RuralArea(X), -LuxuryHotel(X), Town(X).
+Q(?X) <- -RuralArea(X), -Town(X), LuxuryHotel(X).
+Q(?X) <- -RuralArea(X), -Accommodation(X), Town(X).
+Q(?X) <- -RuralArea(X), -Town(X), Accommodation(X).
+Q(?X) <- -RuralArea(X), -Hotel(X), Town(X).
+Q(?X) <- -RuralArea(X), -Town(X), Hotel(X).
+Q(?X) <- -RuralArea(X), -hasAccommodation(X, Y), Town(X).
+Q(?X) <- -RuralArea(X), -Town(X), hasAccommodation(X, Y).
+Q(?X) <- -RuralArea(X), -hasAccommodation(Y, X), Town(X).
+Q(?X) <- -RuralArea(X), -Town(X), hasAccommodation(Y, X).
+Q(?X) <- -RuralArea(X), -hasPart(X, Y), Town(X).
+Q(?X) <- -RuralArea(X), -Town(X), hasPart(X, Y).
+Q(?X) <- -RuralArea(X), -hasRating(X, Y), Town(X).
+Q(?X) <- -RuralArea(X), -Town(X), hasRating(X, Y).
+Q(?X) <- -RuralArea(X), -hasRating(Y, X), Town(X).
+Q(?X) <- -RuralArea(X), -Town(X), hasRating(Y, X).
+Q(?X) <- -RuralArea(X), -hasAccommodation(X, Y), LuxuryHotel(X).
+Q(?X) <- -RuralArea(X), -LuxuryHotel(X), hasAccommodation(X, Y).
+Q(?X) <- -RuralArea(X), -hasPart(X, Y), LuxuryHotel(X).
+Q(?X) <- -RuralArea(X), -LuxuryHotel(X), hasPart(X, Y).
+Q(?X) <- -RuralArea(X), -hasRating(Y, X), LuxuryHotel(X).
+Q(?X) <- -RuralArea(X), -LuxuryHotel(X), hasRating(Y, X).
+Q(?X) <- -RuralArea(X), -hasAccommodation(X, Y), Capital(X).
+Q(?X) <- -RuralArea(X), -hasPart(X, Y), Capital(X).
+Q(?X) <- -RuralArea(X), -hasAccommodation(X, Y), Accommodation(X).
+Q(?X) <- -RuralArea(X), -Accommodation(X), hasAccommodation(X, Y).
+Q(?X) <- -RuralArea(X), -hasPart(X, Y), Accommodation(X).
+Q(?X) <- -RuralArea(X), -Accommodation(X), hasPart(X, Y).
+Q(?X) <- -RuralArea(X), -hasRating(Y, X), Accommodation(X).
+Q(?X) <- -RuralArea(X), -Accommodation(X), hasRating(Y, X).
+Q(?X) <- -RuralArea(X), -hasAccommodation(X, Y), RetireeDestination(X).
+Q(?X) <- -RuralArea(X), -hasPart(X, Y), RetireeDestination(X).
+Q(?X) <- -RuralArea(X), -hasAccommodation(X, Y), Hotel(X).
+Q(?X) <- -RuralArea(X), -Hotel(X), hasAccommodation(X, Y).
+Q(?X) <- -RuralArea(X), -hasPart(X, Y), Hotel(X).
+Q(?X) <- -RuralArea(X), -Hotel(X), hasPart(X, Y).
+Q(?X) <- -RuralArea(X), -hasRating(Y, X), Hotel(X).
+Q(?X) <- -RuralArea(X), -Hotel(X), hasRating(Y, X).
+Q(?X) <- -RuralArea(X), -hasAccommodation(Y, X), hasAccommodation(X, Y).
+Q(?X) <- -RuralArea(X), -hasAccommodation(X, Y), hasAccommodation(Y, X).
+Q(?X) <- -RuralArea(X), -hasRating(X, Y), hasAccommodation(X, Y).
+Q(?X) <- -RuralArea(X), -hasAccommodation(X, Y), hasRating(X, Y).
+Q(?X) <- -RuralArea(X), -hasRating(Y, X), hasAccommodation(X, Y).
+Q(?X) <- -RuralArea(X), -hasAccommodation(X, Y), hasRating(Y, X).
+Q(?X) <- -RuralArea(X), -hasPart(X, Y), hasAccommodation(Y, X).
+Q(?X) <- -RuralArea(X), -hasAccommodation(Y, X), hasPart(X, Y).
+Q(?X) <- -RuralArea(X), -hasRating(Y, X), hasAccommodation(Y, X).
+Q(?X) <- -RuralArea(X), -hasAccommodation(Y, X), hasRating(Y, X).
+Q(?X) <- -RuralArea(X), -hasRating(X, Y), hasPart(X, Y).
+Q(?X) <- -RuralArea(X), -hasPart(X, Y), hasRating(X, Y).
+Q(?X) <- -RuralArea(X), -hasRating(Y, X), hasPart(X, Y).
+Q(?X) <- -RuralArea(X), -hasPart(X, Y), hasRating(Y, X).
+Q(?X) <- -RuralArea(X), -hasRating(Y, X), hasRating(X, Y).
+Q(?X) <- -RuralArea(X), -hasRating(X, Y), hasRating(Y, X).
+Q(?X) <- -AccommodationRating(X), -Beach(X), Town(X).
+Q(?X) <- -AccommodationRating(X), -Capital(X), Town(X).
+Q(?X) <- -AccommodationRating(X), -RetireeDestination(X), Town(X).
+Q(?X) <- -AccommodationRating(X), -NationalPark(X), Town(X).
+Q(?X) <- -AccommodationRating(X), -BackpackersDestination(X), Town(X).
+Q(?X) <- -AccommodationRating(X), -hasPart(Y, X), Town(X).
+Q(?X) <- -Beach(X), -City(X), Town(X).
+Q(?X) <- -City(X), -NationalPark(X), Town(X).
+Q(?X) <- -City(X), -BackpackersDestination(X), Town(X).
+Q(?X) <- -City(X), -hasPart(Y, X), Town(X).
+Q(?X) <- Destination(X), -hasAccommodation(X, Y), Town(X).
+Q(?X) <- -Town(X), Destination(X), hasAccommodation(X, Y).
+Q(?X) <- Destination(X), -hasPart(X, Y), Town(X).
+Q(?X) <- -Town(X), Destination(X), hasPart(X, Y).
+Q(?X) <- -AccommodationRating(X), -Beach(X), -Destination(X).
+Q(?X) <- -AccommodationRating(X), -Beach(X), LuxuryHotel(X).
+Q(?X) <- -AccommodationRating(X), -Beach(X), Accommodation(X).
+Q(?X) <- -AccommodationRating(X), -Beach(X), Hotel(X).
+Q(?X) <- -AccommodationRating(X), -Beach(X), hasAccommodation(X, Y).
+Q(?X) <- -AccommodationRating(X), -Beach(X), hasAccommodation(Y, X).
+Q(?X) <- -AccommodationRating(X), -Beach(X), hasPart(X, Y).
+Q(?X) <- -AccommodationRating(X), -Beach(X), hasRating(X, Y).
+Q(?X) <- -AccommodationRating(X), -Capital(X), City(X).
+Q(?X) <- -AccommodationRating(X), -RetireeDestination(X), City(X).
+Q(?X) <- -AccommodationRating(X), -Capital(X), -Destination(X).
+Q(?X) <- -AccommodationRating(X), -RetireeDestination(X), -Destination(X).
+Q(?X) <- -AccommodationRating(X), -NationalPark(X), -Destination(X).
+Q(?X) <- -AccommodationRating(X), -BackpackersDestination(X), -Destination(X).
+Q(?X) <- -AccommodationRating(X), -hasPart(Y, X), -Destination(X).
+Q(?X) <- -AccommodationRating(X), -Capital(X), LuxuryHotel(X).
+Q(?X) <- -AccommodationRating(X), -RetireeDestination(X), LuxuryHotel(X).
+Q(?X) <- -AccommodationRating(X), -NationalPark(X), LuxuryHotel(X).
+Q(?X) <- -AccommodationRating(X), -BackpackersDestination(X), LuxuryHotel(X).
+Q(?X) <- -AccommodationRating(X), -hasPart(Y, X), LuxuryHotel(X).
+Q(?X) <- -AccommodationRating(X), -Capital(X), Accommodation(X).
+Q(?X) <- -AccommodationRating(X), -Capital(X), Hotel(X).
+Q(?X) <- -AccommodationRating(X), -Capital(X), hasAccommodation(Y, X).
+Q(?X) <- -AccommodationRating(X), -Capital(X), hasRating(X, Y).
+Q(?X) <- -AccommodationRating(X), -RetireeDestination(X), Accommodation(X).
+Q(?X) <- -AccommodationRating(X), -NationalPark(X), Accommodation(X).
+Q(?X) <- -AccommodationRating(X), -BackpackersDestination(X), Accommodation(X).
+Q(?X) <- -AccommodationRating(X), -hasPart(Y, X), Accommodation(X).
+Q(?X) <- -AccommodationRating(X), -RetireeDestination(X), Hotel(X).
+Q(?X) <- -AccommodationRating(X), -RetireeDestination(X), hasAccommodation(Y, X).
+Q(?X) <- -AccommodationRating(X), -RetireeDestination(X), hasRating(X, Y).
+Q(?X) <- -AccommodationRating(X), -NationalPark(X), Hotel(X).
+Q(?X) <- -AccommodationRating(X), -NationalPark(X), hasAccommodation(X, Y).
+Q(?X) <- -AccommodationRating(X), -NationalPark(X), hasAccommodation(Y, X).
+Q(?X) <- -AccommodationRating(X), -NationalPark(X), hasPart(X, Y).
+Q(?X) <- -AccommodationRating(X), -NationalPark(X), hasRating(X, Y).
+Q(?X) <- -AccommodationRating(X), -BackpackersDestination(X), Hotel(X).
+Q(?X) <- -AccommodationRating(X), -hasPart(Y, X), Hotel(X).
+Q(?X) <- -AccommodationRating(X), -BackpackersDestination(X), hasAccommodation(X, Y).
+Q(?X) <- -AccommodationRating(X), -BackpackersDestination(X), hasAccommodation(Y, X).
+Q(?X) <- -AccommodationRating(X), -BackpackersDestination(X), hasPart(X, Y).
+Q(?X) <- -AccommodationRating(X), -BackpackersDestination(X), hasRating(X, Y).
+Q(?X) <- -AccommodationRating(X), -hasPart(Y, X), hasAccommodation(X, Y).
+Q(?X) <- -AccommodationRating(X), -hasPart(Y, X), hasAccommodation(Y, X).
+Q(?X) <- -AccommodationRating(X), -hasPart(Y, X), hasPart(X, Y).
+Q(?X) <- -AccommodationRating(X), -hasPart(Y, X), hasRating(X, Y).
+Q(?X) <- -Beach(X), -City(X), UrbanArea(X).
+Q(?X) <- -Beach(X), -City(X), LuxuryHotel(X).
+Q(?X) <- -Beach(X), -City(X), Accommodation(X).
+Q(?X) <- -Beach(X), -City(X), Hotel(X).
+Q(?X) <- -Beach(X), -City(X), hasAccommodation(Y, X).
+Q(?X) <- -Beach(X), -City(X), hasRating(X, Y).
+Q(?X) <- -Beach(X), -City(X), hasRating(Y, X).
+Q(?X) <- -City(X), -NationalPark(X), UrbanArea(X).
+Q(?X) <- -City(X), -BackpackersDestination(X), UrbanArea(X).
+Q(?X) <- -City(X), -hasPart(Y, X), UrbanArea(X).
+Q(?X) <- -UrbanArea(X), -hasRating(Y, X), LuxuryHotel(X).
+Q(?X) <- -UrbanArea(X), -LuxuryHotel(X), hasRating(Y, X).
+Q(?X) <- -UrbanArea(X), -hasRating(Y, X), Accommodation(X).
+Q(?X) <- -UrbanArea(X), -Accommodation(X), hasRating(Y, X).
+Q(?X) <- -UrbanArea(X), -hasRating(Y, X), Hotel(X).
+Q(?X) <- -UrbanArea(X), -Hotel(X), hasRating(Y, X).
+Q(?X) <- -UrbanArea(X), -hasRating(Y, X), hasAccommodation(Y, X).
+Q(?X) <- -UrbanArea(X), -hasAccommodation(Y, X), hasRating(Y, X).
+Q(?X) <- -UrbanArea(X), -hasRating(Y, X), hasRating(X, Y).
+Q(?X) <- -UrbanArea(X), -hasRating(X, Y), hasRating(Y, X).
+Q(?X) <- -City(X), -NationalPark(X), LuxuryHotel(X).
+Q(?X) <- -City(X), -BackpackersDestination(X), LuxuryHotel(X).
+Q(?X) <- -City(X), -hasPart(Y, X), LuxuryHotel(X).
+Q(?X) <- -City(X), -NationalPark(X), Accommodation(X).
+Q(?X) <- -City(X), -BackpackersDestination(X), Accommodation(X).
+Q(?X) <- -City(X), -hasPart(Y, X), Accommodation(X).
+Q(?X) <- -City(X), -NationalPark(X), Hotel(X).
+Q(?X) <- -City(X), -NationalPark(X), hasAccommodation(Y, X).
+Q(?X) <- -City(X), -NationalPark(X), hasRating(X, Y).
+Q(?X) <- -City(X), -NationalPark(X), hasRating(Y, X).
+Q(?X) <- -City(X), -BackpackersDestination(X), Hotel(X).
+Q(?X) <- -City(X), -hasPart(Y, X), Hotel(X).
+Q(?X) <- -City(X), -BackpackersDestination(X), hasAccommodation(Y, X).
+Q(?X) <- -City(X), -BackpackersDestination(X), hasRating(X, Y).
+Q(?X) <- -City(X), -BackpackersDestination(X), hasRating(Y, X).
+Q(?X) <- -City(X), -hasPart(Y, X), hasAccommodation(Y, X).
+Q(?X) <- -City(X), -hasPart(Y, X), hasRating(X, Y).
+Q(?X) <- -City(X), -hasPart(Y, X), hasRating(Y, X).
+Q(?X) <- Destination(X), -hasAccommodation(X, Y), Capital(X).
+Q(?X) <- Destination(X), -hasPart(X, Y), Capital(X).
+Q(?X) <- Destination(X), -hasAccommodation(X, Y), RetireeDestination(X).
+Q(?X) <- Destination(X), -hasPart(X, Y), RetireeDestination(X).
+Q(?X) <- -LuxuryHotel(X), -Accommodation(X), Beach(X).
+Q(?X) <- -LuxuryHotel(X), -Hotel(X), Beach(X).
+Q(?X) <- -LuxuryHotel(X), -hasAccommodation(Y, X), Beach(X).
+Q(?X) <- -LuxuryHotel(X), -hasRating(X, Y), Beach(X).
+Q(?X) <- -Accommodation(X), -Hotel(X), Beach(X).
+Q(?X) <- -Accommodation(X), -hasAccommodation(Y, X), Beach(X).
+Q(?X) <- -Accommodation(X), -hasRating(X, Y), Beach(X).
+Q(?X) <- -Hotel(X), -hasAccommodation(Y, X), Beach(X).
+Q(?X) <- -Hotel(X), -hasRating(X, Y), Beach(X).
+Q(?X) <- -hasAccommodation(X, Y), -hasPart(X, Y), Beach(X).
+Q(?X) <- -hasAccommodation(Y, X), -hasRating(X, Y), Beach(X).
+Q(?X) <- -hasAccommodation(X, Y), -hasPart(X, Y), City(X).
+Q(?X) <- -LuxuryHotel(X), -Accommodation(X), Capital(X).
+Q(?X) <- -LuxuryHotel(X), -Hotel(X), Capital(X).
+Q(?X) <- -LuxuryHotel(X), -hasAccommodation(Y, X), Capital(X).
+Q(?X) <- -LuxuryHotel(X), -hasRating(X, Y), Capital(X).
+Q(?X) <- -LuxuryHotel(X), -Accommodation(X), RetireeDestination(X).
+Q(?X) <- -LuxuryHotel(X), -Accommodation(X), NationalPark(X).
+Q(?X) <- -LuxuryHotel(X), -Accommodation(X), BackpackersDestination(X).
+Q(?X) <- -LuxuryHotel(X), -Accommodation(X), hasPart(Y, X).
+Q(?X) <- -LuxuryHotel(X), -Hotel(X), RetireeDestination(X).
+Q(?X) <- -LuxuryHotel(X), -hasAccommodation(Y, X), RetireeDestination(X).
+Q(?X) <- -LuxuryHotel(X), -hasRating(X, Y), RetireeDestination(X).
+Q(?X) <- -LuxuryHotel(X), -Hotel(X), NationalPark(X).
+Q(?X) <- -LuxuryHotel(X), -hasAccommodation(Y, X), NationalPark(X).
+Q(?X) <- -LuxuryHotel(X), -hasRating(X, Y), NationalPark(X).
+Q(?X) <- -LuxuryHotel(X), -Hotel(X), BackpackersDestination(X).
+Q(?X) <- -LuxuryHotel(X), -Hotel(X), hasPart(Y, X).
+Q(?X) <- -LuxuryHotel(X), -hasAccommodation(Y, X), BackpackersDestination(X).
+Q(?X) <- -LuxuryHotel(X), -hasRating(X, Y), BackpackersDestination(X).
+Q(?X) <- -LuxuryHotel(X), -hasAccommodation(Y, X), hasPart(Y, X).
+Q(?X) <- -LuxuryHotel(X), -hasRating(X, Y), hasPart(Y, X).
+Q(?X) <- -Accommodation(X), -Hotel(X), Capital(X).
+Q(?X) <- -Accommodation(X), -hasAccommodation(Y, X), Capital(X).
+Q(?X) <- -Accommodation(X), -hasRating(X, Y), Capital(X).
+Q(?X) <- -Hotel(X), -hasAccommodation(Y, X), Capital(X).
+Q(?X) <- -Hotel(X), -hasRating(X, Y), Capital(X).
+Q(?X) <- -hasAccommodation(Y, X), -hasRating(X, Y), Capital(X).
+Q(?X) <- -Accommodation(X), -Hotel(X), RetireeDestination(X).
+Q(?X) <- -Accommodation(X), -hasAccommodation(Y, X), RetireeDestination(X).
+Q(?X) <- -Accommodation(X), -hasRating(X, Y), RetireeDestination(X).
+Q(?X) <- -Accommodation(X), -Hotel(X), NationalPark(X).
+Q(?X) <- -Accommodation(X), -hasAccommodation(Y, X), NationalPark(X).
+Q(?X) <- -Accommodation(X), -hasRating(X, Y), NationalPark(X).
+Q(?X) <- -Accommodation(X), -Hotel(X), BackpackersDestination(X).
+Q(?X) <- -Accommodation(X), -Hotel(X), hasPart(Y, X).
+Q(?X) <- -Accommodation(X), -hasAccommodation(Y, X), BackpackersDestination(X).
+Q(?X) <- -Accommodation(X), -hasRating(X, Y), BackpackersDestination(X).
+Q(?X) <- -Accommodation(X), -hasAccommodation(Y, X), hasPart(Y, X).
+Q(?X) <- -Accommodation(X), -hasRating(X, Y), hasPart(Y, X).
+Q(?X) <- -Hotel(X), -hasAccommodation(Y, X), RetireeDestination(X).
+Q(?X) <- -Hotel(X), -hasRating(X, Y), RetireeDestination(X).
+Q(?X) <- -hasAccommodation(Y, X), -hasRating(X, Y), RetireeDestination(X).
+Q(?X) <- -Hotel(X), -hasAccommodation(Y, X), NationalPark(X).
+Q(?X) <- -Hotel(X), -hasRating(X, Y), NationalPark(X).
+Q(?X) <- -hasAccommodation(X, Y), -hasPart(X, Y), NationalPark(X).
+Q(?X) <- -hasAccommodation(Y, X), -hasRating(X, Y), NationalPark(X).
+Q(?X) <- -Hotel(X), -hasAccommodation(Y, X), BackpackersDestination(X).
+Q(?X) <- -Hotel(X), -hasRating(X, Y), BackpackersDestination(X).
+Q(?X) <- -Hotel(X), -hasAccommodation(Y, X), hasPart(Y, X).
+Q(?X) <- -Hotel(X), -hasRating(X, Y), hasPart(Y, X).
+Q(?X) <- -hasAccommodation(X, Y), -hasPart(X, Y), BackpackersDestination(X).
+Q(?X) <- -hasAccommodation(Y, X), -hasRating(X, Y), BackpackersDestination(X).
+Q(?X) <- -hasAccommodation(X, Y), -hasPart(X, Y), hasPart(Y, X).
+Q(?X) <- -hasAccommodation(Y, X), -hasRating(X, Y), hasPart(Y, X).
+Q(?X) <- -NationalPark(X), -BackpackersDestination(X), RuralArea(X).
+Q(?X) <- -Town(X), -hasRating(Y, X), AccommodationRating(X).
+Q(?X) <- -Town(X), -LuxuryHotel(X), Beach(X).
+Q(?X) <- -Town(X), -Accommodation(X), Beach(X).
+Q(?X) <- -Town(X), -Hotel(X), Beach(X).
+Q(?X) <- -Town(X), -hasAccommodation(X, Y), Beach(X).
+Q(?X) <- -Town(X), -hasAccommodation(Y, X), Beach(X).
+Q(?X) <- -Town(X), -hasPart(X, Y), Beach(X).
+Q(?X) <- -Town(X), -hasRating(X, Y), Beach(X).
+Q(?X) <- -Town(X), -hasRating(Y, X), Beach(X).
+Q(?X) <- -Town(X), -hasAccommodation(X, Y), UrbanArea(X).
+Q(?X) <- -Town(X), -hasPart(X, Y), UrbanArea(X).
+Q(?X) <- -Town(X), -hasAccommodation(X, Y), City(X).
+Q(?X) <- -Town(X), -hasPart(X, Y), City(X).
+Q(?X) <- -Town(X), -LuxuryHotel(X), Capital(X).
+Q(?X) <- -Town(X), -LuxuryHotel(X), RetireeDestination(X).
+Q(?X) <- -Town(X), -LuxuryHotel(X), NationalPark(X).
+Q(?X) <- -Town(X), -LuxuryHotel(X), BackpackersDestination(X).
+Q(?X) <- -Town(X), -LuxuryHotel(X), hasPart(Y, X).
+Q(?X) <- -Town(X), -Accommodation(X), Capital(X).
+Q(?X) <- -Town(X), -Hotel(X), Capital(X).
+Q(?X) <- -Town(X), -hasAccommodation(Y, X), Capital(X).
+Q(?X) <- -Town(X), -hasRating(X, Y), Capital(X).
+Q(?X) <- -Town(X), -hasRating(Y, X), Capital(X).
+Q(?X) <- -Town(X), -Accommodation(X), RetireeDestination(X).
+Q(?X) <- -Town(X), -Accommodation(X), NationalPark(X).
+Q(?X) <- -Town(X), -Accommodation(X), BackpackersDestination(X).
+Q(?X) <- -Town(X), -Accommodation(X), hasPart(Y, X).
+Q(?X) <- -Town(X), -Hotel(X), RetireeDestination(X).
+Q(?X) <- -Town(X), -hasAccommodation(Y, X), RetireeDestination(X).
+Q(?X) <- -Town(X), -hasRating(X, Y), RetireeDestination(X).
+Q(?X) <- -Town(X), -hasRating(Y, X), RetireeDestination(X).
+Q(?X) <- -Town(X), -Hotel(X), NationalPark(X).
+Q(?X) <- -Town(X), -hasAccommodation(X, Y), NationalPark(X).
+Q(?X) <- -Town(X), -hasAccommodation(Y, X), NationalPark(X).
+Q(?X) <- -Town(X), -hasPart(X, Y), NationalPark(X).
+Q(?X) <- -Town(X), -hasRating(X, Y), NationalPark(X).
+Q(?X) <- -Town(X), -hasRating(Y, X), NationalPark(X).
+Q(?X) <- -Town(X), -Hotel(X), BackpackersDestination(X).
+Q(?X) <- -Town(X), -Hotel(X), hasPart(Y, X).
+Q(?X) <- -Town(X), -hasAccommodation(X, Y), BackpackersDestination(X).
+Q(?X) <- -Town(X), -hasAccommodation(Y, X), BackpackersDestination(X).
+Q(?X) <- -Town(X), -hasPart(X, Y), BackpackersDestination(X).
+Q(?X) <- -Town(X), -hasRating(X, Y), BackpackersDestination(X).
+Q(?X) <- -Town(X), -hasRating(Y, X), BackpackersDestination(X).
+Q(?X) <- -Town(X), -hasAccommodation(X, Y), hasPart(Y, X).
+Q(?X) <- -Town(X), -hasAccommodation(Y, X), hasPart(Y, X).
+Q(?X) <- -Town(X), -hasPart(X, Y), hasPart(Y, X).
+Q(?X) <- -Town(X), -hasRating(X, Y), hasPart(Y, X).
+Q(?X) <- -Town(X), -hasRating(Y, X), hasPart(Y, X).
+Q(?X) <- -LuxuryHotel(X), -hasRating(Y, X), AccommodationRating(X).
+Q(?X) <- -Accommodation(X), -hasRating(Y, X), AccommodationRating(X).
+Q(?X) <- -Hotel(X), -hasRating(Y, X), AccommodationRating(X).
+Q(?X) <- -hasAccommodation(X, Y), -hasRating(Y, X), AccommodationRating(X).
+Q(?X) <- -hasAccommodation(Y, X), -hasRating(Y, X), AccommodationRating(X).
+Q(?X) <- -hasPart(X, Y), -hasRating(Y, X), AccommodationRating(X).
+Q(?X) <- -hasRating(X, Y), -hasRating(Y, X), AccommodationRating(X).
+Q(?X) <- -LuxuryHotel(X), -hasAccommodation(X, Y), Beach(X).
+Q(?X) <- -LuxuryHotel(X), -hasPart(X, Y), Beach(X).
+Q(?X) <- -LuxuryHotel(X), -hasRating(Y, X), Beach(X).
+Q(?X) <- -Capital(X), -RetireeDestination(X), Beach(X).
+Q(?X) <- -Capital(X), -hasAccommodation(X, Y), Beach(X).
+Q(?X) <- -Capital(X), -hasPart(X, Y), Beach(X).
+Q(?X) <- -Beach(X), -hasPart(Y, X), Capital(X).
+Q(?X) <- -Accommodation(X), -hasAccommodation(X, Y), Beach(X).
+Q(?X) <- -Accommodation(X), -hasPart(X, Y), Beach(X).
+Q(?X) <- -Accommodation(X), -hasRating(Y, X), Beach(X).
+Q(?X) <- -RetireeDestination(X), -hasAccommodation(X, Y), Beach(X).
+Q(?X) <- -RetireeDestination(X), -hasPart(X, Y), Beach(X).
+Q(?X) <- -Beach(X), -hasPart(Y, X), RetireeDestination(X).
+Q(?X) <- -NationalPark(X), -BackpackersDestination(X), Beach(X).
+Q(?X) <- -Beach(X), -hasPart(Y, X), NationalPark(X).
+Q(?X) <- -Hotel(X), -hasAccommodation(X, Y), Beach(X).
+Q(?X) <- -Hotel(X), -hasPart(X, Y), Beach(X).
+Q(?X) <- -Hotel(X), -hasRating(Y, X), Beach(X).
+Q(?X) <- -Beach(X), -hasPart(Y, X), BackpackersDestination(X).
+Q(?X) <- -hasAccommodation(X, Y), -hasAccommodation(Y, X), Beach(X).
+Q(?X) <- -hasAccommodation(X, Y), -hasRating(X, Y), Beach(X).
+Q(?X) <- -hasAccommodation(X, Y), -hasRating(Y, X), Beach(X).
+Q(?X) <- -hasAccommodation(Y, X), -hasPart(X, Y), Beach(X).
+Q(?X) <- -hasAccommodation(Y, X), -hasRating(Y, X), Beach(X).
+Q(?X) <- -hasPart(X, Y), -hasRating(X, Y), Beach(X).
+Q(?X) <- -hasPart(X, Y), -hasRating(Y, X), Beach(X).
+Q(?X) <- -hasRating(X, Y), -hasRating(Y, X), Beach(X).
+Q(?X) <- -Capital(X), -RetireeDestination(X), UrbanArea(X).
+Q(?X) <- -Capital(X), -hasAccommodation(X, Y), UrbanArea(X).
+Q(?X) <- -Capital(X), -hasPart(X, Y), UrbanArea(X).
+Q(?X) <- -RetireeDestination(X), -hasAccommodation(X, Y), UrbanArea(X).
+Q(?X) <- -RetireeDestination(X), -hasPart(X, Y), UrbanArea(X).
+Q(?X) <- -LuxuryHotel(X), -hasAccommodation(X, Y), City(X).
+Q(?X) <- -LuxuryHotel(X), -hasPart(X, Y), City(X).
+Q(?X) <- -Accommodation(X), -hasAccommodation(X, Y), City(X).
+Q(?X) <- -Accommodation(X), -hasPart(X, Y), City(X).
+Q(?X) <- -Hotel(X), -hasAccommodation(X, Y), City(X).
+Q(?X) <- -Hotel(X), -hasPart(X, Y), City(X).
+Q(?X) <- -hasAccommodation(X, Y), -hasAccommodation(Y, X), City(X).
+Q(?X) <- -hasAccommodation(X, Y), -hasRating(X, Y), City(X).
+Q(?X) <- -hasAccommodation(X, Y), -hasRating(Y, X), City(X).
+Q(?X) <- -hasAccommodation(Y, X), -hasPart(X, Y), City(X).
+Q(?X) <- -hasPart(X, Y), -hasRating(X, Y), City(X).
+Q(?X) <- -hasPart(X, Y), -hasRating(Y, X), City(X).
+Q(?X) <- -LuxuryHotel(X), -hasRating(Y, X), -Destination(X).
+Q(?X) <- -Accommodation(X), -hasRating(Y, X), -Destination(X).
+Q(?X) <- -Hotel(X), -hasRating(Y, X), -Destination(X).
+Q(?X) <- -hasAccommodation(Y, X), -hasRating(Y, X), -Destination(X).
+Q(?X) <- -hasRating(X, Y), -hasRating(Y, X), -Destination(X).
+Q(?X) <- -LuxuryHotel(X), -hasRating(Y, X), Capital(X).
+Q(?X) <- -LuxuryHotel(X), -hasRating(Y, X), RetireeDestination(X).
+Q(?X) <- -LuxuryHotel(X), -hasAccommodation(X, Y), NationalPark(X).
+Q(?X) <- -LuxuryHotel(X), -hasPart(X, Y), NationalPark(X).
+Q(?X) <- -LuxuryHotel(X), -hasRating(Y, X), NationalPark(X).
+Q(?X) <- -LuxuryHotel(X), -hasAccommodation(X, Y), BackpackersDestination(X).
+Q(?X) <- -LuxuryHotel(X), -hasPart(X, Y), BackpackersDestination(X).
+Q(?X) <- -LuxuryHotel(X), -hasRating(Y, X), BackpackersDestination(X).
+Q(?X) <- -LuxuryHotel(X), -hasAccommodation(X, Y), hasPart(Y, X).
+Q(?X) <- -LuxuryHotel(X), -hasPart(X, Y), hasPart(Y, X).
+Q(?X) <- -LuxuryHotel(X), -hasRating(Y, X), hasPart(Y, X).
+Q(?X) <- -Accommodation(X), -hasRating(Y, X), Capital(X).
+Q(?X) <- -Capital(X), -RetireeDestination(X), NationalPark(X).
+Q(?X) <- -Capital(X), -RetireeDestination(X), BackpackersDestination(X).
+Q(?X) <- -Capital(X), -RetireeDestination(X), hasPart(Y, X).
+Q(?X) <- -NationalPark(X), -BackpackersDestination(X), Capital(X).
+Q(?X) <- -Capital(X), -hasAccommodation(X, Y), NationalPark(X).
+Q(?X) <- -Capital(X), -hasPart(X, Y), NationalPark(X).
+Q(?X) <- -Hotel(X), -hasRating(Y, X), Capital(X).
+Q(?X) <- -Capital(X), -hasAccommodation(X, Y), BackpackersDestination(X).
+Q(?X) <- -Capital(X), -hasPart(X, Y), BackpackersDestination(X).
+Q(?X) <- -Capital(X), -hasAccommodation(X, Y), hasPart(Y, X).
+Q(?X) <- -hasAccommodation(Y, X), -hasRating(Y, X), Capital(X).
+Q(?X) <- -Capital(X), -hasPart(X, Y), hasPart(Y, X).
+Q(?X) <- -hasRating(X, Y), -hasRating(Y, X), Capital(X).
+Q(?X) <- -Accommodation(X), -hasRating(Y, X), RetireeDestination(X).
+Q(?X) <- -Accommodation(X), -hasAccommodation(X, Y), NationalPark(X).
+Q(?X) <- -Accommodation(X), -hasPart(X, Y), NationalPark(X).
+Q(?X) <- -Accommodation(X), -hasRating(Y, X), NationalPark(X).
+Q(?X) <- -Accommodation(X), -hasAccommodation(X, Y), BackpackersDestination(X).
+Q(?X) <- -Accommodation(X), -hasPart(X, Y), BackpackersDestination(X).
+Q(?X) <- -Accommodation(X), -hasRating(Y, X), BackpackersDestination(X).
+Q(?X) <- -Accommodation(X), -hasAccommodation(X, Y), hasPart(Y, X).
+Q(?X) <- -Accommodation(X), -hasPart(X, Y), hasPart(Y, X).
+Q(?X) <- -Accommodation(X), -hasRating(Y, X), hasPart(Y, X).
+Q(?X) <- -NationalPark(X), -BackpackersDestination(X), RetireeDestination(X).
+Q(?X) <- -RetireeDestination(X), -hasAccommodation(X, Y), NationalPark(X).
+Q(?X) <- -RetireeDestination(X), -hasPart(X, Y), NationalPark(X).
+Q(?X) <- -Hotel(X), -hasRating(Y, X), RetireeDestination(X).
+Q(?X) <- -RetireeDestination(X), -hasAccommodation(X, Y), BackpackersDestination(X).
+Q(?X) <- -RetireeDestination(X), -hasPart(X, Y), BackpackersDestination(X).
+Q(?X) <- -RetireeDestination(X), -hasAccommodation(X, Y), hasPart(Y, X).
+Q(?X) <- -hasAccommodation(Y, X), -hasRating(Y, X), RetireeDestination(X).
+Q(?X) <- -RetireeDestination(X), -hasPart(X, Y), hasPart(Y, X).
+Q(?X) <- -hasRating(X, Y), -hasRating(Y, X), RetireeDestination(X).
+Q(?X) <- -Hotel(X), -hasAccommodation(X, Y), NationalPark(X).
+Q(?X) <- -Hotel(X), -hasPart(X, Y), NationalPark(X).
+Q(?X) <- -Hotel(X), -hasRating(Y, X), NationalPark(X).
+Q(?X) <- -NationalPark(X), -BackpackersDestination(X), hasPart(Y, X).
+Q(?X) <- -hasAccommodation(X, Y), -hasAccommodation(Y, X), NationalPark(X).
+Q(?X) <- -hasAccommodation(X, Y), -hasRating(X, Y), NationalPark(X).
+Q(?X) <- -hasAccommodation(X, Y), -hasRating(Y, X), NationalPark(X).
+Q(?X) <- -hasAccommodation(Y, X), -hasPart(X, Y), NationalPark(X).
+Q(?X) <- -hasAccommodation(Y, X), -hasRating(Y, X), NationalPark(X).
+Q(?X) <- -hasPart(X, Y), -hasRating(X, Y), NationalPark(X).
+Q(?X) <- -hasPart(X, Y), -hasRating(Y, X), NationalPark(X).
+Q(?X) <- -hasRating(X, Y), -hasRating(Y, X), NationalPark(X).
+Q(?X) <- -Hotel(X), -hasAccommodation(X, Y), BackpackersDestination(X).
+Q(?X) <- -Hotel(X), -hasPart(X, Y), BackpackersDestination(X).
+Q(?X) <- -Hotel(X), -hasRating(Y, X), BackpackersDestination(X).
+Q(?X) <- -Hotel(X), -hasAccommodation(X, Y), hasPart(Y, X).
+Q(?X) <- -Hotel(X), -hasPart(X, Y), hasPart(Y, X).
+Q(?X) <- -Hotel(X), -hasRating(Y, X), hasPart(Y, X).
+Q(?X) <- -hasAccommodation(X, Y), -hasAccommodation(Y, X), BackpackersDestination(X).
+Q(?X) <- -hasAccommodation(X, Y), -hasRating(X, Y), BackpackersDestination(X).
+Q(?X) <- -hasAccommodation(X, Y), -hasRating(Y, X), BackpackersDestination(X).
+Q(?X) <- -hasAccommodation(Y, X), -hasPart(X, Y), BackpackersDestination(X).
+Q(?X) <- -hasAccommodation(Y, X), -hasRating(Y, X), BackpackersDestination(X).
+Q(?X) <- -hasPart(X, Y), -hasRating(X, Y), BackpackersDestination(X).
+Q(?X) <- -hasPart(X, Y), -hasRating(Y, X), BackpackersDestination(X).
+Q(?X) <- -hasRating(X, Y), -hasRating(Y, X), BackpackersDestination(X).
+Q(?X) <- -hasAccommodation(X, Y), -hasAccommodation(Y, X), hasPart(Y, X).
+Q(?X) <- -hasAccommodation(X, Y), -hasRating(X, Y), hasPart(Y, X).
+Q(?X) <- -hasAccommodation(X, Y), -hasRating(Y, X), hasPart(Y, X).
+Q(?X) <- -hasAccommodation(Y, X), -hasPart(X, Y), hasPart(Y, X).
+Q(?X) <- -hasAccommodation(Y, X), -hasRating(Y, X), hasPart(Y, X).
+Q(?X) <- -hasPart(X, Y), -hasRating(X, Y), hasPart(Y, X).
+Q(?X) <- -hasPart(X, Y), -hasRating(Y, X), hasPart(Y, X).
+Q(?X) <- -hasRating(X, Y), -hasRating(Y, X), hasPart(Y, X).
+Q(?X) <- -Town(X), -NationalPark(X), RuralArea(X).
+Q(?X) <- -Town(X), -BackpackersDestination(X), RuralArea(X).
+Q(?X) <- -LuxuryHotel(X), -NationalPark(X), RuralArea(X).
+Q(?X) <- -LuxuryHotel(X), -BackpackersDestination(X), RuralArea(X).
+Q(?X) <- -Accommodation(X), -NationalPark(X), RuralArea(X).
+Q(?X) <- -Accommodation(X), -BackpackersDestination(X), RuralArea(X).
+Q(?X) <- -NationalPark(X), -Hotel(X), RuralArea(X).
+Q(?X) <- -NationalPark(X), -hasAccommodation(X, Y), RuralArea(X).
+Q(?X) <- -NationalPark(X), -hasAccommodation(Y, X), RuralArea(X).
+Q(?X) <- -NationalPark(X), -hasPart(X, Y), RuralArea(X).
+Q(?X) <- -NationalPark(X), -hasRating(X, Y), RuralArea(X).
+Q(?X) <- -NationalPark(X), -hasRating(Y, X), RuralArea(X).
+Q(?X) <- -Hotel(X), -BackpackersDestination(X), RuralArea(X).
+Q(?X) <- -BackpackersDestination(X), -hasAccommodation(X, Y), RuralArea(X).
+Q(?X) <- -BackpackersDestination(X), -hasAccommodation(Y, X), RuralArea(X).
+Q(?X) <- -BackpackersDestination(X), -hasPart(X, Y), RuralArea(X).
+Q(?X) <- -BackpackersDestination(X), -hasRating(X, Y), RuralArea(X).
+Q(?X) <- -BackpackersDestination(X), -hasRating(Y, X), RuralArea(X).
+Q(?X) <- -Town(X), -Capital(X), Beach(X).
+Q(?X) <- -Town(X), -Beach(X), Capital(X).
+Q(?X) <- -Town(X), -RetireeDestination(X), Beach(X).
+Q(?X) <- -Town(X), -Beach(X), RetireeDestination(X).
+Q(?X) <- -Town(X), -NationalPark(X), Beach(X).
+Q(?X) <- -Town(X), -Beach(X), NationalPark(X).
+Q(?X) <- -Town(X), -BackpackersDestination(X), Beach(X).
+Q(?X) <- -Town(X), -Beach(X), BackpackersDestination(X).
+Q(?X) <- -Town(X), -NationalPark(X), Capital(X).
+Q(?X) <- -Town(X), -Capital(X), NationalPark(X).
+Q(?X) <- -Town(X), -BackpackersDestination(X), Capital(X).
+Q(?X) <- -Town(X), -Capital(X), BackpackersDestination(X).
+Q(?X) <- -Town(X), -hasPart(Y, X), Capital(X).
+Q(?X) <- -Town(X), -Capital(X), hasPart(Y, X).
+Q(?X) <- -Town(X), -NationalPark(X), RetireeDestination(X).
+Q(?X) <- -Town(X), -RetireeDestination(X), NationalPark(X).
+Q(?X) <- -Town(X), -BackpackersDestination(X), RetireeDestination(X).
+Q(?X) <- -Town(X), -RetireeDestination(X), BackpackersDestination(X).
+Q(?X) <- -Town(X), -hasPart(Y, X), RetireeDestination(X).
+Q(?X) <- -Town(X), -RetireeDestination(X), hasPart(Y, X).
+Q(?X) <- -Town(X), -hasPart(Y, X), NationalPark(X).
+Q(?X) <- -Town(X), -NationalPark(X), hasPart(Y, X).
+Q(?X) <- -Town(X), -hasPart(Y, X), BackpackersDestination(X).
+Q(?X) <- -Town(X), -BackpackersDestination(X), hasPart(Y, X).
+Q(?X) <- -Beach(X), -hasRating(Y, X), AccommodationRating(X).
+Q(?X) <- -AccommodationRating(X), -hasRating(Y, X), Beach(X).
+Q(?X) <- -Capital(X), -hasRating(Y, X), AccommodationRating(X).
+Q(?X) <- -AccommodationRating(X), -hasRating(Y, X), Capital(X).
+Q(?X) <- -RetireeDestination(X), -hasRating(Y, X), AccommodationRating(X).
+Q(?X) <- -AccommodationRating(X), -hasRating(Y, X), RetireeDestination(X).
+Q(?X) <- -NationalPark(X), -hasRating(Y, X), AccommodationRating(X).
+Q(?X) <- -AccommodationRating(X), -hasRating(Y, X), NationalPark(X).
+Q(?X) <- -BackpackersDestination(X), -hasRating(Y, X), AccommodationRating(X).
+Q(?X) <- -AccommodationRating(X), -hasRating(Y, X), BackpackersDestination(X).
+Q(?X) <- -hasPart(Y, X), -hasRating(Y, X), AccommodationRating(X).
+Q(?X) <- -AccommodationRating(X), -hasRating(Y, X), hasPart(Y, X).
+Q(?X) <- -City(X), -Capital(X), Beach(X).
+Q(?X) <- -City(X), -RetireeDestination(X), Beach(X).
+Q(?X) <- -City(X), -hasAccommodation(X, Y), Beach(X).
+Q(?X) <- -Beach(X), -hasAccommodation(X, Y), City(X).
+Q(?X) <- -City(X), -hasPart(X, Y), Beach(X).
+Q(?X) <- -Beach(X), -hasPart(X, Y), City(X).
+Q(?X) <- -LuxuryHotel(X), -Capital(X), Beach(X).
+Q(?X) <- -Beach(X), -LuxuryHotel(X), Capital(X).
+Q(?X) <- -LuxuryHotel(X), -RetireeDestination(X), Beach(X).
+Q(?X) <- -Beach(X), -LuxuryHotel(X), RetireeDestination(X).
+Q(?X) <- -LuxuryHotel(X), -NationalPark(X), Beach(X).
+Q(?X) <- -Beach(X), -LuxuryHotel(X), NationalPark(X).
+Q(?X) <- -LuxuryHotel(X), -BackpackersDestination(X), Beach(X).
+Q(?X) <- -Beach(X), -LuxuryHotel(X), BackpackersDestination(X).
+Q(?X) <- -Capital(X), -Accommodation(X), Beach(X).
+Q(?X) <- -Beach(X), -Accommodation(X), Capital(X).
+Q(?X) <- -Capital(X), -Hotel(X), Beach(X).
+Q(?X) <- -Beach(X), -Hotel(X), Capital(X).
+Q(?X) <- -Capital(X), -hasAccommodation(Y, X), Beach(X).
+Q(?X) <- -Beach(X), -hasAccommodation(Y, X), Capital(X).
+Q(?X) <- -Capital(X), -hasRating(X, Y), Beach(X).
+Q(?X) <- -Beach(X), -hasRating(X, Y), Capital(X).
+Q(?X) <- -Capital(X), -hasRating(Y, X), Beach(X).
+Q(?X) <- -Beach(X), -hasRating(Y, X), Capital(X).
+Q(?X) <- -Accommodation(X), -RetireeDestination(X), Beach(X).
+Q(?X) <- -Beach(X), -Accommodation(X), RetireeDestination(X).
+Q(?X) <- -Accommodation(X), -NationalPark(X), Beach(X).
+Q(?X) <- -Beach(X), -Accommodation(X), NationalPark(X).
+Q(?X) <- -Accommodation(X), -BackpackersDestination(X), Beach(X).
+Q(?X) <- -Beach(X), -Accommodation(X), BackpackersDestination(X).
+Q(?X) <- -RetireeDestination(X), -Hotel(X), Beach(X).
+Q(?X) <- -Beach(X), -Hotel(X), RetireeDestination(X).
+Q(?X) <- -RetireeDestination(X), -hasAccommodation(Y, X), Beach(X).
+Q(?X) <- -Beach(X), -hasAccommodation(Y, X), RetireeDestination(X).
+Q(?X) <- -RetireeDestination(X), -hasRating(X, Y), Beach(X).
+Q(?X) <- -Beach(X), -hasRating(X, Y), RetireeDestination(X).
+Q(?X) <- -RetireeDestination(X), -hasRating(Y, X), Beach(X).
+Q(?X) <- -Beach(X), -hasRating(Y, X), RetireeDestination(X).
+Q(?X) <- -NationalPark(X), -Hotel(X), Beach(X).
+Q(?X) <- -Beach(X), -Hotel(X), NationalPark(X).
+Q(?X) <- -NationalPark(X), -hasAccommodation(X, Y), Beach(X).
+Q(?X) <- -Beach(X), -hasAccommodation(X, Y), NationalPark(X).
+Q(?X) <- -NationalPark(X), -hasAccommodation(Y, X), Beach(X).
+Q(?X) <- -Beach(X), -hasAccommodation(Y, X), NationalPark(X).
+Q(?X) <- -NationalPark(X), -hasPart(X, Y), Beach(X).
+Q(?X) <- -Beach(X), -hasPart(X, Y), NationalPark(X).
+Q(?X) <- -NationalPark(X), -hasRating(X, Y), Beach(X).
+Q(?X) <- -Beach(X), -hasRating(X, Y), NationalPark(X).
+Q(?X) <- -NationalPark(X), -hasRating(Y, X), Beach(X).
+Q(?X) <- -Beach(X), -hasRating(Y, X), NationalPark(X).
+Q(?X) <- -Hotel(X), -BackpackersDestination(X), Beach(X).
+Q(?X) <- -Beach(X), -Hotel(X), BackpackersDestination(X).
+Q(?X) <- -BackpackersDestination(X), -hasAccommodation(X, Y), Beach(X).
+Q(?X) <- -Beach(X), -hasAccommodation(X, Y), BackpackersDestination(X).
+Q(?X) <- -BackpackersDestination(X), -hasAccommodation(Y, X), Beach(X).
+Q(?X) <- -Beach(X), -hasAccommodation(Y, X), BackpackersDestination(X).
+Q(?X) <- -BackpackersDestination(X), -hasPart(X, Y), Beach(X).
+Q(?X) <- -Beach(X), -hasPart(X, Y), BackpackersDestination(X).
+Q(?X) <- -BackpackersDestination(X), -hasRating(X, Y), Beach(X).
+Q(?X) <- -Beach(X), -hasRating(X, Y), BackpackersDestination(X).
+Q(?X) <- -BackpackersDestination(X), -hasRating(Y, X), Beach(X).
+Q(?X) <- -Beach(X), -hasRating(Y, X), BackpackersDestination(X).
+Q(?X) <- -LuxuryHotel(X), -Capital(X), UrbanArea(X).
+Q(?X) <- -LuxuryHotel(X), -RetireeDestination(X), UrbanArea(X).
+Q(?X) <- -Capital(X), -Accommodation(X), UrbanArea(X).
+Q(?X) <- -Capital(X), -Hotel(X), UrbanArea(X).
+Q(?X) <- -Capital(X), -hasAccommodation(Y, X), UrbanArea(X).
+Q(?X) <- -Capital(X), -hasRating(X, Y), UrbanArea(X).
+Q(?X) <- -Capital(X), -hasRating(Y, X), UrbanArea(X).
+Q(?X) <- -Accommodation(X), -RetireeDestination(X), UrbanArea(X).
+Q(?X) <- -RetireeDestination(X), -Hotel(X), UrbanArea(X).
+Q(?X) <- -RetireeDestination(X), -hasAccommodation(Y, X), UrbanArea(X).
+Q(?X) <- -RetireeDestination(X), -hasRating(X, Y), UrbanArea(X).
+Q(?X) <- -RetireeDestination(X), -hasRating(Y, X), UrbanArea(X).
+Q(?X) <- -City(X), -Capital(X), NationalPark(X).
+Q(?X) <- -City(X), -Capital(X), BackpackersDestination(X).
+Q(?X) <- -City(X), -Capital(X), hasPart(Y, X).
+Q(?X) <- -City(X), -RetireeDestination(X), NationalPark(X).
+Q(?X) <- -City(X), -RetireeDestination(X), BackpackersDestination(X).
+Q(?X) <- -City(X), -RetireeDestination(X), hasPart(Y, X).
+Q(?X) <- -NationalPark(X), -hasAccommodation(X, Y), City(X).
+Q(?X) <- -City(X), -hasAccommodation(X, Y), NationalPark(X).
+Q(?X) <- -NationalPark(X), -hasPart(X, Y), City(X).
+Q(?X) <- -City(X), -hasPart(X, Y), NationalPark(X).
+Q(?X) <- -BackpackersDestination(X), -hasAccommodation(X, Y), City(X).
+Q(?X) <- -City(X), -hasAccommodation(X, Y), BackpackersDestination(X).
+Q(?X) <- -BackpackersDestination(X), -hasPart(X, Y), City(X).
+Q(?X) <- -City(X), -hasPart(X, Y), BackpackersDestination(X).
+Q(?X) <- -hasAccommodation(X, Y), -hasPart(Y, X), City(X).
+Q(?X) <- -City(X), -hasAccommodation(X, Y), hasPart(Y, X).
+Q(?X) <- -hasPart(X, Y), -hasPart(Y, X), City(X).
+Q(?X) <- -City(X), -hasPart(X, Y), hasPart(Y, X).
+Q(?X) <- -LuxuryHotel(X), -NationalPark(X), Capital(X).
+Q(?X) <- -LuxuryHotel(X), -Capital(X), NationalPark(X).
+Q(?X) <- -LuxuryHotel(X), -BackpackersDestination(X), Capital(X).
+Q(?X) <- -LuxuryHotel(X), -Capital(X), BackpackersDestination(X).
+Q(?X) <- -LuxuryHotel(X), -hasPart(Y, X), Capital(X).
+Q(?X) <- -LuxuryHotel(X), -Capital(X), hasPart(Y, X).
+Q(?X) <- -LuxuryHotel(X), -NationalPark(X), RetireeDestination(X).
+Q(?X) <- -LuxuryHotel(X), -RetireeDestination(X), NationalPark(X).
+Q(?X) <- -LuxuryHotel(X), -BackpackersDestination(X), RetireeDestination(X).
+Q(?X) <- -LuxuryHotel(X), -RetireeDestination(X), BackpackersDestination(X).
+Q(?X) <- -LuxuryHotel(X), -hasPart(Y, X), RetireeDestination(X).
+Q(?X) <- -LuxuryHotel(X), -RetireeDestination(X), hasPart(Y, X).
+Q(?X) <- -LuxuryHotel(X), -hasPart(Y, X), NationalPark(X).
+Q(?X) <- -LuxuryHotel(X), -NationalPark(X), hasPart(Y, X).
+Q(?X) <- -LuxuryHotel(X), -hasPart(Y, X), BackpackersDestination(X).
+Q(?X) <- -LuxuryHotel(X), -BackpackersDestination(X), hasPart(Y, X).
+Q(?X) <- -Accommodation(X), -NationalPark(X), Capital(X).
+Q(?X) <- -Capital(X), -Accommodation(X), NationalPark(X).
+Q(?X) <- -Accommodation(X), -BackpackersDestination(X), Capital(X).
+Q(?X) <- -Capital(X), -Accommodation(X), BackpackersDestination(X).
+Q(?X) <- -Accommodation(X), -hasPart(Y, X), Capital(X).
+Q(?X) <- -Capital(X), -Accommodation(X), hasPart(Y, X).
+Q(?X) <- -NationalPark(X), -Hotel(X), Capital(X).
+Q(?X) <- -Capital(X), -Hotel(X), NationalPark(X).
+Q(?X) <- -NationalPark(X), -hasAccommodation(Y, X), Capital(X).
+Q(?X) <- -Capital(X), -hasAccommodation(Y, X), NationalPark(X).
+Q(?X) <- -NationalPark(X), -hasRating(X, Y), Capital(X).
+Q(?X) <- -Capital(X), -hasRating(X, Y), NationalPark(X).
+Q(?X) <- -NationalPark(X), -hasRating(Y, X), Capital(X).
+Q(?X) <- -Capital(X), -hasRating(Y, X), NationalPark(X).
+Q(?X) <- -Hotel(X), -BackpackersDestination(X), Capital(X).
+Q(?X) <- -Capital(X), -Hotel(X), BackpackersDestination(X).
+Q(?X) <- -Hotel(X), -hasPart(Y, X), Capital(X).
+Q(?X) <- -Capital(X), -Hotel(X), hasPart(Y, X).
+Q(?X) <- -BackpackersDestination(X), -hasAccommodation(Y, X), Capital(X).
+Q(?X) <- -Capital(X), -hasAccommodation(Y, X), BackpackersDestination(X).
+Q(?X) <- -BackpackersDestination(X), -hasRating(X, Y), Capital(X).
+Q(?X) <- -Capital(X), -hasRating(X, Y), BackpackersDestination(X).
+Q(?X) <- -BackpackersDestination(X), -hasRating(Y, X), Capital(X).
+Q(?X) <- -Capital(X), -hasRating(Y, X), BackpackersDestination(X).
+Q(?X) <- -hasAccommodation(Y, X), -hasPart(Y, X), Capital(X).
+Q(?X) <- -Capital(X), -hasAccommodation(Y, X), hasPart(Y, X).
+Q(?X) <- -hasPart(Y, X), -hasRating(X, Y), Capital(X).
+Q(?X) <- -Capital(X), -hasRating(X, Y), hasPart(Y, X).
+Q(?X) <- -hasPart(Y, X), -hasRating(Y, X), Capital(X).
+Q(?X) <- -Capital(X), -hasRating(Y, X), hasPart(Y, X).
+Q(?X) <- -Accommodation(X), -NationalPark(X), RetireeDestination(X).
+Q(?X) <- -Accommodation(X), -RetireeDestination(X), NationalPark(X).
+Q(?X) <- -Accommodation(X), -BackpackersDestination(X), RetireeDestination(X).
+Q(?X) <- -Accommodation(X), -RetireeDestination(X), BackpackersDestination(X).
+Q(?X) <- -Accommodation(X), -hasPart(Y, X), RetireeDestination(X).
+Q(?X) <- -Accommodation(X), -RetireeDestination(X), hasPart(Y, X).
+Q(?X) <- -Accommodation(X), -hasPart(Y, X), NationalPark(X).
+Q(?X) <- -Accommodation(X), -NationalPark(X), hasPart(Y, X).
+Q(?X) <- -Accommodation(X), -hasPart(Y, X), BackpackersDestination(X).
+Q(?X) <- -Accommodation(X), -BackpackersDestination(X), hasPart(Y, X).
+Q(?X) <- -NationalPark(X), -Hotel(X), RetireeDestination(X).
+Q(?X) <- -RetireeDestination(X), -Hotel(X), NationalPark(X).
+Q(?X) <- -NationalPark(X), -hasAccommodation(Y, X), RetireeDestination(X).
+Q(?X) <- -RetireeDestination(X), -hasAccommodation(Y, X), NationalPark(X).
+Q(?X) <- -NationalPark(X), -hasRating(X, Y), RetireeDestination(X).
+Q(?X) <- -RetireeDestination(X), -hasRating(X, Y), NationalPark(X).
+Q(?X) <- -NationalPark(X), -hasRating(Y, X), RetireeDestination(X).
+Q(?X) <- -RetireeDestination(X), -hasRating(Y, X), NationalPark(X).
+Q(?X) <- -Hotel(X), -BackpackersDestination(X), RetireeDestination(X).
+Q(?X) <- -RetireeDestination(X), -Hotel(X), BackpackersDestination(X).
+Q(?X) <- -Hotel(X), -hasPart(Y, X), RetireeDestination(X).
+Q(?X) <- -RetireeDestination(X), -Hotel(X), hasPart(Y, X).
+Q(?X) <- -BackpackersDestination(X), -hasAccommodation(Y, X), RetireeDestination(X).
+Q(?X) <- -RetireeDestination(X), -hasAccommodation(Y, X), BackpackersDestination(X).
+Q(?X) <- -BackpackersDestination(X), -hasRating(X, Y), RetireeDestination(X).
+Q(?X) <- -RetireeDestination(X), -hasRating(X, Y), BackpackersDestination(X).
+Q(?X) <- -BackpackersDestination(X), -hasRating(Y, X), RetireeDestination(X).
+Q(?X) <- -RetireeDestination(X), -hasRating(Y, X), BackpackersDestination(X).
+Q(?X) <- -hasAccommodation(Y, X), -hasPart(Y, X), RetireeDestination(X).
+Q(?X) <- -RetireeDestination(X), -hasAccommodation(Y, X), hasPart(Y, X).
+Q(?X) <- -hasPart(Y, X), -hasRating(X, Y), RetireeDestination(X).
+Q(?X) <- -RetireeDestination(X), -hasRating(X, Y), hasPart(Y, X).
+Q(?X) <- -hasPart(Y, X), -hasRating(Y, X), RetireeDestination(X).
+Q(?X) <- -RetireeDestination(X), -hasRating(Y, X), hasPart(Y, X).
+Q(?X) <- -Hotel(X), -hasPart(Y, X), NationalPark(X).
+Q(?X) <- -NationalPark(X), -Hotel(X), hasPart(Y, X).
+Q(?X) <- -hasAccommodation(X, Y), -hasPart(Y, X), NationalPark(X).
+Q(?X) <- -NationalPark(X), -hasAccommodation(X, Y), hasPart(Y, X).
+Q(?X) <- -hasAccommodation(Y, X), -hasPart(Y, X), NationalPark(X).
+Q(?X) <- -NationalPark(X), -hasAccommodation(Y, X), hasPart(Y, X).
+Q(?X) <- -hasPart(X, Y), -hasPart(Y, X), NationalPark(X).
+Q(?X) <- -NationalPark(X), -hasPart(X, Y), hasPart(Y, X).
+Q(?X) <- -hasPart(Y, X), -hasRating(X, Y), NationalPark(X).
+Q(?X) <- -NationalPark(X), -hasRating(X, Y), hasPart(Y, X).
+Q(?X) <- -hasPart(Y, X), -hasRating(Y, X), NationalPark(X).
+Q(?X) <- -NationalPark(X), -hasRating(Y, X), hasPart(Y, X).
+Q(?X) <- -Hotel(X), -hasPart(Y, X), BackpackersDestination(X).
+Q(?X) <- -Hotel(X), -BackpackersDestination(X), hasPart(Y, X).
+Q(?X) <- -hasAccommodation(X, Y), -hasPart(Y, X), BackpackersDestination(X).
+Q(?X) <- -BackpackersDestination(X), -hasAccommodation(X, Y), hasPart(Y, X).
+Q(?X) <- -hasAccommodation(Y, X), -hasPart(Y, X), BackpackersDestination(X).
+Q(?X) <- -BackpackersDestination(X), -hasAccommodation(Y, X), hasPart(Y, X).
+Q(?X) <- -hasPart(X, Y), -hasPart(Y, X), BackpackersDestination(X).
+Q(?X) <- -BackpackersDestination(X), -hasPart(X, Y), hasPart(Y, X).
+Q(?X) <- -hasPart(Y, X), -hasRating(X, Y), BackpackersDestination(X).
+Q(?X) <- -BackpackersDestination(X), -hasRating(X, Y), hasPart(Y, X).
+Q(?X) <- -hasPart(Y, X), -hasRating(Y, X), BackpackersDestination(X).
+Q(?X) <- -BackpackersDestination(X), -hasRating(Y, X), hasPart(Y, X).
+Q(?X) <- -Beach(X), -NationalPark(X), RuralArea(X).
+Q(?X) <- -RuralArea(X), -NationalPark(X), Beach(X).
+Q(?X) <- -Beach(X), -BackpackersDestination(X), RuralArea(X).
+Q(?X) <- -RuralArea(X), -BackpackersDestination(X), Beach(X).
+Q(?X) <- -Capital(X), -NationalPark(X), RuralArea(X).
+Q(?X) <- -RuralArea(X), -NationalPark(X), Capital(X).
+Q(?X) <- -Capital(X), -BackpackersDestination(X), RuralArea(X).
+Q(?X) <- -RuralArea(X), -BackpackersDestination(X), Capital(X).
+Q(?X) <- -RetireeDestination(X), -NationalPark(X), RuralArea(X).
+Q(?X) <- -RuralArea(X), -NationalPark(X), RetireeDestination(X).
+Q(?X) <- -RetireeDestination(X), -BackpackersDestination(X), RuralArea(X).
+Q(?X) <- -RuralArea(X), -BackpackersDestination(X), RetireeDestination(X).
+Q(?X) <- -NationalPark(X), -hasPart(Y, X), RuralArea(X).
+Q(?X) <- -RuralArea(X), -NationalPark(X), hasPart(Y, X).
+Q(?X) <- -BackpackersDestination(X), -hasPart(Y, X), RuralArea(X).
+Q(?X) <- -RuralArea(X), -BackpackersDestination(X), hasPart(Y, X).
+Q(?X) <- -Town(X), -AccommodationRating(X), Beach(X).
+Q(?X) <- -Town(X), -AccommodationRating(X), Capital(X).
+Q(?X) <- -Town(X), -AccommodationRating(X), RetireeDestination(X).
+Q(?X) <- -Town(X), -AccommodationRating(X), NationalPark(X).
+Q(?X) <- -Town(X), -AccommodationRating(X), BackpackersDestination(X).
+Q(?X) <- -Town(X), -AccommodationRating(X), hasPart(Y, X).
+Q(?X) <- -Town(X), -UrbanArea(X), Beach(X).
+Q(?X) <- -Town(X), -City(X), Beach(X).
+Q(?X) <- -Town(X), -UrbanArea(X), NationalPark(X).
+Q(?X) <- -Town(X), -UrbanArea(X), BackpackersDestination(X).
+Q(?X) <- -Town(X), -UrbanArea(X), hasPart(Y, X).
+Q(?X) <- -Town(X), -City(X), NationalPark(X).
+Q(?X) <- -Town(X), -City(X), BackpackersDestination(X).
+Q(?X) <- -Town(X), -City(X), hasPart(Y, X).
+Q(?X) <- -AccommodationRating(X), Destination(X), Beach(X).
+Q(?X) <- -AccommodationRating(X), -LuxuryHotel(X), Beach(X).
+Q(?X) <- -AccommodationRating(X), -Accommodation(X), Beach(X).
+Q(?X) <- -AccommodationRating(X), -Hotel(X), Beach(X).
+Q(?X) <- -AccommodationRating(X), -hasAccommodation(X, Y), Beach(X).
+Q(?X) <- -AccommodationRating(X), -hasAccommodation(Y, X), Beach(X).
+Q(?X) <- -AccommodationRating(X), -hasPart(X, Y), Beach(X).
+Q(?X) <- -AccommodationRating(X), -hasRating(X, Y), Beach(X).
+Q(?X) <- -AccommodationRating(X), -hasAccommodation(X, Y), City(X).
+Q(?X) <- -AccommodationRating(X), -hasPart(X, Y), City(X).
+Q(?X) <- -City(X), -hasRating(Y, X), AccommodationRating(X).
+Q(?X) <- -AccommodationRating(X), Destination(X), Capital(X).
+Q(?X) <- -AccommodationRating(X), Destination(X), RetireeDestination(X).
+Q(?X) <- -AccommodationRating(X), Destination(X), NationalPark(X).
+Q(?X) <- -AccommodationRating(X), Destination(X), BackpackersDestination(X).
+Q(?X) <- -AccommodationRating(X), Destination(X), hasPart(Y, X).
+Q(?X) <- -AccommodationRating(X), -LuxuryHotel(X), Capital(X).
+Q(?X) <- -AccommodationRating(X), -LuxuryHotel(X), RetireeDestination(X).
+Q(?X) <- -AccommodationRating(X), -LuxuryHotel(X), NationalPark(X).
+Q(?X) <- -AccommodationRating(X), -LuxuryHotel(X), BackpackersDestination(X).
+Q(?X) <- -AccommodationRating(X), -LuxuryHotel(X), hasPart(Y, X).
+Q(?X) <- -AccommodationRating(X), -Accommodation(X), Capital(X).
+Q(?X) <- -AccommodationRating(X), -Hotel(X), Capital(X).
+Q(?X) <- -AccommodationRating(X), -hasAccommodation(Y, X), Capital(X).
+Q(?X) <- -AccommodationRating(X), -hasRating(X, Y), Capital(X).
+Q(?X) <- -AccommodationRating(X), -Accommodation(X), RetireeDestination(X).
+Q(?X) <- -AccommodationRating(X), -Accommodation(X), NationalPark(X).
+Q(?X) <- -AccommodationRating(X), -Accommodation(X), BackpackersDestination(X).
+Q(?X) <- -AccommodationRating(X), -Accommodation(X), hasPart(Y, X).
+Q(?X) <- -AccommodationRating(X), -Hotel(X), RetireeDestination(X).
+Q(?X) <- -AccommodationRating(X), -hasAccommodation(Y, X), RetireeDestination(X).
+Q(?X) <- -AccommodationRating(X), -hasRating(X, Y), RetireeDestination(X).
+Q(?X) <- -AccommodationRating(X), -Hotel(X), NationalPark(X).
+Q(?X) <- -AccommodationRating(X), -hasAccommodation(X, Y), NationalPark(X).
+Q(?X) <- -AccommodationRating(X), -hasAccommodation(Y, X), NationalPark(X).
+Q(?X) <- -AccommodationRating(X), -hasPart(X, Y), NationalPark(X).
+Q(?X) <- -AccommodationRating(X), -hasRating(X, Y), NationalPark(X).
+Q(?X) <- -AccommodationRating(X), -Hotel(X), BackpackersDestination(X).
+Q(?X) <- -AccommodationRating(X), -Hotel(X), hasPart(Y, X).
+Q(?X) <- -AccommodationRating(X), -hasAccommodation(X, Y), BackpackersDestination(X).
+Q(?X) <- -AccommodationRating(X), -hasAccommodation(Y, X), BackpackersDestination(X).
+Q(?X) <- -AccommodationRating(X), -hasPart(X, Y), BackpackersDestination(X).
+Q(?X) <- -AccommodationRating(X), -hasRating(X, Y), BackpackersDestination(X).
+Q(?X) <- -AccommodationRating(X), -hasAccommodation(X, Y), hasPart(Y, X).
+Q(?X) <- -AccommodationRating(X), -hasAccommodation(Y, X), hasPart(Y, X).
+Q(?X) <- -AccommodationRating(X), -hasPart(X, Y), hasPart(Y, X).
+Q(?X) <- -AccommodationRating(X), -hasRating(X, Y), hasPart(Y, X).
+Q(?X) <- -UrbanArea(X), -City(X), Beach(X).
+Q(?X) <- -UrbanArea(X), -Capital(X), Beach(X).
+Q(?X) <- -Beach(X), -Capital(X), UrbanArea(X).
+Q(?X) <- -UrbanArea(X), -RetireeDestination(X), Beach(X).
+Q(?X) <- -Beach(X), -RetireeDestination(X), UrbanArea(X).
+Q(?X) <- -UrbanArea(X), -hasAccommodation(X, Y), Beach(X).
+Q(?X) <- -UrbanArea(X), -hasPart(X, Y), Beach(X).
+Q(?X) <- -City(X), -LuxuryHotel(X), Beach(X).
+Q(?X) <- -City(X), -Accommodation(X), Beach(X).
+Q(?X) <- -City(X), -Hotel(X), Beach(X).
+Q(?X) <- -City(X), -hasAccommodation(Y, X), Beach(X).
+Q(?X) <- -City(X), -hasRating(X, Y), Beach(X).
+Q(?X) <- -City(X), -hasRating(Y, X), Beach(X).
+Q(?X) <- Destination(X), -LuxuryHotel(X), Beach(X).
+Q(?X) <- Destination(X), -Accommodation(X), Beach(X).
+Q(?X) <- Destination(X), -Hotel(X), Beach(X).
+Q(?X) <- Destination(X), -hasAccommodation(Y, X), Beach(X).
+Q(?X) <- Destination(X), -hasRating(X, Y), Beach(X).
+Q(?X) <- Destination(X), -hasRating(Y, X), Beach(X).
+Q(?X) <- -Capital(X), -NationalPark(X), Beach(X).
+Q(?X) <- -Beach(X), -NationalPark(X), Capital(X).
+Q(?X) <- -Beach(X), -Capital(X), NationalPark(X).
+Q(?X) <- -Capital(X), -BackpackersDestination(X), Beach(X).
+Q(?X) <- -Beach(X), -BackpackersDestination(X), Capital(X).
+Q(?X) <- -Beach(X), -Capital(X), BackpackersDestination(X).
+Q(?X) <- -RetireeDestination(X), -NationalPark(X), Beach(X).
+Q(?X) <- -Beach(X), -NationalPark(X), RetireeDestination(X).
+Q(?X) <- -Beach(X), -RetireeDestination(X), NationalPark(X).
+Q(?X) <- -RetireeDestination(X), -BackpackersDestination(X), Beach(X).
+Q(?X) <- -Beach(X), -BackpackersDestination(X), RetireeDestination(X).
+Q(?X) <- -Beach(X), -RetireeDestination(X), BackpackersDestination(X).
+Q(?X) <- -UrbanArea(X), -City(X), NationalPark(X).
+Q(?X) <- -UrbanArea(X), -City(X), BackpackersDestination(X).
+Q(?X) <- -UrbanArea(X), -City(X), hasPart(Y, X).
+Q(?X) <- -Capital(X), -NationalPark(X), UrbanArea(X).
+Q(?X) <- -UrbanArea(X), -Capital(X), NationalPark(X).
+Q(?X) <- -Capital(X), -BackpackersDestination(X), UrbanArea(X).
+Q(?X) <- -UrbanArea(X), -Capital(X), BackpackersDestination(X).
+Q(?X) <- -Capital(X), -hasPart(Y, X), UrbanArea(X).
+Q(?X) <- -UrbanArea(X), -Capital(X), hasPart(Y, X).
+Q(?X) <- -RetireeDestination(X), -NationalPark(X), UrbanArea(X).
+Q(?X) <- -UrbanArea(X), -RetireeDestination(X), NationalPark(X).
+Q(?X) <- -RetireeDestination(X), -BackpackersDestination(X), UrbanArea(X).
+Q(?X) <- -UrbanArea(X), -RetireeDestination(X), BackpackersDestination(X).
+Q(?X) <- -RetireeDestination(X), -hasPart(Y, X), UrbanArea(X).
+Q(?X) <- -UrbanArea(X), -RetireeDestination(X), hasPart(Y, X).
+Q(?X) <- -UrbanArea(X), -hasAccommodation(X, Y), NationalPark(X).
+Q(?X) <- -UrbanArea(X), -hasPart(X, Y), NationalPark(X).
+Q(?X) <- -UrbanArea(X), -hasAccommodation(X, Y), BackpackersDestination(X).
+Q(?X) <- -UrbanArea(X), -hasPart(X, Y), BackpackersDestination(X).
+Q(?X) <- -UrbanArea(X), -hasAccommodation(X, Y), hasPart(Y, X).
+Q(?X) <- -UrbanArea(X), -hasPart(X, Y), hasPart(Y, X).
+Q(?X) <- -City(X), -LuxuryHotel(X), NationalPark(X).
+Q(?X) <- -City(X), -LuxuryHotel(X), BackpackersDestination(X).
+Q(?X) <- -City(X), -LuxuryHotel(X), hasPart(Y, X).
+Q(?X) <- -City(X), -Accommodation(X), NationalPark(X).
+Q(?X) <- -City(X), -Accommodation(X), BackpackersDestination(X).
+Q(?X) <- -City(X), -Accommodation(X), hasPart(Y, X).
+Q(?X) <- -City(X), -Hotel(X), NationalPark(X).
+Q(?X) <- -City(X), -hasAccommodation(Y, X), NationalPark(X).
+Q(?X) <- -City(X), -hasRating(X, Y), NationalPark(X).
+Q(?X) <- -City(X), -hasRating(Y, X), NationalPark(X).
+Q(?X) <- -City(X), -Hotel(X), BackpackersDestination(X).
+Q(?X) <- -City(X), -Hotel(X), hasPart(Y, X).
+Q(?X) <- -City(X), -hasAccommodation(Y, X), BackpackersDestination(X).
+Q(?X) <- -City(X), -hasRating(X, Y), BackpackersDestination(X).
+Q(?X) <- -City(X), -hasRating(Y, X), BackpackersDestination(X).
+Q(?X) <- -City(X), -hasAccommodation(Y, X), hasPart(Y, X).
+Q(?X) <- -City(X), -hasRating(X, Y), hasPart(Y, X).
+Q(?X) <- -City(X), -hasRating(Y, X), hasPart(Y, X).
+Q(?X) <- Destination(X), -LuxuryHotel(X), Capital(X).
+Q(?X) <- Destination(X), -LuxuryHotel(X), RetireeDestination(X).
+Q(?X) <- Destination(X), -LuxuryHotel(X), NationalPark(X).
+Q(?X) <- Destination(X), -LuxuryHotel(X), BackpackersDestination(X).
+Q(?X) <- Destination(X), -LuxuryHotel(X), hasPart(Y, X).
+Q(?X) <- Destination(X), -Accommodation(X), Capital(X).
+Q(?X) <- Destination(X), -Hotel(X), Capital(X).
+Q(?X) <- Destination(X), -hasAccommodation(Y, X), Capital(X).
+Q(?X) <- Destination(X), -hasRating(X, Y), Capital(X).
+Q(?X) <- Destination(X), -hasRating(Y, X), Capital(X).
+Q(?X) <- Destination(X), -Accommodation(X), RetireeDestination(X).
+Q(?X) <- Destination(X), -Accommodation(X), NationalPark(X).
+Q(?X) <- Destination(X), -Accommodation(X), BackpackersDestination(X).
+Q(?X) <- Destination(X), -Accommodation(X), hasPart(Y, X).
+Q(?X) <- Destination(X), -Hotel(X), RetireeDestination(X).
+Q(?X) <- Destination(X), -hasAccommodation(Y, X), RetireeDestination(X).
+Q(?X) <- Destination(X), -hasRating(X, Y), RetireeDestination(X).
+Q(?X) <- Destination(X), -hasRating(Y, X), RetireeDestination(X).
+Q(?X) <- Destination(X), -Hotel(X), NationalPark(X).
+Q(?X) <- Destination(X), -hasAccommodation(Y, X), NationalPark(X).
+Q(?X) <- Destination(X), -hasRating(X, Y), NationalPark(X).
+Q(?X) <- Destination(X), -hasRating(Y, X), NationalPark(X).
+Q(?X) <- Destination(X), -Hotel(X), BackpackersDestination(X).
+Q(?X) <- Destination(X), -Hotel(X), hasPart(Y, X).
+Q(?X) <- Destination(X), -hasAccommodation(Y, X), BackpackersDestination(X).
+Q(?X) <- Destination(X), -hasRating(X, Y), BackpackersDestination(X).
+Q(?X) <- Destination(X), -hasRating(Y, X), BackpackersDestination(X).
+Q(?X) <- Destination(X), -hasAccommodation(Y, X), hasPart(Y, X).
+Q(?X) <- Destination(X), -hasRating(X, Y), hasPart(Y, X).
+Q(?X) <- Destination(X), -hasRating(Y, X), hasPart(Y, X).
+Q(?X) <- -NationalPark(X), -hasPart(Y, X), Capital(X).
+Q(?X) <- -Capital(X), -hasPart(Y, X), NationalPark(X).
+Q(?X) <- -Capital(X), -NationalPark(X), hasPart(Y, X).
+Q(?X) <- -BackpackersDestination(X), -hasPart(Y, X), Capital(X).
+Q(?X) <- -Capital(X), -hasPart(Y, X), BackpackersDestination(X).
+Q(?X) <- -Capital(X), -BackpackersDestination(X), hasPart(Y, X).
+Q(?X) <- -NationalPark(X), -hasPart(Y, X), RetireeDestination(X).
+Q(?X) <- -RetireeDestination(X), -hasPart(Y, X), NationalPark(X).
+Q(?X) <- -RetireeDestination(X), -NationalPark(X), hasPart(Y, X).
+Q(?X) <- -BackpackersDestination(X), -hasPart(Y, X), RetireeDestination(X).
+Q(?X) <- -RetireeDestination(X), -hasPart(Y, X), BackpackersDestination(X).
+Q(?X) <- -RetireeDestination(X), -BackpackersDestination(X), hasPart(Y, X).
+Q(?X) <- -LuxuryHotel(X), -Accommodation(X), AccommodationRating(X).
+Q(?X) <- -LuxuryHotel(X), -Hotel(X), AccommodationRating(X).
+Q(?X) <- -LuxuryHotel(X), -hasAccommodation(Y, X), AccommodationRating(X).
+Q(?X) <- -LuxuryHotel(X), -hasRating(X, Y), AccommodationRating(X).
+Q(?X) <- -Accommodation(X), -Hotel(X), AccommodationRating(X).
+Q(?X) <- -Accommodation(X), -hasAccommodation(Y, X), AccommodationRating(X).
+Q(?X) <- -Accommodation(X), -hasRating(X, Y), AccommodationRating(X).
+Q(?X) <- -Hotel(X), -hasAccommodation(Y, X), AccommodationRating(X).
+Q(?X) <- -Hotel(X), -hasRating(X, Y), AccommodationRating(X).
+Q(?X) <- -hasAccommodation(X, Y), -hasPart(X, Y), AccommodationRating(X).
+Q(?X) <- -hasAccommodation(Y, X), -hasRating(X, Y), AccommodationRating(X).
+Q(?X) <- -hasAccommodation(X, Y), -hasPart(X, Y), UrbanArea(X).
+Q(?X) <- -LuxuryHotel(X), -Accommodation(X), City(X).
+Q(?X) <- -LuxuryHotel(X), -Hotel(X), City(X).
+Q(?X) <- -LuxuryHotel(X), -hasAccommodation(Y, X), City(X).
+Q(?X) <- -LuxuryHotel(X), -hasRating(X, Y), City(X).
+Q(?X) <- -Accommodation(X), -Hotel(X), City(X).
+Q(?X) <- -Accommodation(X), -hasAccommodation(Y, X), City(X).
+Q(?X) <- -Accommodation(X), -hasRating(X, Y), City(X).
+Q(?X) <- -Hotel(X), -hasAccommodation(Y, X), City(X).
+Q(?X) <- -Hotel(X), -hasRating(X, Y), City(X).
+Q(?X) <- -hasAccommodation(Y, X), -hasRating(X, Y), City(X).
+Q(?X) <- -LuxuryHotel(X), -Accommodation(X), -Destination(X).
+Q(?X) <- -LuxuryHotel(X), -Hotel(X), -Destination(X).
+Q(?X) <- -LuxuryHotel(X), -hasAccommodation(Y, X), -Destination(X).
+Q(?X) <- -LuxuryHotel(X), -hasRating(X, Y), -Destination(X).
+Q(?X) <- -Accommodation(X), -Hotel(X), -Destination(X).
+Q(?X) <- -Accommodation(X), -hasAccommodation(Y, X), -Destination(X).
+Q(?X) <- -Accommodation(X), -hasRating(X, Y), -Destination(X).
+Q(?X) <- -Hotel(X), -hasAccommodation(Y, X), -Destination(X).
+Q(?X) <- -Hotel(X), -hasRating(X, Y), -Destination(X).
+Q(?X) <- -hasAccommodation(Y, X), -hasRating(X, Y), -Destination(X).
+Q(?X) <- -Town(X), -LuxuryHotel(X), AccommodationRating(X).
+Q(?X) <- -Town(X), -Accommodation(X), AccommodationRating(X).
+Q(?X) <- -Town(X), -Hotel(X), AccommodationRating(X).
+Q(?X) <- -Town(X), -hasAccommodation(X, Y), AccommodationRating(X).
+Q(?X) <- -Town(X), -hasAccommodation(Y, X), AccommodationRating(X).
+Q(?X) <- -Town(X), -hasPart(X, Y), AccommodationRating(X).
+Q(?X) <- -Town(X), -hasRating(X, Y), AccommodationRating(X).
+Q(?X) <- -Town(X), -LuxuryHotel(X), UrbanArea(X).
+Q(?X) <- -Town(X), -Accommodation(X), UrbanArea(X).
+Q(?X) <- -Town(X), -Hotel(X), UrbanArea(X).
+Q(?X) <- -Town(X), -hasAccommodation(Y, X), UrbanArea(X).
+Q(?X) <- -Town(X), -hasRating(X, Y), UrbanArea(X).
+Q(?X) <- -Town(X), -hasRating(Y, X), UrbanArea(X).
+Q(?X) <- -Town(X), -LuxuryHotel(X), City(X).
+Q(?X) <- -Town(X), -Accommodation(X), City(X).
+Q(?X) <- -Town(X), -Hotel(X), City(X).
+Q(?X) <- -Town(X), -hasAccommodation(Y, X), City(X).
+Q(?X) <- -Town(X), -hasRating(X, Y), City(X).
+Q(?X) <- -Town(X), -hasRating(Y, X), City(X).
+Q(?X) <- -Town(X), -LuxuryHotel(X), -Destination(X).
+Q(?X) <- -Town(X), -Accommodation(X), -Destination(X).
+Q(?X) <- -Town(X), -Hotel(X), -Destination(X).
+Q(?X) <- -Town(X), -hasAccommodation(Y, X), -Destination(X).
+Q(?X) <- -Town(X), -hasRating(X, Y), -Destination(X).
+Q(?X) <- -Town(X), -hasRating(Y, X), -Destination(X).
+Q(?X) <- -Beach(X), -hasPart(Y, X), AccommodationRating(X).
+Q(?X) <- -LuxuryHotel(X), -hasAccommodation(X, Y), AccommodationRating(X).
+Q(?X) <- -LuxuryHotel(X), -hasPart(X, Y), AccommodationRating(X).
+Q(?X) <- -Capital(X), -RetireeDestination(X), AccommodationRating(X).
+Q(?X) <- -Capital(X), -hasAccommodation(X, Y), AccommodationRating(X).
+Q(?X) <- -Capital(X), -hasPart(X, Y), AccommodationRating(X).
+Q(?X) <- -Accommodation(X), -hasAccommodation(X, Y), AccommodationRating(X).
+Q(?X) <- -Accommodation(X), -hasPart(X, Y), AccommodationRating(X).
+Q(?X) <- -RetireeDestination(X), -hasAccommodation(X, Y), AccommodationRating(X).
+Q(?X) <- -RetireeDestination(X), -hasPart(X, Y), AccommodationRating(X).
+Q(?X) <- -NationalPark(X), -BackpackersDestination(X), AccommodationRating(X).
+Q(?X) <- -Hotel(X), -hasAccommodation(X, Y), AccommodationRating(X).
+Q(?X) <- -Hotel(X), -hasPart(X, Y), AccommodationRating(X).
+Q(?X) <- -hasAccommodation(X, Y), -hasAccommodation(Y, X), AccommodationRating(X).
+Q(?X) <- -hasAccommodation(X, Y), -hasRating(X, Y), AccommodationRating(X).
+Q(?X) <- -hasAccommodation(Y, X), -hasPart(X, Y), AccommodationRating(X).
+Q(?X) <- -hasPart(X, Y), -hasRating(X, Y), AccommodationRating(X).
+Q(?X) <- -Beach(X), -hasPart(Y, X), City(X).
+Q(?X) <- -LuxuryHotel(X), -hasAccommodation(X, Y), UrbanArea(X).
+Q(?X) <- -LuxuryHotel(X), -hasPart(X, Y), UrbanArea(X).
+Q(?X) <- -Accommodation(X), -hasAccommodation(X, Y), UrbanArea(X).
+Q(?X) <- -Accommodation(X), -hasPart(X, Y), UrbanArea(X).
+Q(?X) <- -Hotel(X), -hasAccommodation(X, Y), UrbanArea(X).
+Q(?X) <- -Hotel(X), -hasPart(X, Y), UrbanArea(X).
+Q(?X) <- -hasAccommodation(X, Y), -hasAccommodation(Y, X), UrbanArea(X).
+Q(?X) <- -hasAccommodation(X, Y), -hasRating(X, Y), UrbanArea(X).
+Q(?X) <- -hasAccommodation(X, Y), -hasRating(Y, X), UrbanArea(X).
+Q(?X) <- -hasAccommodation(Y, X), -hasPart(X, Y), UrbanArea(X).
+Q(?X) <- -hasPart(X, Y), -hasRating(X, Y), UrbanArea(X).
+Q(?X) <- -hasPart(X, Y), -hasRating(Y, X), UrbanArea(X).
+Q(?X) <- -LuxuryHotel(X), -hasRating(Y, X), City(X).
+Q(?X) <- -Accommodation(X), -hasRating(Y, X), City(X).
+Q(?X) <- -NationalPark(X), -BackpackersDestination(X), City(X).
+Q(?X) <- -Hotel(X), -hasRating(Y, X), City(X).
+Q(?X) <- -hasAccommodation(Y, X), -hasRating(Y, X), City(X).
+Q(?X) <- -hasRating(X, Y), -hasRating(Y, X), City(X).
+Q(?X) <- -LuxuryHotel(X), -hasAccommodation(X, Y), -Destination(X).
+Q(?X) <- -LuxuryHotel(X), -hasPart(X, Y), -Destination(X).
+Q(?X) <- -Accommodation(X), -hasAccommodation(X, Y), -Destination(X).
+Q(?X) <- -Accommodation(X), -hasPart(X, Y), -Destination(X).
+Q(?X) <- -Hotel(X), -hasAccommodation(X, Y), -Destination(X).
+Q(?X) <- -Hotel(X), -hasPart(X, Y), -Destination(X).
+Q(?X) <- -hasAccommodation(X, Y), -hasAccommodation(Y, X), -Destination(X).
+Q(?X) <- -hasAccommodation(X, Y), -hasRating(X, Y), -Destination(X).
+Q(?X) <- -hasAccommodation(X, Y), -hasRating(Y, X), -Destination(X).
+Q(?X) <- -hasAccommodation(Y, X), -hasPart(X, Y), -Destination(X).
+Q(?X) <- -hasPart(X, Y), -hasRating(X, Y), -Destination(X).
+Q(?X) <- -hasPart(X, Y), -hasRating(Y, X), -Destination(X).
+Q(?X) <- -Town(X), -Beach(X), AccommodationRating(X).
+Q(?X) <- -Town(X), -Capital(X), AccommodationRating(X).
+Q(?X) <- -Town(X), -RetireeDestination(X), AccommodationRating(X).
+Q(?X) <- -Town(X), -NationalPark(X), AccommodationRating(X).
+Q(?X) <- -Town(X), -BackpackersDestination(X), AccommodationRating(X).
+Q(?X) <- -Town(X), -hasPart(Y, X), AccommodationRating(X).
+Q(?X) <- -Town(X), -Beach(X), UrbanArea(X).
+Q(?X) <- -Town(X), -Beach(X), City(X).
+Q(?X) <- -Town(X), -NationalPark(X), UrbanArea(X).
+Q(?X) <- -Town(X), -BackpackersDestination(X), UrbanArea(X).
+Q(?X) <- -Town(X), -hasPart(Y, X), UrbanArea(X).
+Q(?X) <- -Town(X), -NationalPark(X), City(X).
+Q(?X) <- -Town(X), -BackpackersDestination(X), City(X).
+Q(?X) <- -Town(X), -hasPart(Y, X), City(X).
+Q(?X) <- -Beach(X), -LuxuryHotel(X), AccommodationRating(X).
+Q(?X) <- -Beach(X), -Accommodation(X), AccommodationRating(X).
+Q(?X) <- -Beach(X), -Hotel(X), AccommodationRating(X).
+Q(?X) <- -Beach(X), -hasAccommodation(X, Y), AccommodationRating(X).
+Q(?X) <- -Beach(X), -hasAccommodation(Y, X), AccommodationRating(X).
+Q(?X) <- -Beach(X), -hasPart(X, Y), AccommodationRating(X).
+Q(?X) <- -Beach(X), -hasRating(X, Y), AccommodationRating(X).
+Q(?X) <- -City(X), -Capital(X), AccommodationRating(X).
+Q(?X) <- -City(X), -RetireeDestination(X), AccommodationRating(X).
+Q(?X) <- -City(X), -hasAccommodation(X, Y), AccommodationRating(X).
+Q(?X) <- -City(X), -hasPart(X, Y), AccommodationRating(X).
+Q(?X) <- -AccommodationRating(X), -hasRating(Y, X), City(X).
+Q(?X) <- -LuxuryHotel(X), -Capital(X), AccommodationRating(X).
+Q(?X) <- -LuxuryHotel(X), -RetireeDestination(X), AccommodationRating(X).
+Q(?X) <- -LuxuryHotel(X), -NationalPark(X), AccommodationRating(X).
+Q(?X) <- -LuxuryHotel(X), -BackpackersDestination(X), AccommodationRating(X).
+Q(?X) <- -LuxuryHotel(X), -hasPart(Y, X), AccommodationRating(X).
+Q(?X) <- -Capital(X), -Accommodation(X), AccommodationRating(X).
+Q(?X) <- -Capital(X), -Hotel(X), AccommodationRating(X).
+Q(?X) <- -Capital(X), -hasAccommodation(Y, X), AccommodationRating(X).
+Q(?X) <- -Capital(X), -hasRating(X, Y), AccommodationRating(X).
+Q(?X) <- -Accommodation(X), -RetireeDestination(X), AccommodationRating(X).
+Q(?X) <- -Accommodation(X), -NationalPark(X), AccommodationRating(X).
+Q(?X) <- -Accommodation(X), -BackpackersDestination(X), AccommodationRating(X).
+Q(?X) <- -Accommodation(X), -hasPart(Y, X), AccommodationRating(X).
+Q(?X) <- -RetireeDestination(X), -Hotel(X), AccommodationRating(X).
+Q(?X) <- -RetireeDestination(X), -hasAccommodation(Y, X), AccommodationRating(X).
+Q(?X) <- -RetireeDestination(X), -hasRating(X, Y), AccommodationRating(X).
+Q(?X) <- -NationalPark(X), -Hotel(X), AccommodationRating(X).
+Q(?X) <- -NationalPark(X), -hasAccommodation(X, Y), AccommodationRating(X).
+Q(?X) <- -NationalPark(X), -hasAccommodation(Y, X), AccommodationRating(X).
+Q(?X) <- -NationalPark(X), -hasPart(X, Y), AccommodationRating(X).
+Q(?X) <- -NationalPark(X), -hasRating(X, Y), AccommodationRating(X).
+Q(?X) <- -Hotel(X), -BackpackersDestination(X), AccommodationRating(X).
+Q(?X) <- -Hotel(X), -hasPart(Y, X), AccommodationRating(X).
+Q(?X) <- -BackpackersDestination(X), -hasAccommodation(X, Y), AccommodationRating(X).
+Q(?X) <- -BackpackersDestination(X), -hasAccommodation(Y, X), AccommodationRating(X).
+Q(?X) <- -BackpackersDestination(X), -hasPart(X, Y), AccommodationRating(X).
+Q(?X) <- -BackpackersDestination(X), -hasRating(X, Y), AccommodationRating(X).
+Q(?X) <- -hasAccommodation(X, Y), -hasPart(Y, X), AccommodationRating(X).
+Q(?X) <- -hasAccommodation(Y, X), -hasPart(Y, X), AccommodationRating(X).
+Q(?X) <- -hasPart(X, Y), -hasPart(Y, X), AccommodationRating(X).
+Q(?X) <- -hasPart(Y, X), -hasRating(X, Y), AccommodationRating(X).
+Q(?X) <- -Beach(X), -hasAccommodation(X, Y), UrbanArea(X).
+Q(?X) <- -Beach(X), -hasPart(X, Y), UrbanArea(X).
+Q(?X) <- -Beach(X), -LuxuryHotel(X), City(X).
+Q(?X) <- -Beach(X), -Accommodation(X), City(X).
+Q(?X) <- -Beach(X), -Hotel(X), City(X).
+Q(?X) <- -Beach(X), -hasAccommodation(Y, X), City(X).
+Q(?X) <- -Beach(X), -hasRating(X, Y), City(X).
+Q(?X) <- -Beach(X), -hasRating(Y, X), City(X).
+Q(?X) <- -Beach(X), -LuxuryHotel(X), -Destination(X).
+Q(?X) <- -Beach(X), -Accommodation(X), -Destination(X).
+Q(?X) <- -Beach(X), -Hotel(X), -Destination(X).
+Q(?X) <- -Beach(X), -hasAccommodation(Y, X), -Destination(X).
+Q(?X) <- -Beach(X), -hasRating(X, Y), -Destination(X).
+Q(?X) <- -Beach(X), -hasRating(Y, X), -Destination(X).
+Q(?X) <- -NationalPark(X), -hasAccommodation(X, Y), UrbanArea(X).
+Q(?X) <- -NationalPark(X), -hasPart(X, Y), UrbanArea(X).
+Q(?X) <- -BackpackersDestination(X), -hasAccommodation(X, Y), UrbanArea(X).
+Q(?X) <- -BackpackersDestination(X), -hasPart(X, Y), UrbanArea(X).
+Q(?X) <- -hasAccommodation(X, Y), -hasPart(Y, X), UrbanArea(X).
+Q(?X) <- -hasPart(X, Y), -hasPart(Y, X), UrbanArea(X).
+Q(?X) <- -LuxuryHotel(X), -NationalPark(X), City(X).
+Q(?X) <- -LuxuryHotel(X), -BackpackersDestination(X), City(X).
+Q(?X) <- -LuxuryHotel(X), -hasPart(Y, X), City(X).
+Q(?X) <- -Accommodation(X), -NationalPark(X), City(X).
+Q(?X) <- -Accommodation(X), -BackpackersDestination(X), City(X).
+Q(?X) <- -Accommodation(X), -hasPart(Y, X), City(X).
+Q(?X) <- -NationalPark(X), -Hotel(X), City(X).
+Q(?X) <- -NationalPark(X), -hasAccommodation(Y, X), City(X).
+Q(?X) <- -NationalPark(X), -hasRating(X, Y), City(X).
+Q(?X) <- -NationalPark(X), -hasRating(Y, X), City(X).
+Q(?X) <- -Hotel(X), -BackpackersDestination(X), City(X).
+Q(?X) <- -Hotel(X), -hasPart(Y, X), City(X).
+Q(?X) <- -BackpackersDestination(X), -hasAccommodation(Y, X), City(X).
+Q(?X) <- -BackpackersDestination(X), -hasRating(X, Y), City(X).
+Q(?X) <- -BackpackersDestination(X), -hasRating(Y, X), City(X).
+Q(?X) <- -hasAccommodation(Y, X), -hasPart(Y, X), City(X).
+Q(?X) <- -hasPart(Y, X), -hasRating(X, Y), City(X).
+Q(?X) <- -hasPart(Y, X), -hasRating(Y, X), City(X).
+Q(?X) <- -LuxuryHotel(X), -Capital(X), -Destination(X).
+Q(?X) <- -LuxuryHotel(X), -RetireeDestination(X), -Destination(X).
+Q(?X) <- -LuxuryHotel(X), -NationalPark(X), -Destination(X).
+Q(?X) <- -LuxuryHotel(X), -BackpackersDestination(X), -Destination(X).
+Q(?X) <- -LuxuryHotel(X), -hasPart(Y, X), -Destination(X).
+Q(?X) <- -Capital(X), -Accommodation(X), -Destination(X).
+Q(?X) <- -Capital(X), -Hotel(X), -Destination(X).
+Q(?X) <- -Capital(X), -hasAccommodation(Y, X), -Destination(X).
+Q(?X) <- -Capital(X), -hasRating(X, Y), -Destination(X).
+Q(?X) <- -Capital(X), -hasRating(Y, X), -Destination(X).
+Q(?X) <- -Accommodation(X), -RetireeDestination(X), -Destination(X).
+Q(?X) <- -Accommodation(X), -NationalPark(X), -Destination(X).
+Q(?X) <- -Accommodation(X), -BackpackersDestination(X), -Destination(X).
+Q(?X) <- -Accommodation(X), -hasPart(Y, X), -Destination(X).
+Q(?X) <- -RetireeDestination(X), -Hotel(X), -Destination(X).
+Q(?X) <- -RetireeDestination(X), -hasAccommodation(Y, X), -Destination(X).
+Q(?X) <- -RetireeDestination(X), -hasRating(X, Y), -Destination(X).
+Q(?X) <- -RetireeDestination(X), -hasRating(Y, X), -Destination(X).
+Q(?X) <- -NationalPark(X), -Hotel(X), -Destination(X).
+Q(?X) <- -NationalPark(X), -hasAccommodation(Y, X), -Destination(X).
+Q(?X) <- -NationalPark(X), -hasRating(X, Y), -Destination(X).
+Q(?X) <- -NationalPark(X), -hasRating(Y, X), -Destination(X).
+Q(?X) <- -Hotel(X), -BackpackersDestination(X), -Destination(X).
+Q(?X) <- -Hotel(X), -hasPart(Y, X), -Destination(X).
+Q(?X) <- -BackpackersDestination(X), -hasAccommodation(Y, X), -Destination(X).
+Q(?X) <- -BackpackersDestination(X), -hasRating(X, Y), -Destination(X).
+Q(?X) <- -BackpackersDestination(X), -hasRating(Y, X), -Destination(X).
+Q(?X) <- -hasAccommodation(Y, X), -hasPart(Y, X), -Destination(X).
+Q(?X) <- -hasPart(Y, X), -hasRating(X, Y), -Destination(X).
+Q(?X) <- -hasPart(Y, X), -hasRating(Y, X), -Destination(X).

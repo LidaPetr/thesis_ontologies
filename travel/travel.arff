@@ -1,0 +1,36 @@
+@relation travel
+@attribute "RuralArea(X)" {true, false}
+@attribute "Town(X)" {true, false}
+@attribute "AccommodationRating(X)" {true, false}
+@attribute "Beach(X)" {true, false}
+@attribute "UrbanArea(X)" {true, false}
+@attribute "City(X)" {true, false}
+@attribute "Destination(X)" {true, false}
+@attribute "LuxuryHotel(X)" {true, false}
+@attribute "Capital(X)" {true, false}
+@attribute "Accommodation(X)" {true, false}
+@attribute "RetireeDestination(X)" {true, false}
+@attribute "NationalPark(X)" {true, false}
+@attribute "Hotel(X)" {true, false}
+@attribute "BackpackersDestination(X)" {true, false}
+@attribute "hasAccommodation(X, Y)" {true, false}
+@attribute "hasAccommodation(Y, X)" {true, false}
+@attribute "hasPart(X, Y)" {true, false}
+@attribute "hasPart(Y, X)" {true, false}
+@attribute "hasRating(X, Y)" {true, false}
+@attribute "hasRating(Y, X)" {true, false}
+@DATA
+true, false, false, false, false, false, true, false, false, false, false, true, false, true, false, false, false, false, false, false
+false, false, false, true, false, false, true, false, false, false, false, false, false, false, false, false, false, true, false, false
+false, false, false, false, true, true, true, false, false, false, false, false, false, false, false, false, false, false, false, false
+false, false, false, false, true, true, true, false, true, false, true, false, false, false, false, false, false, false, false, false
+true, false, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false
+false, true, false, false, true, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false
+false, false, false, true, false, false, true, false, false, false, false, false, false, false, false, false, false, true, false, false
+false, false, false, false, false, false, false, true, false, true, false, false, true, false, false, true, false, false, true, false
+false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false
+false, false, false, false, true, true, true, false, true, false, true, false, false, false, true, false, true, false, false, false
+false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true
+false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false
+true, false, false, false, false, false, true, false, false, false, false, true, false, true, false, false, false, false, false, false
+true, false, false, false, false, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false

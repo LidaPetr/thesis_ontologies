@@ -1,0 +1,544 @@
+-Accommodation(X) AND -Hotel(X)==>-LuxuryHotel(X),1.0
+-LuxuryHotel(X) AND -Hotel(X)==>-Accommodation(X),1.0
+-LuxuryHotel(X) AND -Accommodation(X)==>-Hotel(X),1.0
+-Accommodation(X) AND -hasAccommodation(Y, X)==>-LuxuryHotel(X),1.0
+-LuxuryHotel(X) AND -hasAccommodation(Y, X)==>-Accommodation(X),1.0
+-LuxuryHotel(X) AND -Accommodation(X)==>-hasAccommodation(Y, X),1.0
+-Accommodation(X) AND -hasRating(X, Y)==>-LuxuryHotel(X),1.0
+-LuxuryHotel(X) AND -hasRating(X, Y)==>-Accommodation(X),1.0
+-LuxuryHotel(X) AND -Accommodation(X)==>-hasRating(X, Y),1.0
+-Hotel(X) AND -hasAccommodation(Y, X)==>-LuxuryHotel(X),1.0
+-LuxuryHotel(X) AND -hasAccommodation(Y, X)==>-Hotel(X),1.0
+-LuxuryHotel(X) AND -Hotel(X)==>-hasAccommodation(Y, X),1.0
+-Hotel(X) AND -hasRating(X, Y)==>-LuxuryHotel(X),1.0
+-LuxuryHotel(X) AND -hasRating(X, Y)==>-Hotel(X),1.0
+-LuxuryHotel(X) AND -Hotel(X)==>-hasRating(X, Y),1.0
+-hasAccommodation(Y, X) AND -hasRating(X, Y)==>-LuxuryHotel(X),1.0
+-LuxuryHotel(X) AND -hasRating(X, Y)==>-hasAccommodation(Y, X),1.0
+-LuxuryHotel(X) AND -hasAccommodation(Y, X)==>-hasRating(X, Y),1.0
+-Hotel(X) AND -hasAccommodation(Y, X)==>-Accommodation(X),1.0
+-Accommodation(X) AND -hasAccommodation(Y, X)==>-Hotel(X),1.0
+-Accommodation(X) AND -Hotel(X)==>-hasAccommodation(Y, X),1.0
+-Hotel(X) AND -hasRating(X, Y)==>-Accommodation(X),1.0
+-Accommodation(X) AND -hasRating(X, Y)==>-Hotel(X),1.0
+-Accommodation(X) AND -Hotel(X)==>-hasRating(X, Y),1.0
+-hasAccommodation(Y, X) AND -hasRating(X, Y)==>-Accommodation(X),1.0
+-Accommodation(X) AND -hasRating(X, Y)==>-hasAccommodation(Y, X),1.0
+-Accommodation(X) AND -hasAccommodation(Y, X)==>-hasRating(X, Y),1.0
+-hasAccommodation(Y, X) AND -hasRating(X, Y)==>-Hotel(X),1.0
+-Hotel(X) AND -hasRating(X, Y)==>-hasAccommodation(Y, X),1.0
+-Hotel(X) AND -hasAccommodation(Y, X)==>-hasRating(X, Y),1.0
+-Town(X) AND -Accommodation(X)==>-LuxuryHotel(X),1.0
+-Town(X) AND -LuxuryHotel(X)==>-Accommodation(X),1.0
+-Town(X) AND -Hotel(X)==>-LuxuryHotel(X),1.0
+-Town(X) AND -LuxuryHotel(X)==>-Hotel(X),1.0
+-Town(X) AND -hasAccommodation(Y, X)==>-LuxuryHotel(X),1.0
+-Town(X) AND -LuxuryHotel(X)==>-hasAccommodation(Y, X),1.0
+-Town(X) AND -hasRating(X, Y)==>-LuxuryHotel(X),1.0
+-Town(X) AND -LuxuryHotel(X)==>-hasRating(X, Y),1.0
+-Town(X) AND -Hotel(X)==>-Accommodation(X),1.0
+-Town(X) AND -Accommodation(X)==>-Hotel(X),1.0
+-Town(X) AND -hasAccommodation(Y, X)==>-Accommodation(X),1.0
+-Town(X) AND -Accommodation(X)==>-hasAccommodation(Y, X),1.0
+-Town(X) AND -hasRating(X, Y)==>-Accommodation(X),1.0
+-Town(X) AND -Accommodation(X)==>-hasRating(X, Y),1.0
+-Town(X) AND -hasAccommodation(Y, X)==>-Hotel(X),1.0
+-Town(X) AND -Hotel(X)==>-hasAccommodation(Y, X),1.0
+-Town(X) AND -hasRating(X, Y)==>-Hotel(X),1.0
+-Town(X) AND -Hotel(X)==>-hasRating(X, Y),1.0
+-Town(X) AND -hasPart(X, Y)==>-hasAccommodation(X, Y),1.0
+-Town(X) AND -hasAccommodation(X, Y)==>-hasPart(X, Y),1.0
+-Town(X) AND -hasRating(X, Y)==>-hasAccommodation(Y, X),1.0
+-Town(X) AND -hasAccommodation(Y, X)==>-hasRating(X, Y),1.0
+-Accommodation(X) AND -hasAccommodation(X, Y)==>-LuxuryHotel(X),1.0
+-LuxuryHotel(X) AND -hasAccommodation(X, Y)==>-Accommodation(X),1.0
+-Accommodation(X) AND -hasPart(X, Y)==>-LuxuryHotel(X),1.0
+-LuxuryHotel(X) AND -hasPart(X, Y)==>-Accommodation(X),1.0
+-Accommodation(X) AND -hasRating(Y, X)==>-LuxuryHotel(X),1.0
+-LuxuryHotel(X) AND -hasRating(Y, X)==>-Accommodation(X),1.0
+-Hotel(X) AND -hasAccommodation(X, Y)==>-LuxuryHotel(X),1.0
+-LuxuryHotel(X) AND -hasAccommodation(X, Y)==>-Hotel(X),1.0
+-Hotel(X) AND -hasPart(X, Y)==>-LuxuryHotel(X),1.0
+-LuxuryHotel(X) AND -hasPart(X, Y)==>-Hotel(X),1.0
+-Hotel(X) AND -hasRating(Y, X)==>-LuxuryHotel(X),1.0
+-LuxuryHotel(X) AND -hasRating(Y, X)==>-Hotel(X),1.0
+-hasAccommodation(X, Y) AND -hasAccommodation(Y, X)==>-LuxuryHotel(X),1.0
+-LuxuryHotel(X) AND -hasAccommodation(X, Y)==>-hasAccommodation(Y, X),1.0
+-LuxuryHotel(X) AND -hasPart(X, Y)==>-hasAccommodation(X, Y),1.0
+-LuxuryHotel(X) AND -hasAccommodation(X, Y)==>-hasPart(X, Y),1.0
+-hasAccommodation(X, Y) AND -hasRating(X, Y)==>-LuxuryHotel(X),1.0
+-LuxuryHotel(X) AND -hasAccommodation(X, Y)==>-hasRating(X, Y),1.0
+-hasAccommodation(Y, X) AND -hasPart(X, Y)==>-LuxuryHotel(X),1.0
+-LuxuryHotel(X) AND -hasPart(X, Y)==>-hasAccommodation(Y, X),1.0
+-hasAccommodation(Y, X) AND -hasRating(Y, X)==>-LuxuryHotel(X),1.0
+-LuxuryHotel(X) AND -hasRating(Y, X)==>-hasAccommodation(Y, X),1.0
+-hasPart(X, Y) AND -hasRating(X, Y)==>-LuxuryHotel(X),1.0
+-LuxuryHotel(X) AND -hasPart(X, Y)==>-hasRating(X, Y),1.0
+-hasRating(X, Y) AND -hasRating(Y, X)==>-LuxuryHotel(X),1.0
+-LuxuryHotel(X) AND -hasRating(Y, X)==>-hasRating(X, Y),1.0
+-RetireeDestination(X) AND -hasAccommodation(X, Y)==>-Capital(X),1.0
+-Capital(X) AND -hasAccommodation(X, Y)==>-RetireeDestination(X),1.0
+-Capital(X) AND -RetireeDestination(X)==>-hasAccommodation(X, Y),1.0
+-RetireeDestination(X) AND -hasPart(X, Y)==>-Capital(X),1.0
+-Capital(X) AND -hasPart(X, Y)==>-RetireeDestination(X),1.0
+-Capital(X) AND -RetireeDestination(X)==>-hasPart(X, Y),1.0
+-Capital(X) AND -hasPart(X, Y)==>-hasAccommodation(X, Y),1.0
+-Capital(X) AND -hasAccommodation(X, Y)==>-hasPart(X, Y),1.0
+-Hotel(X) AND -hasAccommodation(X, Y)==>-Accommodation(X),1.0
+-Accommodation(X) AND -hasAccommodation(X, Y)==>-Hotel(X),1.0
+-Hotel(X) AND -hasPart(X, Y)==>-Accommodation(X),1.0
+-Accommodation(X) AND -hasPart(X, Y)==>-Hotel(X),1.0
+-Hotel(X) AND -hasRating(Y, X)==>-Accommodation(X),1.0
+-Accommodation(X) AND -hasRating(Y, X)==>-Hotel(X),1.0
+-hasAccommodation(X, Y) AND -hasAccommodation(Y, X)==>-Accommodation(X),1.0
+-Accommodation(X) AND -hasAccommodation(X, Y)==>-hasAccommodation(Y, X),1.0
+-Accommodation(X) AND -hasPart(X, Y)==>-hasAccommodation(X, Y),1.0
+-Accommodation(X) AND -hasAccommodation(X, Y)==>-hasPart(X, Y),1.0
+-hasAccommodation(X, Y) AND -hasRating(X, Y)==>-Accommodation(X),1.0
+-Accommodation(X) AND -hasAccommodation(X, Y)==>-hasRating(X, Y),1.0
+-hasAccommodation(Y, X) AND -hasPart(X, Y)==>-Accommodation(X),1.0
+-Accommodation(X) AND -hasPart(X, Y)==>-hasAccommodation(Y, X),1.0
+-hasAccommodation(Y, X) AND -hasRating(Y, X)==>-Accommodation(X),1.0
+-Accommodation(X) AND -hasRating(Y, X)==>-hasAccommodation(Y, X),1.0
+-hasPart(X, Y) AND -hasRating(X, Y)==>-Accommodation(X),1.0
+-Accommodation(X) AND -hasPart(X, Y)==>-hasRating(X, Y),1.0
+-hasRating(X, Y) AND -hasRating(Y, X)==>-Accommodation(X),1.0
+-Accommodation(X) AND -hasRating(Y, X)==>-hasRating(X, Y),1.0
+-RetireeDestination(X) AND -hasPart(X, Y)==>-hasAccommodation(X, Y),1.0
+-RetireeDestination(X) AND -hasAccommodation(X, Y)==>-hasPart(X, Y),1.0
+-hasAccommodation(X, Y) AND -hasAccommodation(Y, X)==>-Hotel(X),1.0
+-Hotel(X) AND -hasAccommodation(X, Y)==>-hasAccommodation(Y, X),1.0
+-Hotel(X) AND -hasPart(X, Y)==>-hasAccommodation(X, Y),1.0
+-Hotel(X) AND -hasAccommodation(X, Y)==>-hasPart(X, Y),1.0
+-hasAccommodation(X, Y) AND -hasRating(X, Y)==>-Hotel(X),1.0
+-Hotel(X) AND -hasAccommodation(X, Y)==>-hasRating(X, Y),1.0
+-hasAccommodation(Y, X) AND -hasPart(X, Y)==>-Hotel(X),1.0
+-Hotel(X) AND -hasPart(X, Y)==>-hasAccommodation(Y, X),1.0
+-hasAccommodation(Y, X) AND -hasRating(Y, X)==>-Hotel(X),1.0
+-Hotel(X) AND -hasRating(Y, X)==>-hasAccommodation(Y, X),1.0
+-hasPart(X, Y) AND -hasRating(X, Y)==>-Hotel(X),1.0
+-Hotel(X) AND -hasPart(X, Y)==>-hasRating(X, Y),1.0
+-hasRating(X, Y) AND -hasRating(Y, X)==>-Hotel(X),1.0
+-Hotel(X) AND -hasRating(Y, X)==>-hasRating(X, Y),1.0
+-hasAccommodation(Y, X) AND -hasPart(X, Y)==>-hasAccommodation(X, Y),1.0
+-hasAccommodation(X, Y) AND -hasAccommodation(Y, X)==>-hasPart(X, Y),1.0
+-hasAccommodation(X, Y) AND -hasRating(X, Y)==>-hasAccommodation(Y, X),1.0
+-hasAccommodation(X, Y) AND -hasAccommodation(Y, X)==>-hasRating(X, Y),1.0
+-hasPart(X, Y) AND -hasRating(X, Y)==>-hasAccommodation(X, Y),1.0
+-hasAccommodation(X, Y) AND -hasRating(X, Y)==>-hasPart(X, Y),1.0
+-hasPart(X, Y) AND -hasRating(Y, X)==>-hasAccommodation(X, Y),1.0
+-hasAccommodation(X, Y) AND -hasRating(Y, X)==>-hasPart(X, Y),1.0
+-hasPart(X, Y) AND -hasRating(X, Y)==>-hasAccommodation(Y, X),1.0
+-hasAccommodation(Y, X) AND -hasPart(X, Y)==>-hasRating(X, Y),1.0
+-hasRating(X, Y) AND -hasRating(Y, X)==>-hasAccommodation(Y, X),1.0
+-hasAccommodation(Y, X) AND -hasRating(Y, X)==>-hasRating(X, Y),1.0
+-Town(X) AND -hasPart(Y, X)==>-Beach(X),1.0
+-Town(X) AND -Beach(X)==>-hasPart(Y, X),1.0
+-Town(X) AND -RetireeDestination(X)==>-Capital(X),1.0
+-Town(X) AND -Capital(X)==>-RetireeDestination(X),1.0
+-Town(X) AND -Capital(X)==>-hasAccommodation(X, Y),1.0
+-Town(X) AND -Capital(X)==>-hasPart(X, Y),1.0
+-Town(X) AND -RetireeDestination(X)==>-hasAccommodation(X, Y),1.0
+-Town(X) AND -RetireeDestination(X)==>-hasPart(X, Y),1.0
+-Town(X) AND -BackpackersDestination(X)==>-NationalPark(X),1.0
+-Town(X) AND -NationalPark(X)==>-BackpackersDestination(X),1.0
+-Beach(X) AND -Accommodation(X)==>-LuxuryHotel(X),1.0
+-Beach(X) AND -LuxuryHotel(X)==>-Accommodation(X),1.0
+-Beach(X) AND -Hotel(X)==>-LuxuryHotel(X),1.0
+-Beach(X) AND -LuxuryHotel(X)==>-Hotel(X),1.0
+-Beach(X) AND -hasAccommodation(Y, X)==>-LuxuryHotel(X),1.0
+-Beach(X) AND -LuxuryHotel(X)==>-hasAccommodation(Y, X),1.0
+-LuxuryHotel(X) AND -hasPart(Y, X)==>-Beach(X),1.0
+-Beach(X) AND -LuxuryHotel(X)==>-hasPart(Y, X),1.0
+-Beach(X) AND -hasRating(X, Y)==>-LuxuryHotel(X),1.0
+-Beach(X) AND -LuxuryHotel(X)==>-hasRating(X, Y),1.0
+-Beach(X) AND -Hotel(X)==>-Accommodation(X),1.0
+-Beach(X) AND -Accommodation(X)==>-Hotel(X),1.0
+-Beach(X) AND -hasAccommodation(Y, X)==>-Accommodation(X),1.0
+-Beach(X) AND -Accommodation(X)==>-hasAccommodation(Y, X),1.0
+-Accommodation(X) AND -hasPart(Y, X)==>-Beach(X),1.0
+-Beach(X) AND -Accommodation(X)==>-hasPart(Y, X),1.0
+-Beach(X) AND -hasRating(X, Y)==>-Accommodation(X),1.0
+-Beach(X) AND -Accommodation(X)==>-hasRating(X, Y),1.0
+-Beach(X) AND -hasAccommodation(Y, X)==>-Hotel(X),1.0
+-Beach(X) AND -Hotel(X)==>-hasAccommodation(Y, X),1.0
+-Hotel(X) AND -hasPart(Y, X)==>-Beach(X),1.0
+-Beach(X) AND -Hotel(X)==>-hasPart(Y, X),1.0
+-Beach(X) AND -hasRating(X, Y)==>-Hotel(X),1.0
+-Beach(X) AND -Hotel(X)==>-hasRating(X, Y),1.0
+-Beach(X) AND -hasPart(X, Y)==>-hasAccommodation(X, Y),1.0
+-Beach(X) AND -hasAccommodation(X, Y)==>-hasPart(X, Y),1.0
+-hasAccommodation(X, Y) AND -hasPart(Y, X)==>-Beach(X),1.0
+-Beach(X) AND -hasAccommodation(X, Y)==>-hasPart(Y, X),1.0
+-hasAccommodation(Y, X) AND -hasPart(Y, X)==>-Beach(X),1.0
+-Beach(X) AND -hasAccommodation(Y, X)==>-hasPart(Y, X),1.0
+-Beach(X) AND -hasRating(X, Y)==>-hasAccommodation(Y, X),1.0
+-Beach(X) AND -hasAccommodation(Y, X)==>-hasRating(X, Y),1.0
+-hasPart(X, Y) AND -hasPart(Y, X)==>-Beach(X),1.0
+-Beach(X) AND -hasPart(X, Y)==>-hasPart(Y, X),1.0
+-hasPart(Y, X) AND -hasRating(X, Y)==>-Beach(X),1.0
+-Beach(X) AND -hasRating(X, Y)==>-hasPart(Y, X),1.0
+-hasPart(Y, X) AND -hasRating(Y, X)==>-Beach(X),1.0
+-Beach(X) AND -hasRating(Y, X)==>-hasPart(Y, X),1.0
+-City(X) AND -RetireeDestination(X)==>-Capital(X),1.0
+-City(X) AND -Capital(X)==>-RetireeDestination(X),1.0
+-City(X) AND -hasAccommodation(X, Y)==>-Capital(X),1.0
+-City(X) AND -Capital(X)==>-hasAccommodation(X, Y),1.0
+-City(X) AND -hasPart(X, Y)==>-Capital(X),1.0
+-City(X) AND -Capital(X)==>-hasPart(X, Y),1.0
+-City(X) AND -hasAccommodation(X, Y)==>-RetireeDestination(X),1.0
+-City(X) AND -RetireeDestination(X)==>-hasAccommodation(X, Y),1.0
+-City(X) AND -hasPart(X, Y)==>-RetireeDestination(X),1.0
+-City(X) AND -RetireeDestination(X)==>-hasPart(X, Y),1.0
+-City(X) AND -hasPart(X, Y)==>-hasAccommodation(X, Y),1.0
+-City(X) AND -hasAccommodation(X, Y)==>-hasPart(X, Y),1.0
+-Capital(X) AND -Accommodation(X)==>-LuxuryHotel(X),1.0
+-LuxuryHotel(X) AND -Capital(X)==>-Accommodation(X),1.0
+-LuxuryHotel(X) AND -RetireeDestination(X)==>-Capital(X),1.0
+-LuxuryHotel(X) AND -Capital(X)==>-RetireeDestination(X),1.0
+-Capital(X) AND -Hotel(X)==>-LuxuryHotel(X),1.0
+-LuxuryHotel(X) AND -Capital(X)==>-Hotel(X),1.0
+-LuxuryHotel(X) AND -Capital(X)==>-hasAccommodation(X, Y),1.0
+-Capital(X) AND -hasAccommodation(Y, X)==>-LuxuryHotel(X),1.0
+-LuxuryHotel(X) AND -Capital(X)==>-hasAccommodation(Y, X),1.0
+-LuxuryHotel(X) AND -Capital(X)==>-hasPart(X, Y),1.0
+-Capital(X) AND -hasRating(X, Y)==>-LuxuryHotel(X),1.0
+-LuxuryHotel(X) AND -Capital(X)==>-hasRating(X, Y),1.0
+-Accommodation(X) AND -RetireeDestination(X)==>-LuxuryHotel(X),1.0
+-LuxuryHotel(X) AND -RetireeDestination(X)==>-Accommodation(X),1.0
+-Accommodation(X) AND -NationalPark(X)==>-LuxuryHotel(X),1.0
+-LuxuryHotel(X) AND -NationalPark(X)==>-Accommodation(X),1.0
+-Accommodation(X) AND -BackpackersDestination(X)==>-LuxuryHotel(X),1.0
+-LuxuryHotel(X) AND -BackpackersDestination(X)==>-Accommodation(X),1.0
+-Accommodation(X) AND -hasPart(Y, X)==>-LuxuryHotel(X),1.0
+-LuxuryHotel(X) AND -hasPart(Y, X)==>-Accommodation(X),1.0
+-RetireeDestination(X) AND -Hotel(X)==>-LuxuryHotel(X),1.0
+-LuxuryHotel(X) AND -RetireeDestination(X)==>-Hotel(X),1.0
+-LuxuryHotel(X) AND -RetireeDestination(X)==>-hasAccommodation(X, Y),1.0
+-RetireeDestination(X) AND -hasAccommodation(Y, X)==>-LuxuryHotel(X),1.0
+-LuxuryHotel(X) AND -RetireeDestination(X)==>-hasAccommodation(Y, X),1.0
+-LuxuryHotel(X) AND -RetireeDestination(X)==>-hasPart(X, Y),1.0
+-RetireeDestination(X) AND -hasRating(X, Y)==>-LuxuryHotel(X),1.0
+-LuxuryHotel(X) AND -RetireeDestination(X)==>-hasRating(X, Y),1.0
+-NationalPark(X) AND -Hotel(X)==>-LuxuryHotel(X),1.0
+-LuxuryHotel(X) AND -NationalPark(X)==>-Hotel(X),1.0
+-LuxuryHotel(X) AND -BackpackersDestination(X)==>-NationalPark(X),1.0
+-LuxuryHotel(X) AND -NationalPark(X)==>-BackpackersDestination(X),1.0
+-NationalPark(X) AND -hasAccommodation(Y, X)==>-LuxuryHotel(X),1.0
+-LuxuryHotel(X) AND -NationalPark(X)==>-hasAccommodation(Y, X),1.0
+-NationalPark(X) AND -hasRating(X, Y)==>-LuxuryHotel(X),1.0
+-LuxuryHotel(X) AND -NationalPark(X)==>-hasRating(X, Y),1.0
+-Hotel(X) AND -BackpackersDestination(X)==>-LuxuryHotel(X),1.0
+-LuxuryHotel(X) AND -BackpackersDestination(X)==>-Hotel(X),1.0
+-Hotel(X) AND -hasPart(Y, X)==>-LuxuryHotel(X),1.0
+-LuxuryHotel(X) AND -hasPart(Y, X)==>-Hotel(X),1.0
+-BackpackersDestination(X) AND -hasAccommodation(Y, X)==>-LuxuryHotel(X),1.0
+-LuxuryHotel(X) AND -BackpackersDestination(X)==>-hasAccommodation(Y, X),1.0
+-BackpackersDestination(X) AND -hasRating(X, Y)==>-LuxuryHotel(X),1.0
+-LuxuryHotel(X) AND -BackpackersDestination(X)==>-hasRating(X, Y),1.0
+-hasAccommodation(Y, X) AND -hasPart(Y, X)==>-LuxuryHotel(X),1.0
+-LuxuryHotel(X) AND -hasPart(Y, X)==>-hasAccommodation(Y, X),1.0
+-hasPart(Y, X) AND -hasRating(X, Y)==>-LuxuryHotel(X),1.0
+-LuxuryHotel(X) AND -hasPart(Y, X)==>-hasRating(X, Y),1.0
+-Accommodation(X) AND -RetireeDestination(X)==>-Capital(X),1.0
+-Capital(X) AND -Accommodation(X)==>-RetireeDestination(X),1.0
+-Capital(X) AND -Hotel(X)==>-Accommodation(X),1.0
+-Capital(X) AND -Accommodation(X)==>-Hotel(X),1.0
+-Capital(X) AND -Accommodation(X)==>-hasAccommodation(X, Y),1.0
+-Capital(X) AND -hasAccommodation(Y, X)==>-Accommodation(X),1.0
+-Capital(X) AND -Accommodation(X)==>-hasAccommodation(Y, X),1.0
+-Capital(X) AND -Accommodation(X)==>-hasPart(X, Y),1.0
+-Capital(X) AND -hasRating(X, Y)==>-Accommodation(X),1.0
+-Capital(X) AND -Accommodation(X)==>-hasRating(X, Y),1.0
+-RetireeDestination(X) AND -Hotel(X)==>-Capital(X),1.0
+-Capital(X) AND -Hotel(X)==>-RetireeDestination(X),1.0
+-RetireeDestination(X) AND -hasAccommodation(Y, X)==>-Capital(X),1.0
+-Capital(X) AND -hasAccommodation(Y, X)==>-RetireeDestination(X),1.0
+-RetireeDestination(X) AND -hasRating(X, Y)==>-Capital(X),1.0
+-Capital(X) AND -hasRating(X, Y)==>-RetireeDestination(X),1.0
+-RetireeDestination(X) AND -hasRating(Y, X)==>-Capital(X),1.0
+-Capital(X) AND -hasRating(Y, X)==>-RetireeDestination(X),1.0
+-Capital(X) AND -Hotel(X)==>-hasAccommodation(X, Y),1.0
+-Capital(X) AND -hasAccommodation(Y, X)==>-Hotel(X),1.0
+-Capital(X) AND -Hotel(X)==>-hasAccommodation(Y, X),1.0
+-Capital(X) AND -Hotel(X)==>-hasPart(X, Y),1.0
+-Capital(X) AND -hasRating(X, Y)==>-Hotel(X),1.0
+-Capital(X) AND -Hotel(X)==>-hasRating(X, Y),1.0
+-Capital(X) AND -hasAccommodation(Y, X)==>-hasAccommodation(X, Y),1.0
+-Capital(X) AND -hasRating(X, Y)==>-hasAccommodation(X, Y),1.0
+-Capital(X) AND -hasRating(Y, X)==>-hasAccommodation(X, Y),1.0
+-Capital(X) AND -hasAccommodation(Y, X)==>-hasPart(X, Y),1.0
+-Capital(X) AND -hasRating(X, Y)==>-hasAccommodation(Y, X),1.0
+-Capital(X) AND -hasAccommodation(Y, X)==>-hasRating(X, Y),1.0
+-Capital(X) AND -hasRating(X, Y)==>-hasPart(X, Y),1.0
+-Capital(X) AND -hasRating(Y, X)==>-hasPart(X, Y),1.0
+-RetireeDestination(X) AND -Hotel(X)==>-Accommodation(X),1.0
+-Accommodation(X) AND -RetireeDestination(X)==>-Hotel(X),1.0
+-Accommodation(X) AND -RetireeDestination(X)==>-hasAccommodation(X, Y),1.0
+-RetireeDestination(X) AND -hasAccommodation(Y, X)==>-Accommodation(X),1.0
+-Accommodation(X) AND -RetireeDestination(X)==>-hasAccommodation(Y, X),1.0
+-Accommodation(X) AND -RetireeDestination(X)==>-hasPart(X, Y),1.0
+-RetireeDestination(X) AND -hasRating(X, Y)==>-Accommodation(X),1.0
+-Accommodation(X) AND -RetireeDestination(X)==>-hasRating(X, Y),1.0
+-NationalPark(X) AND -Hotel(X)==>-Accommodation(X),1.0
+-Accommodation(X) AND -NationalPark(X)==>-Hotel(X),1.0
+-Accommodation(X) AND -BackpackersDestination(X)==>-NationalPark(X),1.0
+-Accommodation(X) AND -NationalPark(X)==>-BackpackersDestination(X),1.0
+-NationalPark(X) AND -hasAccommodation(Y, X)==>-Accommodation(X),1.0
+-Accommodation(X) AND -NationalPark(X)==>-hasAccommodation(Y, X),1.0
+-NationalPark(X) AND -hasRating(X, Y)==>-Accommodation(X),1.0
+-Accommodation(X) AND -NationalPark(X)==>-hasRating(X, Y),1.0
+-Hotel(X) AND -BackpackersDestination(X)==>-Accommodation(X),1.0
+-Accommodation(X) AND -BackpackersDestination(X)==>-Hotel(X),1.0
+-Hotel(X) AND -hasPart(Y, X)==>-Accommodation(X),1.0
+-Accommodation(X) AND -hasPart(Y, X)==>-Hotel(X),1.0
+-BackpackersDestination(X) AND -hasAccommodation(Y, X)==>-Accommodation(X),1.0
+-Accommodation(X) AND -BackpackersDestination(X)==>-hasAccommodation(Y, X),1.0
+-BackpackersDestination(X) AND -hasRating(X, Y)==>-Accommodation(X),1.0
+-Accommodation(X) AND -BackpackersDestination(X)==>-hasRating(X, Y),1.0
+-hasAccommodation(Y, X) AND -hasPart(Y, X)==>-Accommodation(X),1.0
+-Accommodation(X) AND -hasPart(Y, X)==>-hasAccommodation(Y, X),1.0
+-hasPart(Y, X) AND -hasRating(X, Y)==>-Accommodation(X),1.0
+-Accommodation(X) AND -hasPart(Y, X)==>-hasRating(X, Y),1.0
+-RetireeDestination(X) AND -Hotel(X)==>-hasAccommodation(X, Y),1.0
+-RetireeDestination(X) AND -hasAccommodation(Y, X)==>-Hotel(X),1.0
+-RetireeDestination(X) AND -Hotel(X)==>-hasAccommodation(Y, X),1.0
+-RetireeDestination(X) AND -Hotel(X)==>-hasPart(X, Y),1.0
+-RetireeDestination(X) AND -hasRating(X, Y)==>-Hotel(X),1.0
+-RetireeDestination(X) AND -Hotel(X)==>-hasRating(X, Y),1.0
+-RetireeDestination(X) AND -hasAccommodation(Y, X)==>-hasAccommodation(X, Y),1.0
+-RetireeDestination(X) AND -hasRating(X, Y)==>-hasAccommodation(X, Y),1.0
+-RetireeDestination(X) AND -hasRating(Y, X)==>-hasAccommodation(X, Y),1.0
+-RetireeDestination(X) AND -hasAccommodation(Y, X)==>-hasPart(X, Y),1.0
+-RetireeDestination(X) AND -hasRating(X, Y)==>-hasAccommodation(Y, X),1.0
+-RetireeDestination(X) AND -hasAccommodation(Y, X)==>-hasRating(X, Y),1.0
+-RetireeDestination(X) AND -hasRating(X, Y)==>-hasPart(X, Y),1.0
+-RetireeDestination(X) AND -hasRating(Y, X)==>-hasPart(X, Y),1.0
+-Hotel(X) AND -BackpackersDestination(X)==>-NationalPark(X),1.0
+-NationalPark(X) AND -Hotel(X)==>-BackpackersDestination(X),1.0
+-NationalPark(X) AND -hasAccommodation(Y, X)==>-Hotel(X),1.0
+-NationalPark(X) AND -Hotel(X)==>-hasAccommodation(Y, X),1.0
+-NationalPark(X) AND -hasRating(X, Y)==>-Hotel(X),1.0
+-NationalPark(X) AND -Hotel(X)==>-hasRating(X, Y),1.0
+-BackpackersDestination(X) AND -hasAccommodation(X, Y)==>-NationalPark(X),1.0
+-NationalPark(X) AND -hasAccommodation(X, Y)==>-BackpackersDestination(X),1.0
+-BackpackersDestination(X) AND -hasAccommodation(Y, X)==>-NationalPark(X),1.0
+-NationalPark(X) AND -hasAccommodation(Y, X)==>-BackpackersDestination(X),1.0
+-BackpackersDestination(X) AND -hasPart(X, Y)==>-NationalPark(X),1.0
+-NationalPark(X) AND -hasPart(X, Y)==>-BackpackersDestination(X),1.0
+-BackpackersDestination(X) AND -hasRating(X, Y)==>-NationalPark(X),1.0
+-NationalPark(X) AND -hasRating(X, Y)==>-BackpackersDestination(X),1.0
+-BackpackersDestination(X) AND -hasRating(Y, X)==>-NationalPark(X),1.0
+-NationalPark(X) AND -hasRating(Y, X)==>-BackpackersDestination(X),1.0
+-NationalPark(X) AND -hasPart(X, Y)==>-hasAccommodation(X, Y),1.0
+-NationalPark(X) AND -hasAccommodation(X, Y)==>-hasPart(X, Y),1.0
+-NationalPark(X) AND -hasRating(X, Y)==>-hasAccommodation(Y, X),1.0
+-NationalPark(X) AND -hasAccommodation(Y, X)==>-hasRating(X, Y),1.0
+-BackpackersDestination(X) AND -hasAccommodation(Y, X)==>-Hotel(X),1.0
+-Hotel(X) AND -BackpackersDestination(X)==>-hasAccommodation(Y, X),1.0
+-BackpackersDestination(X) AND -hasRating(X, Y)==>-Hotel(X),1.0
+-Hotel(X) AND -BackpackersDestination(X)==>-hasRating(X, Y),1.0
+-hasAccommodation(Y, X) AND -hasPart(Y, X)==>-Hotel(X),1.0
+-Hotel(X) AND -hasPart(Y, X)==>-hasAccommodation(Y, X),1.0
+-hasPart(Y, X) AND -hasRating(X, Y)==>-Hotel(X),1.0
+-Hotel(X) AND -hasPart(Y, X)==>-hasRating(X, Y),1.0
+-BackpackersDestination(X) AND -hasPart(X, Y)==>-hasAccommodation(X, Y),1.0
+-BackpackersDestination(X) AND -hasAccommodation(X, Y)==>-hasPart(X, Y),1.0
+-BackpackersDestination(X) AND -hasRating(X, Y)==>-hasAccommodation(Y, X),1.0
+-BackpackersDestination(X) AND -hasAccommodation(Y, X)==>-hasRating(X, Y),1.0
+-hasPart(X, Y) AND -hasPart(Y, X)==>-hasAccommodation(X, Y),1.0
+-hasAccommodation(X, Y) AND -hasPart(Y, X)==>-hasPart(X, Y),1.0
+-hasPart(Y, X) AND -hasRating(X, Y)==>-hasAccommodation(Y, X),1.0
+-hasAccommodation(Y, X) AND -hasPart(Y, X)==>-hasRating(X, Y),1.0
+-LuxuryHotel(X) AND -Accommodation(X)==>-Town(X),0.9230769230769231
+-LuxuryHotel(X) AND -Hotel(X)==>-Town(X),0.9230769230769231
+-LuxuryHotel(X) AND -hasAccommodation(Y, X)==>-Town(X),0.9230769230769231
+-LuxuryHotel(X) AND -hasRating(X, Y)==>-Town(X),0.9230769230769231
+-Accommodation(X) AND -Hotel(X)==>-Town(X),0.9230769230769231
+-Accommodation(X) AND -hasAccommodation(Y, X)==>-Town(X),0.9230769230769231
+-Accommodation(X) AND -hasRating(X, Y)==>-Town(X),0.9230769230769231
+-Hotel(X) AND -hasAccommodation(Y, X)==>-Town(X),0.9230769230769231
+-Hotel(X) AND -hasRating(X, Y)==>-Town(X),0.9230769230769231
+-hasAccommodation(X, Y) AND -hasPart(X, Y)==>-Town(X),0.9230769230769231
+-hasAccommodation(Y, X) AND -hasRating(X, Y)==>-Town(X),0.9230769230769231
+-LuxuryHotel(X) AND -Accommodation(X)==>-hasAccommodation(X, Y),0.9230769230769231
+-LuxuryHotel(X) AND -Accommodation(X)==>-hasPart(X, Y),0.9230769230769231
+-LuxuryHotel(X) AND -Accommodation(X)==>-hasRating(Y, X),0.9230769230769231
+-LuxuryHotel(X) AND -Hotel(X)==>-hasAccommodation(X, Y),0.9230769230769231
+-LuxuryHotel(X) AND -Hotel(X)==>-hasPart(X, Y),0.9230769230769231
+-LuxuryHotel(X) AND -Hotel(X)==>-hasRating(Y, X),0.9230769230769231
+-LuxuryHotel(X) AND -hasAccommodation(Y, X)==>-hasAccommodation(X, Y),0.9230769230769231
+-hasAccommodation(X, Y) AND -hasPart(X, Y)==>-LuxuryHotel(X),0.9230769230769231
+-LuxuryHotel(X) AND -hasRating(X, Y)==>-hasAccommodation(X, Y),0.9230769230769231
+-LuxuryHotel(X) AND -hasAccommodation(Y, X)==>-hasPart(X, Y),0.9230769230769231
+-LuxuryHotel(X) AND -hasAccommodation(Y, X)==>-hasRating(Y, X),0.9230769230769231
+-LuxuryHotel(X) AND -hasRating(X, Y)==>-hasPart(X, Y),0.9230769230769231
+-LuxuryHotel(X) AND -hasRating(X, Y)==>-hasRating(Y, X),0.9230769230769231
+-hasAccommodation(X, Y) AND -hasPart(X, Y)==>-Capital(X),0.9230769230769231
+-Accommodation(X) AND -Hotel(X)==>-hasAccommodation(X, Y),0.9230769230769231
+-Accommodation(X) AND -Hotel(X)==>-hasPart(X, Y),0.9230769230769231
+-Accommodation(X) AND -Hotel(X)==>-hasRating(Y, X),0.9230769230769231
+-Accommodation(X) AND -hasAccommodation(Y, X)==>-hasAccommodation(X, Y),0.9230769230769231
+-hasAccommodation(X, Y) AND -hasPart(X, Y)==>-Accommodation(X),0.9230769230769231
+-Accommodation(X) AND -hasRating(X, Y)==>-hasAccommodation(X, Y),0.9230769230769231
+-Accommodation(X) AND -hasAccommodation(Y, X)==>-hasPart(X, Y),0.9230769230769231
+-Accommodation(X) AND -hasAccommodation(Y, X)==>-hasRating(Y, X),0.9230769230769231
+-Accommodation(X) AND -hasRating(X, Y)==>-hasPart(X, Y),0.9230769230769231
+-Accommodation(X) AND -hasRating(X, Y)==>-hasRating(Y, X),0.9230769230769231
+-hasAccommodation(X, Y) AND -hasPart(X, Y)==>-RetireeDestination(X),0.9230769230769231
+-Hotel(X) AND -hasAccommodation(Y, X)==>-hasAccommodation(X, Y),0.9230769230769231
+-hasAccommodation(X, Y) AND -hasPart(X, Y)==>-Hotel(X),0.9230769230769231
+-Hotel(X) AND -hasRating(X, Y)==>-hasAccommodation(X, Y),0.9230769230769231
+-Hotel(X) AND -hasAccommodation(Y, X)==>-hasPart(X, Y),0.9230769230769231
+-Hotel(X) AND -hasAccommodation(Y, X)==>-hasRating(Y, X),0.9230769230769231
+-Hotel(X) AND -hasRating(X, Y)==>-hasPart(X, Y),0.9230769230769231
+-Hotel(X) AND -hasRating(X, Y)==>-hasRating(Y, X),0.9230769230769231
+-hasAccommodation(X, Y) AND -hasPart(X, Y)==>-hasAccommodation(Y, X),0.9230769230769231
+-hasAccommodation(Y, X) AND -hasRating(X, Y)==>-hasAccommodation(X, Y),0.9230769230769231
+-hasAccommodation(X, Y) AND -hasPart(X, Y)==>-hasRating(X, Y),0.9230769230769231
+-hasAccommodation(X, Y) AND -hasPart(X, Y)==>-hasRating(Y, X),0.9230769230769231
+-hasAccommodation(Y, X) AND -hasRating(X, Y)==>-hasPart(X, Y),0.9230769230769231
+-hasAccommodation(Y, X) AND -hasRating(X, Y)==>-hasRating(Y, X),0.9230769230769231
+-Beach(X) AND -hasPart(Y, X)==>-Town(X),0.9166666666666666
+-LuxuryHotel(X) AND -hasAccommodation(X, Y)==>-Town(X),0.9166666666666666
+-Town(X) AND -hasAccommodation(X, Y)==>-LuxuryHotel(X),0.9166666666666666
+-Town(X) AND -LuxuryHotel(X)==>-hasAccommodation(X, Y),0.9166666666666666
+-LuxuryHotel(X) AND -hasPart(X, Y)==>-Town(X),0.9166666666666666
+-Town(X) AND -hasPart(X, Y)==>-LuxuryHotel(X),0.9166666666666666
+-Town(X) AND -LuxuryHotel(X)==>-hasPart(X, Y),0.9166666666666666
+-LuxuryHotel(X) AND -hasRating(Y, X)==>-Town(X),0.9166666666666666
+-Town(X) AND -hasRating(Y, X)==>-LuxuryHotel(X),0.9166666666666666
+-Town(X) AND -LuxuryHotel(X)==>-hasRating(Y, X),0.9166666666666666
+-Capital(X) AND -RetireeDestination(X)==>-Town(X),0.9166666666666666
+-Capital(X) AND -hasAccommodation(X, Y)==>-Town(X),0.9166666666666666
+-Town(X) AND -hasAccommodation(X, Y)==>-Capital(X),0.9166666666666666
+-Capital(X) AND -hasPart(X, Y)==>-Town(X),0.9166666666666666
+-Town(X) AND -hasPart(X, Y)==>-Capital(X),0.9166666666666666
+-Accommodation(X) AND -hasAccommodation(X, Y)==>-Town(X),0.9166666666666666
+-Town(X) AND -hasAccommodation(X, Y)==>-Accommodation(X),0.9166666666666666
+-Town(X) AND -Accommodation(X)==>-hasAccommodation(X, Y),0.9166666666666666
+-Accommodation(X) AND -hasPart(X, Y)==>-Town(X),0.9166666666666666
+-Town(X) AND -hasPart(X, Y)==>-Accommodation(X),0.9166666666666666
+-Town(X) AND -Accommodation(X)==>-hasPart(X, Y),0.9166666666666666
+-Accommodation(X) AND -hasRating(Y, X)==>-Town(X),0.9166666666666666
+-Town(X) AND -hasRating(Y, X)==>-Accommodation(X),0.9166666666666666
+-Town(X) AND -Accommodation(X)==>-hasRating(Y, X),0.9166666666666666
+-RetireeDestination(X) AND -hasAccommodation(X, Y)==>-Town(X),0.9166666666666666
+-Town(X) AND -hasAccommodation(X, Y)==>-RetireeDestination(X),0.9166666666666666
+-RetireeDestination(X) AND -hasPart(X, Y)==>-Town(X),0.9166666666666666
+-Town(X) AND -hasPart(X, Y)==>-RetireeDestination(X),0.9166666666666666
+-NationalPark(X) AND -BackpackersDestination(X)==>-Town(X),0.9166666666666666
+-Hotel(X) AND -hasAccommodation(X, Y)==>-Town(X),0.9166666666666666
+-Town(X) AND -hasAccommodation(X, Y)==>-Hotel(X),0.9166666666666666
+-Town(X) AND -Hotel(X)==>-hasAccommodation(X, Y),0.9166666666666666
+-Hotel(X) AND -hasPart(X, Y)==>-Town(X),0.9166666666666666
+-Town(X) AND -hasPart(X, Y)==>-Hotel(X),0.9166666666666666
+-Town(X) AND -Hotel(X)==>-hasPart(X, Y),0.9166666666666666
+-Hotel(X) AND -hasRating(Y, X)==>-Town(X),0.9166666666666666
+-Town(X) AND -hasRating(Y, X)==>-Hotel(X),0.9166666666666666
+-Town(X) AND -Hotel(X)==>-hasRating(Y, X),0.9166666666666666
+-hasAccommodation(X, Y) AND -hasAccommodation(Y, X)==>-Town(X),0.9166666666666666
+-Town(X) AND -hasAccommodation(Y, X)==>-hasAccommodation(X, Y),0.9166666666666666
+-Town(X) AND -hasAccommodation(X, Y)==>-hasAccommodation(Y, X),0.9166666666666666
+-hasAccommodation(X, Y) AND -hasRating(X, Y)==>-Town(X),0.9166666666666666
+-Town(X) AND -hasRating(X, Y)==>-hasAccommodation(X, Y),0.9166666666666666
+-Town(X) AND -hasAccommodation(X, Y)==>-hasRating(X, Y),0.9166666666666666
+-hasAccommodation(X, Y) AND -hasRating(Y, X)==>-Town(X),0.9166666666666666
+-Town(X) AND -hasRating(Y, X)==>-hasAccommodation(X, Y),0.9166666666666666
+-Town(X) AND -hasAccommodation(X, Y)==>-hasRating(Y, X),0.9166666666666666
+-hasAccommodation(Y, X) AND -hasPart(X, Y)==>-Town(X),0.9166666666666666
+-Town(X) AND -hasPart(X, Y)==>-hasAccommodation(Y, X),0.9166666666666666
+-Town(X) AND -hasAccommodation(Y, X)==>-hasPart(X, Y),0.9166666666666666
+-hasAccommodation(Y, X) AND -hasRating(Y, X)==>-Town(X),0.9166666666666666
+-Town(X) AND -hasRating(Y, X)==>-hasAccommodation(Y, X),0.9166666666666666
+-Town(X) AND -hasAccommodation(Y, X)==>-hasRating(Y, X),0.9166666666666666
+-hasPart(X, Y) AND -hasRating(X, Y)==>-Town(X),0.9166666666666666
+-Town(X) AND -hasRating(X, Y)==>-hasPart(X, Y),0.9166666666666666
+-Town(X) AND -hasPart(X, Y)==>-hasRating(X, Y),0.9166666666666666
+-hasPart(X, Y) AND -hasRating(Y, X)==>-Town(X),0.9166666666666666
+-Town(X) AND -hasRating(Y, X)==>-hasPart(X, Y),0.9166666666666666
+-Town(X) AND -hasPart(X, Y)==>-hasRating(Y, X),0.9166666666666666
+-hasRating(X, Y) AND -hasRating(Y, X)==>-Town(X),0.9166666666666666
+-Town(X) AND -hasRating(Y, X)==>-hasRating(X, Y),0.9166666666666666
+-Town(X) AND -hasRating(X, Y)==>-hasRating(Y, X),0.9166666666666666
+-Beach(X) AND -hasPart(Y, X)==>-LuxuryHotel(X),0.9166666666666666
+-Beach(X) AND -hasPart(Y, X)==>-Accommodation(X),0.9166666666666666
+-Beach(X) AND -hasPart(Y, X)==>-Hotel(X),0.9166666666666666
+-Beach(X) AND -hasPart(Y, X)==>-hasAccommodation(X, Y),0.9166666666666666
+-Beach(X) AND -hasPart(Y, X)==>-hasAccommodation(Y, X),0.9166666666666666
+-Beach(X) AND -hasPart(Y, X)==>-hasPart(X, Y),0.9166666666666666
+-Beach(X) AND -hasPart(Y, X)==>-hasRating(X, Y),0.9166666666666666
+-Beach(X) AND -hasPart(Y, X)==>-hasRating(Y, X),0.9166666666666666
+-Capital(X) AND -RetireeDestination(X)==>-City(X),0.9166666666666666
+-Capital(X) AND -hasAccommodation(X, Y)==>-City(X),0.9166666666666666
+-Capital(X) AND -hasPart(X, Y)==>-City(X),0.9166666666666666
+-RetireeDestination(X) AND -hasAccommodation(X, Y)==>-City(X),0.9166666666666666
+-RetireeDestination(X) AND -hasPart(X, Y)==>-City(X),0.9166666666666666
+-Capital(X) AND -RetireeDestination(X)==>-LuxuryHotel(X),0.9166666666666666
+-Capital(X) AND -hasAccommodation(X, Y)==>-LuxuryHotel(X),0.9166666666666666
+-LuxuryHotel(X) AND -hasAccommodation(X, Y)==>-Capital(X),0.9166666666666666
+-Capital(X) AND -hasPart(X, Y)==>-LuxuryHotel(X),0.9166666666666666
+-LuxuryHotel(X) AND -hasPart(X, Y)==>-Capital(X),0.9166666666666666
+-RetireeDestination(X) AND -hasAccommodation(X, Y)==>-LuxuryHotel(X),0.9166666666666666
+-LuxuryHotel(X) AND -hasAccommodation(X, Y)==>-RetireeDestination(X),0.9166666666666666
+-RetireeDestination(X) AND -hasPart(X, Y)==>-LuxuryHotel(X),0.9166666666666666
+-LuxuryHotel(X) AND -hasPart(X, Y)==>-RetireeDestination(X),0.9166666666666666
+-NationalPark(X) AND -BackpackersDestination(X)==>-LuxuryHotel(X),0.9166666666666666
+-hasAccommodation(X, Y) AND -hasRating(Y, X)==>-LuxuryHotel(X),0.9166666666666666
+-LuxuryHotel(X) AND -hasRating(Y, X)==>-hasAccommodation(X, Y),0.9166666666666666
+-LuxuryHotel(X) AND -hasAccommodation(X, Y)==>-hasRating(Y, X),0.9166666666666666
+-hasPart(X, Y) AND -hasRating(Y, X)==>-LuxuryHotel(X),0.9166666666666666
+-LuxuryHotel(X) AND -hasRating(Y, X)==>-hasPart(X, Y),0.9166666666666666
+-LuxuryHotel(X) AND -hasPart(X, Y)==>-hasRating(Y, X),0.9166666666666666
+-Capital(X) AND -RetireeDestination(X)==>-Accommodation(X),0.9166666666666666
+-Accommodation(X) AND -hasAccommodation(X, Y)==>-Capital(X),0.9166666666666666
+-Capital(X) AND -hasAccommodation(X, Y)==>-Accommodation(X),0.9166666666666666
+-Accommodation(X) AND -hasPart(X, Y)==>-Capital(X),0.9166666666666666
+-Capital(X) AND -hasPart(X, Y)==>-Accommodation(X),0.9166666666666666
+-Capital(X) AND -RetireeDestination(X)==>-Hotel(X),0.9166666666666666
+-Capital(X) AND -RetireeDestination(X)==>-hasAccommodation(Y, X),0.9166666666666666
+-Capital(X) AND -RetireeDestination(X)==>-hasRating(X, Y),0.9166666666666666
+-Capital(X) AND -RetireeDestination(X)==>-hasRating(Y, X),0.9166666666666666
+-Hotel(X) AND -hasAccommodation(X, Y)==>-Capital(X),0.9166666666666666
+-Capital(X) AND -hasAccommodation(X, Y)==>-Hotel(X),0.9166666666666666
+-Hotel(X) AND -hasPart(X, Y)==>-Capital(X),0.9166666666666666
+-Capital(X) AND -hasPart(X, Y)==>-Hotel(X),0.9166666666666666
+-hasAccommodation(X, Y) AND -hasAccommodation(Y, X)==>-Capital(X),0.9166666666666666
+-Capital(X) AND -hasAccommodation(X, Y)==>-hasAccommodation(Y, X),0.9166666666666666
+-hasAccommodation(X, Y) AND -hasRating(X, Y)==>-Capital(X),0.9166666666666666
+-Capital(X) AND -hasAccommodation(X, Y)==>-hasRating(X, Y),0.9166666666666666
+-hasAccommodation(X, Y) AND -hasRating(Y, X)==>-Capital(X),0.9166666666666666
+-Capital(X) AND -hasAccommodation(X, Y)==>-hasRating(Y, X),0.9166666666666666
+-hasAccommodation(Y, X) AND -hasPart(X, Y)==>-Capital(X),0.9166666666666666
+-Capital(X) AND -hasPart(X, Y)==>-hasAccommodation(Y, X),0.9166666666666666
+-hasPart(X, Y) AND -hasRating(X, Y)==>-Capital(X),0.9166666666666666
+-Capital(X) AND -hasPart(X, Y)==>-hasRating(X, Y),0.9166666666666666
+-hasPart(X, Y) AND -hasRating(Y, X)==>-Capital(X),0.9166666666666666
+-Capital(X) AND -hasPart(X, Y)==>-hasRating(Y, X),0.9166666666666666
+-RetireeDestination(X) AND -hasAccommodation(X, Y)==>-Accommodation(X),0.9166666666666666
+-Accommodation(X) AND -hasAccommodation(X, Y)==>-RetireeDestination(X),0.9166666666666666
+-RetireeDestination(X) AND -hasPart(X, Y)==>-Accommodation(X),0.9166666666666666
+-Accommodation(X) AND -hasPart(X, Y)==>-RetireeDestination(X),0.9166666666666666
+-NationalPark(X) AND -BackpackersDestination(X)==>-Accommodation(X),0.9166666666666666
+-hasAccommodation(X, Y) AND -hasRating(Y, X)==>-Accommodation(X),0.9166666666666666
+-Accommodation(X) AND -hasRating(Y, X)==>-hasAccommodation(X, Y),0.9166666666666666
+-Accommodation(X) AND -hasAccommodation(X, Y)==>-hasRating(Y, X),0.9166666666666666
+-hasPart(X, Y) AND -hasRating(Y, X)==>-Accommodation(X),0.9166666666666666
+-Accommodation(X) AND -hasRating(Y, X)==>-hasPart(X, Y),0.9166666666666666
+-Accommodation(X) AND -hasPart(X, Y)==>-hasRating(Y, X),0.9166666666666666
+-Hotel(X) AND -hasAccommodation(X, Y)==>-RetireeDestination(X),0.9166666666666666
+-RetireeDestination(X) AND -hasAccommodation(X, Y)==>-Hotel(X),0.9166666666666666
+-Hotel(X) AND -hasPart(X, Y)==>-RetireeDestination(X),0.9166666666666666
+-RetireeDestination(X) AND -hasPart(X, Y)==>-Hotel(X),0.9166666666666666
+-hasAccommodation(X, Y) AND -hasAccommodation(Y, X)==>-RetireeDestination(X),0.9166666666666666
+-RetireeDestination(X) AND -hasAccommodation(X, Y)==>-hasAccommodation(Y, X),0.9166666666666666
+-hasAccommodation(X, Y) AND -hasRating(X, Y)==>-RetireeDestination(X),0.9166666666666666
+-RetireeDestination(X) AND -hasAccommodation(X, Y)==>-hasRating(X, Y),0.9166666666666666
+-hasAccommodation(X, Y) AND -hasRating(Y, X)==>-RetireeDestination(X),0.9166666666666666
+-RetireeDestination(X) AND -hasAccommodation(X, Y)==>-hasRating(Y, X),0.9166666666666666
+-hasAccommodation(Y, X) AND -hasPart(X, Y)==>-RetireeDestination(X),0.9166666666666666
+-RetireeDestination(X) AND -hasPart(X, Y)==>-hasAccommodation(Y, X),0.9166666666666666
+-hasPart(X, Y) AND -hasRating(X, Y)==>-RetireeDestination(X),0.9166666666666666
+-RetireeDestination(X) AND -hasPart(X, Y)==>-hasRating(X, Y),0.9166666666666666
+-hasPart(X, Y) AND -hasRating(Y, X)==>-RetireeDestination(X),0.9166666666666666
+-RetireeDestination(X) AND -hasPart(X, Y)==>-hasRating(Y, X),0.9166666666666666

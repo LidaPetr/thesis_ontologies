@@ -1,0 +1,12 @@
+"concept";"probability"
+"Adult(X)";1.0
+"Female(X)";0.5
+"Male(X)";0.5
+"Man(X)";0.5
+"Person(X)";1.0
+"Priest(X)";0.25
+"Woman(X)";0.5
+"MarriedTo(X, Y)";0.5
+"MarriedTo(Y, X)";0.5
+"hasParent(X, Y)";0.5
+"hasParent(Y, X)";0.5

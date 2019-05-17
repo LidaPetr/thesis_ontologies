@@ -1,0 +1,100 @@
+Q(?X) <- hasFlavor(?X, ?Y0), -hasSugar(?X, ?Y1).
+Q(?X) <- hasColor(?X, ?Y0), -hasMaker(?X, ?Y1).
+Q(?X) <- hasBody(?X, ?Y0), -ConsumableThing(?X).
+Q(?X) <- PotableLiquid(?X), -hasWineDescriptor(?X, ?Y0).
+Q(?X) <- hasMaker(?X, ?Y0), -PotableLiquid(?X).
+Q(?X) <- hasMaker(?X, ?Y0), -hasFlavor(?X, ?Y1).
+Q(?X) <- hasMaker(?X, ?Y0), -hasSugar(?X, ?Y1).
+Q(?X) <- hasFlavor(?X, ?Y0), -hasWineDescriptor(?X, ?Y1).
+Q(?X) <- hasBody(?X, ?Y0), -PotableLiquid(?X).
+Q(?X) <- hasColor(?X, ?Y0), -hasSugar(?X, ?Y1).
+Q(?X) <- PotableLiquid(?X), -ConsumableThing(?X).
+Q(?X) <- hasMaker(?X, ?Y0), -Wine(?X).
+Q(?X) <- hasColor(?X, ?Y0), -hasFlavor(?X, ?Y1).
+Q(?X) <- hasFlavor(?X, ?Y0), -ConsumableThing(?X).
+Q(?X) <- hasWineDescriptor(?X, ?Y0), -hasSugar(?X, ?Y1).
+Q(?X) <- hasMaker(?X, ?Y0), -ConsumableThing(?X).
+Q(?X) <- hasMaker(?X, ?Y0), -producesWine(?Y1, ?X).
+Q(?X) <- hasBody(?X, ?Y0), -hasWineDescriptor(?X, ?Y1).
+Q(?X) <- PotableLiquid(?X), -hasSugar(?X, ?Y0).
+Q(?X) <- hasWineDescriptor(?X, ?Y0), -hasFlavor(?X, ?Y1).
+Q(?X) <- hasWineDescriptor(?X, ?Y0), -ConsumableThing(?X).
+Q(?X) <- hasSugar(?X, ?Y0), -ConsumableThing(?X).
+Q(?X) <- hasWineDescriptor(?X, ?Y0), -PotableLiquid(?X).
+Q(?X) <- Wine(?X), -hasFlavor(?X, ?Y0).
+Q(?X) <- hasWineDescriptor(?X, ?Y0), -Wine(?X).
+Q(?X) <- hasSugar(?X, ?Y0), -PotableLiquid(?X).
+Q(?X) <- hasColor(?X, ?Y0), -hasWineDescriptor(?X, ?Y1).
+Q(?X) <- producesWine(?Y0, ?X), -Wine(?X).
+Q(?X) <- hasColor(?X, ?Y0), -Wine(?X).
+Q(?X) <- Wine(?X), -PotableLiquid(?X).
+Q(?X) <- hasSugar(?X, ?Y0), -Wine(?X).
+Q(?X) <- hasSugar(?X, ?Y0), -hasFlavor(?X, ?Y1).
+Q(?X) <- Wine(?X), -hasSugar(?X, ?Y0).
+Q(?X) <- producesWine(?Y1, ?X), -hasWineDescriptor(?X, ?Y0).
+Q(?X) <- producesWine(?Y0, ?X), -PotableLiquid(?X).
+Q(?X) <- EdibleThing(?X), -ConsumableThing(?X).
+Q(?X) <- producesWine(?Y1, ?X), -hasSugar(?X, ?Y0).
+Q(?X) <- hasColor(?X, ?Y0), -PotableLiquid(?X).
+Q(?X) <- producesWine(?Y1, ?X), -hasMaker(?X, ?Y0).
+Q(?X) <- hasBody(?X, ?Y0), -hasSugar(?X, ?Y1).
+Q(?X) <- hasColor(?X, ?Y0), -producesWine(?Y1, ?X).
+Q(?X) <- Wine(?X), -hasWineDescriptor(?X, ?Y0).
+Q(?X) <- PotableLiquid(?X), -hasFlavor(?X, ?Y0).
+Q(?X) <- producesWine(?Y0, ?X), -ConsumableThing(?X).
+Q(?X) <- hasColor(?X, ?Y0), -ConsumableThing(?X).
+Q(?X) <- hasBody(?X, ?Y0), -hasFlavor(?X, ?Y1).
+Q(?X) <- producesWine(?Y1, ?X), -hasFlavor(?X, ?Y0).
+Q(?X) <- hasMaker(?X, ?Y0), -hasColor(?X, ?Y1).
+Q(?X) <- PotableLiquid(?X), -Wine(?X).
+Q(?X) <- hasFlavor(?X, ?Y0), -PotableLiquid(?X).
+Q(?X) <- hasBody(?X, ?Y0), -Wine(?X).
+Q(?X) <- Wine(?X), -ConsumableThing(?X).
+Q(?X) <- producesWine(?Y1, ?X), -hasColor(?X, ?Y0).
+Q(?X) <- hasMaker(?X, ?Y0), -hasWineDescriptor(?X, ?Y1).
+Q(?X) <- hasFlavor(?X, ?Y0), -Wine(?X).
+Q(?X) <- hasSugar(?X, ?Y0), -hasWineDescriptor(?X, ?Y1).
+Q(?X) <- hasWineDescriptor(?X, ?Y0), -hasColor(?X, ?Y1).
+Q(?X) <- PotableLiquid(?X), -producesWine(?Y0, ?X).
+Q(?X) <- hasBody(?X, ?Y0), -producesWine(?Y1, ?X).
+Q(?X) <- PotableLiquid(?X), -hasColor(?X, ?Y0).
+Q(?X) <- hasFlavor(?X, ?Y0), -producesWine(?Y1, ?X).
+Q(?X) <- hasBody(?X, ?Y0), -hasMaker(?X, ?Y1).
+Q(?X) <- Wine(?X), -producesWine(?Y0, ?X).
+Q(?X) <- hasBody(?X, ?Y0), -hasColor(?X, ?Y1).
+Q(?X) <- hasSugar(?X, ?Y0), -hasColor(?X, ?Y1).
+Q(?X) <- hasSugar(?X, ?Y0), -hasMaker(?X, ?Y1).
+Q(?X) <- hasSugar(?X, ?Y0), -producesWine(?Y1, ?X).
+Q(?X) <- PotableLiquid(?X), -hasMaker(?X, ?Y0).
+Q(?X) <- hasWineDescriptor(?X, ?Y0), -hasMaker(?X, ?Y1).
+Q(?X) <- hasWineDescriptor(?X, ?Y0), -producesWine(?Y1, ?X).
+Q(?X) <- hasFlavor(?X, ?Y0), -hasColor(?X, ?Y1).
+Q(?X) <- Wine(?X), -hasColor(?X, ?Y0).
+Q(?X) <- Wine(?X), -hasMaker(?X, ?Y0).
+Q(?X) <- hasFlavor(?X, ?Y0), -hasMaker(?X, ?Y1).
+Q(?X) <- producesWine(?Y1, ?X), -locatedIn(?X, ?Y0).
+Q(?X) <- hasMaker(?X, ?Y0), -locatedIn(?X, ?Y1).
+Q(?X) <- hasSugar(?X, ?Y0), -locatedIn(?X, ?Y1).
+Q(?X) <- hasColor(?X, ?Y0), -locatedIn(?X, ?Y1).
+Q(?X) <- hasFlavor(?X, ?Y0), -locatedIn(?X, ?Y1).
+Q(?X) <- Wine(?X), -locatedIn(?X, ?Y0).
+Q(?X) <- PotableLiquid(?X), -locatedIn(?X, ?Y0).
+Q(?X) <- hasWineDescriptor(?X, ?Y0), -locatedIn(?X, ?Y1).
+Q(?X) <- hasMaker(?X, ?Y0), -hasBody(?X, ?Y1).
+Q(?X) <- hasColor(?X, ?Y0), -hasBody(?X, ?Y1).
+Q(?X) <- hasSugar(?X, ?Y0), -hasBody(?X, ?Y1).
+Q(?X) <- Wine(?X), -hasBody(?X, ?Y0).
+Q(?X) <- hasWineDescriptor(?X, ?Y0), -hasBody(?X, ?Y1).
+Q(?X) <- hasFlavor(?X, ?Y0), -hasBody(?X, ?Y1).
+Q(?X) <- PotableLiquid(?X), -hasBody(?X, ?Y0).
+Q(?X) <- producesWine(?Y1, ?X), -hasBody(?X, ?Y0).
+Q(?X) <- locatedIn(?X, ?Y0), -hasWineDescriptor(?X, ?Y1).
+Q(?X) <- locatedIn(?X, ?Y0), -ConsumableThing(?X).
+Q(?X) <- locatedIn(?X, ?Y0), -PotableLiquid(?X).
+Q(?X) <- locatedIn(?X, ?Y0), -Wine(?X).
+Q(?X) <- locatedIn(?X, ?Y0), -hasSugar(?X, ?Y1).
+Q(?X) <- locatedIn(?X, ?Y0), -hasFlavor(?X, ?Y1).
+Q(?X) <- locatedIn(?X, ?Y0), -producesWine(?Y1, ?X).
+Q(?X) <- locatedIn(?X, ?Y0), -hasMaker(?X, ?Y1).
+Q(?X) <- locatedIn(?X, ?Y0), -hasColor(?X, ?Y1).
+Q(?X) <- ConsumableThing(?X), -Wine(?X).
